@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: #ded9d4;
+}
+
+.main-container {
+  background-color: #e7e4e1;
+}
+
+.font-brand-green {
+  color: #011e0e;
+}
+
+.gb-green-brand {
+  background-color: #011e0e;
+  height: 15rem;
+}
