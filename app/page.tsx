@@ -12,7 +12,6 @@ import "./styles.css"
 export default function Home() {
   return (
     <>
-      <div className=" h-16 w-full bg-indigo-500 text-white">Fake Nav</div>
       <section className="h-96 w-full flex-none bg-indigo-400 px-4">
         <h1 className="header-text text-4xl font-extrabold text-white"></h1>
       </section>
