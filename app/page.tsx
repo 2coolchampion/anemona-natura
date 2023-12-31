@@ -7,47 +7,14 @@ import HeroImage from "../public/hero-images/v1.png"
 import SadnjaImage from "../public/sadnja.png"
 import Home1 from "@/components/Home1"
 import { useEffect, useState } from "react"
+import "./styles.css"
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState<Number | undefined>(undefined)
-
-  useEffect(() => {
-    // Update the screenWidth state with the current window width
-    const updateScreenWidth = () => setScreenWidth(window.innerWidth)
-
-    // Set the initial screen width
-    updateScreenWidth()
-
-    // Add event listener for window resize
-    window.addEventListener("resize", updateScreenWidth)
-
-    // Clean up event listener on component unmount
-    return () => window.removeEventListener("resize", updateScreenWidth)
-  }, [])
-
-  const h11Classes = "text-4xl font-extrabold text-white"
-
-  const renderHeaderText = () => {
-    const screenWidth = window.innerWidth
-
-    if (screenWidth === undefined) {
-      return <p className={h11Classes}>SAVJETOVANJE I USLUGE U ŠUMARSTVU 😧</p>
-    } else if (screenWidth < 640) {
-      return <h1 className={h11Classes}>SAVJETOVANJE I USLUGE U ŠUMARSTVU</h1>
-    } else {
-      return (
-        <h1 className={h11Classes}>
-          SPECIJALNE USLUGE IS SAVJETOVANJE U ŠUMARSTVU
-        </h1>
-      )
-    }
-  }
-
   return (
     <>
       <div className=" h-16 w-full bg-indigo-500 text-white">Fake Nav</div>
       <section className="h-96 w-full flex-none bg-indigo-400 px-4">
-        {renderHeaderText()}
+        <h1 className="header-text text-4xl font-extrabold text-white"></h1>
       </section>
       <section className="w-full bg-indigo-800 px-4 pb-20">
         <div className="mt-10 flex items-center">
