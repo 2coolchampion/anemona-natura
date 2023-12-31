@@ -130,7 +130,38 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-20 flex w-full flex-col bg-indigo-950 px-4 pb-10">
+      <section className="relative z-0 mt-20 flex w-full flex-col px-4 pb-24">
+        <Image
+          src={SadnjaImage}
+          fill
+          alt="background image"
+          className="-z-10 object-cover opacity-40"
+        />
+        <div className="mt-10 flex items-center">
+          <h2 className="mr-auto text-3xl font-extrabold">
+            EU FONDOVI - PODMJERA 8.5.1
+          </h2>
+          <div className="-mr-4 ml-auto h-[50px] w-[12px] bg-indigo-800"></div>
+        </div>
+        <h3 className="font-xs mt-2 font-light">
+          TIP OPERACIJE 8.5.1 KONVERZIJA ŠUMA
+        </h3>
+        <p className="font-sm mt-4">
+          Izrada programa konverzije degradiranih šumskih sastojina i šumskih
+          kultura.
+        </p>
+        <p className="font-md mt-4">
+          Do sada smo našim zadovoljnim klijentima osigurali preko{" "}
+          <strong>3 milijuna eura</strong> bespovratnih sredstava. U nastavku
+          saznajte više o našim projektima te kako možete postati korisnik ove
+          mjere.
+        </p>
+        <button className="mt-6 self-start rounded bg-indigo-900 p-2 px-4 font-semibold text-white">
+          SAZNAJ VIŠE
+        </button>
+        <div className="flex justify-between"></div>
+      </section>
+      <section className="flex w-full flex-col bg-indigo-950 px-4 pb-10">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold text-white">O NAMA</h2>
           <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200"></div>
