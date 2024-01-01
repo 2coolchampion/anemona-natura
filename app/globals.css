@@ -18,3 +18,44 @@ html {
   background-color: #011e0e;
   height: 15rem;
 }
+
+.breakpointer::after {
+  content: "a ";
+}
+
+@media (width < 640px) {
+  .breakpointer::after {
+    content: "mob";
+  }
+}
+
+@media (width >= 640px) and (width < 768px) {
+  .breakpointer::after {
+    content: "sm";
+  }
+}
+
+@media (width >= 768px) and (width < 1024px) {
+  .breakpointer::after {
+    content: "md";
+  }
+}
+
+@media (width >= 1024px) and (width < 1280px) {
+  .breakpointer::after {
+    content: "lg";
+  }
+}
+
+@media (width >= 1280px) and (width < 1536px) {
+  .breakpointer::after {
+    content: "2xl";
+  }
+}
+
+@media (width >= 1536px) {
+  .breakpointer::after {
+    content: "Beyond 2xl";
+    font-size: 0.525rem;
+  }
+}

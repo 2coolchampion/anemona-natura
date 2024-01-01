@@ -19,13 +19,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Nav />
-        <main className="main-container flex min-h-screen w-auto flex-col items-start justify-start">
+        <main className="main-container flex min-h-screen w-auto flex-col items-center justify-start">
           {children}
         </main>
         <footer className="w-full bg-indigo-950 py-8 text-center text-xs text-white">
           {" "}
           © 2024 Anemora Natura d.o.o.
         </footer>
+        <div className="breakpointer fixed bottom-8 right-8 flex h-8 w-8 items-center justify-center bg-orange-600 p-1 text-white sm:bg-green-500 md:bg-orange-300 lg:bg-blue-500 2xl:bg-pink-500"></div>
       </body>
     </html>
   )
