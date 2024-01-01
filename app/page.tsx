@@ -12,10 +12,10 @@ import "./styles.css"
 export default function Home() {
   return (
     <>
-      <section className="h-96 w-full flex-none bg-indigo-400 px-4">
+      <section className="h-96 w-full flex-none bg-indigo-400 px-4 sm:px-16 md:px-32 lg:px-48 ">
         <h1 className="header-text text-4xl font-extrabold text-white"></h1>
       </section>
-      <section className="w-full bg-indigo-800 px-4 pb-20">
+      <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32 lg:px-48 ">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold text-white">
             KONTAKT
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-20 h-fit w-full px-8">
+      <section className=" h-fit w-full px-8 py-16 sm:px-16 md:px-32 lg:px-48 ">
         <div className="flex flex-col space-y-8">
           <div className="felx felx-col ">
             <label
@@ -99,7 +99,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="mt-20 flex w-full flex-col px-4">
+      <section className="flex w-full flex-col px-4 pb-16 sm:px-16 md:px-32 lg:px-48 ">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold">USLUGE</h2>
           <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-600"></div>
@@ -129,63 +129,67 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative z-0 mt-20 flex w-full flex-col px-4 pb-24">
+      <section className="relative z-0 mt-20 flex w-screen flex-col px-4 py-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw] ">
         <Image
           src={SadnjaImage}
           fill
           alt="background image"
           className="-z-10 object-cover opacity-40"
         />
-        <div className="mt-10 flex items-center">
-          <h2 className="mr-auto text-3xl font-extrabold">
+        <div className="mt-10 flex items-center justify-between">
+          <h2 className="text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[7.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[7.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
             EU FONDOVI - PODMJERA 8.5.1
           </h2>
-          <div className="-mr-4 ml-auto h-[50px] w-[12px] bg-indigo-800"></div>
+          <div className="-mr-4 h-[50px] w-[12px] flex-none bg-indigo-800  sm:-mr-16 sm:h-[10px] sm:w-[100px] lg:hidden"></div>
         </div>
-        <h3 className="font-xs mt-2 font-light">
+        <h3 className="font-xs mt-1 font-light">
           TIP OPERACIJE 8.5.1 KONVERZIJA ŠUMA
         </h3>
-        <p className="font-sm mt-4">
+        <p className="font-sm mt-6 max-w-md flex-none">
           Izrada programa konverzije degradiranih šumskih sastojina i šumskih
           kultura.
         </p>
-        <p className="font-md mt-4">
+        <p className="font-md mt-6 max-w-md">
           Do sada smo našim zadovoljnim klijentima osigurali preko{" "}
-          <strong>3 milijuna eura</strong> bespovratnih sredstava. U nastavku
-          saznajte više o našim projektima te kako možete postati korisnik ove
-          mjere.
+          <strong className="whitespace-nowrap font-extrabold">
+            3 milijuna eura
+          </strong>{" "}
+          bespovratnih sredstava. U nastavku saznajte više o našim projektima te
+          kako možete postati korisnik ove mjere.
         </p>
-        <button className="mt-6 self-start rounded bg-indigo-900 p-2 px-4 font-semibold text-white">
+        <button className="mt-10 self-start rounded bg-indigo-900 p-2 px-4 font-semibold text-white">
           SAZNAJ VIŠE
         </button>
         <div className="flex justify-between"></div>
       </section>
-      <section className="flex w-full flex-col bg-indigo-950 px-4 pb-10">
-        <div className="mt-10 flex items-center">
-          <h2 className="mr-auto text-3xl font-extrabold text-white">O NAMA</h2>
-          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200"></div>
+      <section className="flex w-full flex-col bg-indigo-950 px-4 py-16 sm:px-16 md:items-center md:px-32 lg:px-48">
+        <div className="flex w-full flex-col items-start md:w-fit">
+          <div className="mt-10 flex items-center justify-between self-stretch">
+            <h2 className="text-3xl font-extrabold text-white">O NAMA</h2>
+            <div className="-mr-4 h-[12px] w-[150px] bg-indigo-200 sm:hidden"></div>
+          </div>
+          <p className="font-sm mt-8 text-white sm:w-[36rem] ">
+            Anemona Natura d.o.o. nudi specijalne usluge i savjetovanja u
+            šumarstvu.
+          </p>
+          <p className="font-sm mt-6 text-white sm:w-[36rem]">
+            Nudimo usluge doznake stabala i otpreme drvnih sortimenata, usluge
+            održivog gospodarenja šumom, provodimo lovnogospodarske planove te
+            nudimo identifikaciju katastarskih čestica na terenu kao i procjenu
+            vrijednosti šume i šumskog zemljišta.
+          </p>
+          <p className="font-sm mt-6 text-white sm:w-[36rem]">
+            Osim toga pružamo uslugu organizacije, savjetovanja i pripreme
+            projekata iz Europskih fondova. Specijalizirani smo u izradi
+            projekata za podmjeru 8.5.1. - konverzije šuma. Pripremamo i
+            izrađujemo cjelokupnu dokumentaciju za potrebe projekta iz Europskih
+            strukturnih i investicijskih fondova.
+          </p>
+          <p className="font-sm mt-6 text-white sm:w-[36rem]">
+            Sjedište naše tvrtke nalazi se u Karlovcu, no rad uspješno obavljamo
+            na području cijele Hrvatske.
+          </p>
         </div>
-        <p className="font-sm mt-4 text-white">
-          Anemona Natura d.o.o. nudi specijalne usluge i savjetovanja u
-          šumarstvu.
-        </p>
-        <p className="font-sm mt-4 text-white">
-          Nudimo usluge doznake stabala i otpreme drvnih sortimenata, usluge
-          održivog gospodarenja šumom, provodimo lovnogospodarske planove te
-          nudimo identifikaciju katastarskih čestica na terenu kao i procjenu
-          vrijednosti šume i šumskog zemljišta.
-        </p>
-        <p className="font-sm mt-4 text-white">
-          Osim toga pružamo uslugu organizacije, savjetovanja i pripreme
-          projekata iz Europskih fondova. Specijalizirani smo u izradi projekata
-          za podmjeru 8.5.1. - konverzije šuma. Pripremamo i izrađujemo
-          cjelokupnu dokumentaciju za potrebe projekta iz Europskih strukturnih
-          i investicijskih fondova.
-        </p>
-        <p className="font-sm mt-4 text-white">
-          Sjedište naše tvrtke nalazi se u Karlovcu, no rad uspješno obavljamo
-          na području cijele Hrvatske.
-        </p>
       </section>
     </>
   )
