@@ -12,10 +12,10 @@ import "./styles.css"
 export default function Home() {
   return (
     <>
-      <section className="h-96 w-full flex-none bg-indigo-400 px-4 sm:px-16 md:px-32 lg:px-48 ">
+      <section className="h-96 w-full flex-none bg-indigo-400 px-4 sm:px-16 md:px-32 ">
         <h1 className="header-text text-4xl font-extrabold text-white"></h1>
       </section>
-      <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32 lg:px-48 ">
+      <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw]">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold text-white">
             KONTAKT
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" h-fit w-full px-8 py-16 sm:px-16 md:px-32 lg:px-48 ">
+      <section className="w-screen px-8 py-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw]">
         <div className="flex flex-col space-y-8">
           <div className="felx felx-col ">
             <label
@@ -99,7 +99,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="flex w-full flex-col px-4 pb-16 sm:px-16 md:px-32 lg:px-48 ">
+      <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw]">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold">USLUGE</h2>
           <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-600"></div>
@@ -162,7 +162,7 @@ export default function Home() {
         </button>
         <div className="flex justify-between"></div>
       </section>
-      <section className="flex w-full flex-col bg-indigo-950 px-4 py-16 sm:px-16 md:items-center md:px-32 lg:px-48">
+      <section className="flex w-full flex-col bg-indigo-950 px-4 py-16 sm:px-16 md:items-center md:px-32">
         <div className="flex w-full flex-col items-start md:w-fit">
           <div className="mt-10 flex items-center justify-between self-stretch">
             <h2 className="text-3xl font-extrabold text-white">O NAMA</h2>
