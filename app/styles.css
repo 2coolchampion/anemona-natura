@@ -2,8 +2,8 @@
   content: "SAVJETOVANJE I USLUGE U ŠUMARSTVU";
 }
 
-@media (min-width: 640px) {
+@media (width > 640px) {
   .header-text::before {
-    content: "SPECIJALNE USLUGE IS SAVJETOVANJE U ŠUMARSTVU";
+    content: "SPECIJALNE USLUGE I SAVJETOVANJE U ŠUMARSTVU";
   }
 }
