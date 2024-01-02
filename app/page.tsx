@@ -12,7 +12,7 @@ import "./styles.css"
 export default function Home() {
   return (
     <>
-      <section className="h-[27rem] w-full bg-indigo-400 px-4 sm:h-[36rem] sm:px-16 md:px-32 lg:h-[42rem]">
+      <section className="h-[27rem] w-full bg-indigo-400 px-4 sm:h-[36rem] sm:px-16 md:px-32 lg:h-[42rem] 2xl:max-w-[1535px]">
         <div className="mt-[6rem] flex flex-col lg:mt-36">
           <h1 className="header-text text-4xl font-extrabold text-white"></h1>
           <button className="mt-8 w-48 bg-indigo-800 px-4 py-2 text-white">
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw]">
+      <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
             USLUGE
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative z-0 mt-20 flex w-screen flex-col px-4 py-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw] ">
+      <section className="relative z-0 mt-20 flex w-screen flex-col px-4 py-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
         <Image
           src={SadnjaImage}
           fill
@@ -174,7 +174,7 @@ export default function Home() {
         </button>
         <div className="flex justify-between"></div>
       </section>
-      <section className="flex w-full flex-col bg-indigo-950 px-4 py-16 sm:px-16 md:items-center md:px-32">
+      <section className="flex w-full flex-col bg-indigo-950 px-4 py-16 sm:px-16 md:items-center md:px-32 2xl:max-w-[1535px]">
         <div className="flex w-full flex-col items-start md:w-fit">
           <div className="mt-10 flex items-center justify-between self-stretch">
             <h2 className="text-3xl font-extrabold text-white">O NAMA</h2>
