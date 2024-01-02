@@ -20,7 +20,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <div className="relative w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16">
+      <div className="relative w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]">
         <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
           <h2 className="text-xl font-extrabold text-white">KONTAKT</h2>
         </button>
