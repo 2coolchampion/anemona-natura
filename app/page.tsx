@@ -20,7 +20,7 @@ export default function Home() {
           <h2 className="mr-auto text-3xl font-extrabold text-white">
             KONTAKT
           </h2>
-          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200"></div>
+          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200 lg:hidden"></div>
         </div>
         <div className="mt-16 flex flex-col items-start justify-start space-y-4">
           <div className="flex items-center bg-indigo-500">
@@ -101,8 +101,10 @@ export default function Home() {
       </section>
       <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw]">
         <div className="mt-10 flex items-center">
-          <h2 className="mr-auto text-3xl font-extrabold">USLUGE</h2>
-          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-600"></div>
+          <h2 className="mr-auto text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
+            USLUGE
+          </h2>
+          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-600 lg:hidden"></div>
         </div>
         <div className="mt-16 flex flex-col">
           <div className="grid grid-cols-1 grid-rows-5 gap-5">
