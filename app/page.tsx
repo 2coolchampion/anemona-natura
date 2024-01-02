@@ -16,11 +16,10 @@ export default function Home() {
         <h1 className="header-text text-4xl font-extrabold text-white"></h1>
       </section>
       <div className="relative w-screen rounded-lg bg-indigo-200 lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16">
+        <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
+          <h2 className="text-xl font-extrabold text-white">KONTAKT</h2>
+        </button>
         <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32">
-          <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
-            KONTAKT
-          </button>
-
           <div className="mt-10 flex items-center">
             <h2 className="mr-auto text-3xl font-extrabold text-white lg:hidden">
               KONTAKT
