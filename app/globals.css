@@ -49,13 +49,12 @@ html {
 
 @media (width >= 1280px) and (width < 1536px) {
   .breakpointer::after {
-    content: "2xl";
+    content: "xl";
   }
 }
 
 @media (width >= 1536px) {
   .breakpointer::after {
-    content: "Beyond 2xl";
-    font-size: 0.525rem;
+    content: "2xl";
   }
 }

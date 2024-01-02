@@ -26,7 +26,7 @@ export default function RootLayout({
           {" "}
           © 2024 Anemora Natura d.o.o.
         </footer>
-        <div className="breakpointer fixed bottom-8 right-8 flex h-8 w-8 items-center justify-center bg-orange-600 p-1 text-white sm:bg-green-500 md:bg-orange-300 lg:bg-blue-500 2xl:bg-pink-500"></div>
+        <div className="breakpointer fixed bottom-8 right-8 flex h-8 w-8 items-center justify-center bg-orange-600 p-1 text-white sm:bg-green-500 md:bg-orange-300 lg:bg-blue-500 xl:bg-lime-400 xl:text-black 2xl:bg-pink-500 2xl:text-white"></div>
       </body>
     </html>
   )
