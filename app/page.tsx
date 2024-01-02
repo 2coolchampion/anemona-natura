@@ -12,10 +12,15 @@ import "./styles.css"
 export default function Home() {
   return (
     <>
-      <section className="h-96 w-full flex-none bg-indigo-400 px-4 sm:px-16 md:px-32 ">
-        <h1 className="header-text text-4xl font-extrabold text-white"></h1>
+      <section className="h-[27rem] w-full bg-indigo-400 px-4 sm:h-[36rem] sm:px-16 md:px-32 lg:h-[42rem]">
+        <div className="mt-[6rem] flex flex-col lg:mt-36">
+          <h1 className="header-text text-4xl font-extrabold text-white"></h1>
+          <button className="mt-8 w-48 bg-indigo-800 px-4 py-2 text-white">
+            Istraži Ponudu
+          </button>
+        </div>
       </section>
-      <div className="relative w-screen rounded-lg bg-indigo-200 lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16">
+      <div className="relative w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16">
         <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
           <h2 className="text-xl font-extrabold text-white">KONTAKT</h2>
         </button>
@@ -104,7 +109,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw]">
+      <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw]">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
             USLUGE
