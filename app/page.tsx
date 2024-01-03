@@ -8,6 +8,8 @@ import SadnjaImage from "../public/sadnja.png"
 import Home1 from "@/components/Home1"
 import { useEffect, useState } from "react"
 import "./styles.css"
+import KontaktSectionXl from "@/components/KontaktSectionLG"
+import KontaktSection from "@/components/KontaktSection"
 
 export default function Home() {
   return (
@@ -20,95 +22,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <div className="relative w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]">
-        <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
-          <h2 className="text-xl font-extrabold text-white">KONTAKT</h2>
-        </button>
-        <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32">
-          <div className="mt-10 flex items-center">
-            <h2 className="mr-auto text-3xl font-extrabold text-white lg:hidden">
-              KONTAKT
-            </h2>
-            <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200 lg:hidden"></div>
-          </div>
-          <div className="mt-16 flex flex-col items-start justify-start space-y-4">
-            <div className="flex items-center bg-indigo-500">
-              <div className="h-4 w-4 bg-indigo-400"></div>
-              <div className="text-white">
-                Vlasnica <br /> Sabrina Hribar
-              </div>
-            </div>
-            <div className="flex items-center bg-indigo-500">
-              <div className="h-4 w-4 bg-indigo-400"></div>
-              <div className="text-white">
-                Vlasnica <br /> Sabrina Hribar
-              </div>
-            </div>
-            <div className="flex items-center bg-indigo-500">
-              <div className="h-4 w-4 bg-indigo-400"></div>
-              <div className="text-white">+385 99 286 8188</div>
-            </div>
-            <div className="flex items-center bg-indigo-500">
-              <div className="h-4 w-4 bg-indigo-400"></div>
-              <div className="text-white">anemora.natura.info@gmail.com</div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full px-8 py-16 sm:px-16 md:px-32">
-          <div className="flex flex-col space-y-8">
-            <div className="felx felx-col ">
-              <label
-                htmlFor="ime-i-prezime"
-                className="relative top-4 font-semibold"
-              >
-                IME I PREZIME
-              </label>
-              <input
-                type="name"
-                className="w-full border-b-4 border-b-indigo-500 bg-transparent"
-                id="ime-i-prezime"
-              />
-            </div>
-            <div className="felx felx-col ">
-              <label htmlFor="email" className="relative top-4 font-semibold">
-                EMAIL
-              </label>
-              <input
-                type="email"
-                className="w-full border-b-4 border-b-indigo-500 bg-transparent"
-                id="email"
-              />
-            </div>
-            <div className="felx felx-col ">
-              <label
-                htmlFor="kontakt-telefon"
-                className="relative top-4 font-semibold"
-              >
-                KONTAKT TELEFON
-              </label>
-              <input
-                type="phone"
-                className="w-full border-b-4 border-b-indigo-500 bg-transparent"
-                id="kontakt-telefon"
-              />
-            </div>
-            <div className="felx felx-col ">
-              <label htmlFor="poruka" className="font-semibold">
-                PORUKA
-              </label>
-              <textarea
-                className=" mt-2 h-32 w-full rounded-lg border-4 border-dashed border-indigo-500 bg-transparent p-4"
-                id="poruka"
-                placeholder="Upišite svoju poruku ovdje..."
-              />
-            </div>
-            <button className="flex items-center justify-center rounded-lg bg-indigo-600 p-2 font-extrabold text-white">
-              POŠALJI PORUKU
-              <div className="ml-2 inline-block h-4 w-4 bg-indigo-300"></div>
-            </button>
-          </div>
-        </section>
-      </div>
+      <KontaktSection className="relative w-screen rounded-lg bg-indigo-200 lg:hidden" />
+      <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" />
       <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
