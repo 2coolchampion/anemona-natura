@@ -14,7 +14,7 @@ import KontaktSection from "@/components/KontaktSection"
 export default function Home() {
   return (
     <>
-      <section className="h-[66vh] max-h-[650px] w-full bg-indigo-400 px-4  sm:max-h-[] sm:px-16 md:px-32  2xl:max-w-[1535px] landscape:h-[100vh]">
+      <section className="h-[66vh] max-h-[650px] w-full bg-indigo-400 px-4 sm:px-16 md:px-32  2xl:max-w-[1535px] landscape:h-[100vh]">
         <div className="mt-[6rem] flex flex-col lg:mt-36">
           <h1 className="header-text text-4xl font-extrabold text-white"></h1>
           <button className="mt-8 w-48 bg-indigo-800 px-4 py-2 text-white">
