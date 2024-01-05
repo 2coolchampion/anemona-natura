@@ -26,12 +26,12 @@ const Nav = () => {
 
   return (
     <nav
-      className={`nav fixed z-10 flex h-16 w-full justify-between bg-indigo-800 p-2 drop-shadow-lg transition-transform ${
+      className={`nav bg-background-light fixed z-10 flex h-16 w-full justify-between p-2 drop-shadow-lg transition-transform ${
         isHidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="h-full w-[180px] bg-indigo-200"></div>
-      <div className="h-full w-[50px] bg-indigo-200"></div>
+      <div className="bg-green-dark h-full w-[180px]"></div>
+      <div className="bg-green-dark h-full w-[50px]"></div>
     </nav>
   )
 }

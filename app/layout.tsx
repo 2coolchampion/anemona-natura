@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className="main-container flex min-h-screen w-auto flex-col items-center justify-start">
           {children}
         </main>
-        <footer className="w-full bg-indigo-950 py-8 text-center text-xs text-white">
+        <footer className="bg-green-dark w-full py-8 text-center text-xs text-white">
           {" "}
           © 2024 Anemora Natura d.o.o.
         </footer>

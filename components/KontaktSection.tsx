@@ -14,36 +14,33 @@ type KontaktSectionProps = {
 const KontaktSection = ({ className }: KontaktSectionProps) => {
   return (
     <div className={className}>
-      <button className="absolute left-1/2 right-auto top-4 hidden -translate-x-1/2 rounded bg-indigo-500  px-4 py-2 font-extrabold text-white lg:block">
-        <h2 className="text-xl font-extrabold text-white">KONTAKT</h2>
-      </button>
-      <section className="w-full bg-indigo-800 px-4 py-16 pb-20 sm:px-16 md:px-32">
+      <section className="bg-green-dark w-full px-4 py-16 pb-20 sm:px-16 md:px-32">
         <div className="mt-10 flex items-center">
-          <h2 className="mr-auto text-3xl font-extrabold text-white lg:hidden">
+          <h2 className="text-background-light mr-auto text-3xl font-extrabold lg:hidden">
             KONTAKT
           </h2>
-          <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200 lg:hidden"></div>
+          <div className="bg-background-light -mr-4 ml-auto h-[12px] w-[150px] lg:hidden"></div>
         </div>
         <div className="mt-16 flex flex-col items-start justify-start space-y-4">
-          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
-            <PersonIcon className="h-8 w-8 text-indigo-100" />
+          <div className="flex w-full items-center gap-4 p-4">
+            <PersonIcon className="text-background-light h-8 w-8" />
 
             <div className="text-white">
               Vlasnica <br /> Sabrina Hribar
             </div>
           </div>
-          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
-            <PinIcon className="h-9 text-indigo-100" />
+          <div className="flex w-full items-center gap-4 p-4">
+            <PinIcon className="text-background-light h-9" />
             <div className="text-white">
               Adreasa1 <br /> Adresa 2
             </div>
           </div>
-          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
-            <PhoneIcon className="h-8 w-8 text-indigo-100" />
+          <div className="flex w-full items-center gap-4 p-4">
+            <PhoneIcon className="text-background-light h-8 w-8" />
             <div className="text-white underline">+385 99 286 8188</div>
           </div>
-          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
-            <MailIcon className="w-8 text-indigo-100" />
+          <div className="flex w-full items-center gap-4 p-4">
+            <MailIcon className="text-background-light w-8" />
             <div className="text-white">anemora.natura.info@gmail.com</div>
           </div>
         </div>
@@ -59,7 +56,7 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
             </label>
             <input
               type="name"
-              className="w-full border-b-4 border-b-indigo-500 bg-transparent"
+              className="border-b-green-dark w-full border-b-4 bg-transparent"
               id="ime-i-prezime"
             />
           </div>
@@ -69,7 +66,7 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
             </label>
             <input
               type="email"
-              className="w-full border-b-4 border-b-indigo-500 bg-transparent"
+              className="border-b-green-dark w-full border-b-4 bg-transparent"
               id="email"
             />
           </div>
@@ -82,7 +79,7 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
             </label>
             <input
               type="phone"
-              className="w-full border-b-4 border-b-indigo-500 bg-transparent"
+              className="border-b-green-dark w-full border-b-4 bg-transparent"
               id="kontakt-telefon"
             />
           </div>
@@ -91,14 +88,14 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
               PORUKA
             </label>
             <textarea
-              className=" mt-2 h-32 w-full rounded-lg border-4 border-dashed border-indigo-500 bg-transparent p-4"
+              className=" border-green-light mt-2 h-32 w-full rounded-lg border-4 border-dashed bg-transparent p-4"
               id="poruka"
               placeholder="Upišite svoju poruku ovdje..."
             />
           </div>
-          <button className="flex items-center justify-center rounded-lg bg-indigo-600 p-2 font-extrabold text-white">
+          <button className="bg-green-light flex items-center justify-center rounded-lg p-2 font-extrabold text-white">
             POŠALJI PORUKU
-            <SendIcon className="ml-2 w-4 text-indigo-100" />
+            <SendIcon className="ml-2 w-4 text-white" />
           </button>
         </div>
       </section>
