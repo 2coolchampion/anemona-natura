@@ -88,7 +88,7 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
               PORUKA
             </label>
             <textarea
-              className=" border-green-light mt-2 h-32 w-full rounded-lg border-4 border-dashed bg-transparent p-4"
+              className=" border-green-light placeholder:text-green-light mt-2 h-32 w-full rounded-lg border-4 border-dashed bg-transparent p-4"
               id="poruka"
               placeholder="Upišite svoju poruku ovdje..."
             />
