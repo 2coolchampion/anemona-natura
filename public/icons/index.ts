@@ -1,0 +1,6 @@
+export { default as SendIcon } from "./sendIcon.svg"
+export { default as PersonIcon } from "./personIcon.svg"
+export { default as MailIcon } from "./mailIcon.svg"
+export { default as PhoneIcon } from "./phoneIcon.svg"
+export { default as PinIcon } from "./pinIcon.svg"
+export { default as arrowDownIcon } from "./arrowDownIcon.svg"

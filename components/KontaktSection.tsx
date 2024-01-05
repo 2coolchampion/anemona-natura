@@ -1,4 +1,11 @@
 import React from "react"
+import {
+  PersonIcon,
+  PhoneIcon,
+  PinIcon,
+  MailIcon,
+  SendIcon,
+} from "/public/icons/index.ts"
 
 type KontaktSectionProps = {
   className?: string
@@ -18,24 +25,25 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
           <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-indigo-200 lg:hidden"></div>
         </div>
         <div className="mt-16 flex flex-col items-start justify-start space-y-4">
-          <div className="flex items-center bg-indigo-500">
-            <div className="h-4 w-4 bg-indigo-400"></div>
+          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
+            <PersonIcon className="h-8 w-8 text-indigo-100" />
+
             <div className="text-white">
               Vlasnica <br /> Sabrina Hribar
             </div>
           </div>
-          <div className="flex items-center bg-indigo-500">
-            <div className="h-4 w-4 bg-indigo-400"></div>
+          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
+            <PinIcon className="h-9 text-indigo-100" />
             <div className="text-white">
-              Vlasnica <br /> Sabrina Hribar
+              Adreasa1 <br /> Adresa 2
             </div>
           </div>
-          <div className="flex items-center bg-indigo-500">
-            <div className="h-4 w-4 bg-indigo-400"></div>
-            <div className="text-white">+385 99 286 8188</div>
+          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
+            <PhoneIcon className="h-8 w-8 text-indigo-100" />
+            <div className="text-white underline">+385 99 286 8188</div>
           </div>
-          <div className="flex items-center bg-indigo-500">
-            <div className="h-4 w-4 bg-indigo-400"></div>
+          <div className="flex w-full items-center gap-4 bg-indigo-500 p-4">
+            <MailIcon className="w-8 text-indigo-100" />
             <div className="text-white">anemora.natura.info@gmail.com</div>
           </div>
         </div>
@@ -90,7 +98,7 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
           </div>
           <button className="flex items-center justify-center rounded-lg bg-indigo-600 p-2 font-extrabold text-white">
             POŠALJI PORUKU
-            <div className="ml-2 inline-block h-4 w-4 bg-indigo-300"></div>
+            <SendIcon className="ml-2 w-4 text-indigo-100" />
           </button>
         </div>
       </section>
