@@ -22,24 +22,24 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
           <div className="bg-background-light -mr-4 ml-auto h-[12px] w-[150px] lg:hidden"></div>
         </div>
         <div className="mt-16 flex flex-col items-start justify-start space-y-4">
-          <div className="flex w-full items-center gap-4 p-4">
+          <div className="flex  w-full items-center gap-4 p-4 sm:px-0">
             <PersonIcon className="text-background-light h-8 w-8" />
 
             <div className="text-white">
               Vlasnica <br /> Sabrina Hribar
             </div>
           </div>
-          <div className="flex w-full items-center gap-4 p-4">
+          <div className="flex w-full items-center gap-4 p-4 sm:px-0">
             <PinIcon className="text-background-light h-9" />
             <div className="text-white">
               Adreasa1 <br /> Adresa 2
             </div>
           </div>
-          <div className="flex w-full items-center gap-4 p-4">
+          <div className="flex w-full items-center gap-4 p-4 sm:px-0">
             <PhoneIcon className="text-background-light h-8 w-8" />
             <div className="text-white underline">+385 99 286 8188</div>
           </div>
-          <div className="flex w-full items-center gap-4 p-4">
+          <div className="flex w-full items-center gap-4 p-4 sm:px-0">
             <MailIcon className="text-background-light w-8" />
             <div className="text-white">anemora.natura.info@gmail.com</div>
           </div>
