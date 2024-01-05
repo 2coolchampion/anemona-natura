@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: #ded9d4;
-}
-
-.main-container {
-  background-color: #e7e4e1;
+body {
+  @apply bg-background-dark;
 }
 
 .font-brand-green {
