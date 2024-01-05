@@ -14,7 +14,7 @@ import KontaktSection from "@/components/KontaktSection"
 export default function Home() {
   return (
     <>
-      <div className="bg-background-light flex flex-col justify-center">
+      <div className="bg-background-light flex w-screen flex-col justify-center lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
         <section className="relative z-0 h-[66vh] max-h-[650px] w-full bg-indigo-400 px-4 sm:px-16  md:px-32 2xl:max-w-[1535px] landscape:h-[100vh]">
           <Image
             src={HeroImage}
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </section>
         <KontaktSection className="bg-background-green-light relative w-screen rounded-lg lg:hidden" />
-        <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" />
+        {/* <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" /> */}
         <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
           <div className="mt-10 flex items-center">
             <h2 className="text-green-dark mr-auto text-3xl font-extrabold lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-indigo-900 lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-indigo-900">
