@@ -1,4 +1,52 @@
 import React from "react"
+import UslugeCard from "./UslugeCard"
+import { CardType } from "./UslugeCard"
+
+type ImageObject = {
+  usluga: string
+  imgSrc: string
+  imgAlt: string
+  cardType: CardType
+}
+
+const Images: ImageObject[] = [
+  {
+    usluga: "Doznaka i otprema drvnih sortimenata",
+    imgSrc: "/usluge/forest_truck_full_of_logs.png",
+    imgAlt: "Kamion odvozi trupce",
+    cardType: "small",
+  },
+  {
+    usluga: "EU Fondovi",
+    imgSrc: "/usluge/handshake.png",
+    imgAlt: "muškarci se rukuju",
+    cardType: "big",
+  },
+  {
+    usluga: "Procjena vrijednosti šume i šumskog zemljišta",
+    imgSrc: "/usluge/map.png",
+    imgAlt: "Osoba pokazuje penkalom na karti",
+    cardType: "big",
+  },
+  {
+    usluga: "Izrada lovno gospodarskih planova",
+    imgSrc: "/usluge/hogs.png",
+    imgAlt: "divlje svinje u šumi",
+    cardType: "small",
+  },
+  {
+    usluga: "Izrada šumsko gospodarskih planova",
+    imgSrc: "/usluge/beech.png",
+    imgAlt: "bukva",
+    cardType: "small",
+  },
+  {
+    usluga: "Otkup drvnih sortimenata",
+    imgSrc: "/usluge/timber_assortments.png",
+    imgAlt: "naslagana narezana drva",
+    cardType: "big",
+  },
+]
 
 const Usluge = () => {
   return (
@@ -10,27 +58,16 @@ const Usluge = () => {
         <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-green-dark lg:hidden"></div>
       </div>
       <div className="mt-16 flex flex-col">
-        <div className="grid grid-cols-1 grid-rows-5 gap-5">
-          <div className="flex h-36 flex-col items-center justify-around rounded-lg bg-indigo-400">
-            <h4>Naziv usluge</h4>
-            <button>Saznaj više...</button>
-          </div>
-          <div className="flex h-36 flex-col items-center justify-around rounded-lg bg-indigo-400">
-            <h4>Naziv usluge</h4>
-            <button>Saznaj više...</button>
-          </div>
-          <div className="flex h-36 flex-col items-center justify-around rounded-lg bg-indigo-400">
-            <h4>Naziv usluge</h4>
-            <button>Saznaj više...</button>
-          </div>
-          <div className="flex h-36 flex-col items-center justify-around rounded-lg bg-indigo-400">
-            <h4>Naziv usluge</h4>
-            <button>Saznaj više...</button>
-          </div>
-          <div className="flex h-36 flex-col items-center justify-around rounded-lg bg-indigo-400">
-            <h4>Naziv usluge</h4>
-            <button>Saznaj više...</button>
-          </div>
+        <div className="grid grid-cols-1 grid-rows-6 gap-5 md:grid-cols-3 md:grid-rows-3">
+          {Images.map((image, index) => (
+            <UslugeCard
+              key={index}
+              nazivUsluge={image.usluga}
+              imgSrc={image.imgSrc}
+              imgAlt={image.imgAlt}
+              cardType={image.cardType}
+            />
+          ))}
         </div>
       </div>
     </section>
