@@ -19,7 +19,7 @@ const UslugeCard = ({
   return (
     <div
       className={`relative z-0 flex h-48 flex-col items-center justify-around overflow-hidden rounded-lg text-center text-background-light ${
-        cardType === "small" ? "col-span-1" : "col-span-1 md:col-span-2"
+        cardType === "small" ? "col-span-1" : "col-span-1 lg:col-span-2"
       }`}
     >
       <h4 className="text-xl font-bold">{nazivUsluge}</h4>
