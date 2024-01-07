@@ -1,14 +1,10 @@
-"use client"
-
 import ImageCropTool from "@/components/ImageCropTool"
 import ContactDesktop from "@/components/ContactDesktop"
 import Image from "next/image"
 import HeroImage from "../public/hero-images/v1-darkened.jpg"
 import SadnjaImage from "../public/sadnja.png"
 import Home1 from "@/components/Home1"
-import { useEffect, useState } from "react"
 import "./styles.css"
-import KontaktSectionXl from "@/components/KontaktSectionLG"
 import KontaktSection from "@/components/KontaktSection"
 import Usluge from "@/components/Usluge"
 
