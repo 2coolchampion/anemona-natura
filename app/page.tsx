@@ -8,6 +8,10 @@ import "./styles.css"
 import KontaktSection from "@/components/KontaktSection"
 import Usluge from "@/components/Usluge"
 import { ArrowDownIcon } from "/public/icons/index.ts"
+import Croatia from "../public/partners-images/croatia.png"
+import Eu from "../public/partners-images/eu.png"
+import EuInvestmentFunds from "../public/partners-images/euInvestmentFunds.png"
+import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
 
 export default function Home() {
   return (
@@ -67,7 +71,40 @@ export default function Home() {
           <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
             SAZNAJ VIŠE
           </button>
-          <div className="flex justify-between"></div>
+          <div className="flex h-44 w-full justify-between gap-8">
+            <div className="border-1 relative w-24 border-purple-400">
+              <Image
+                src={Croatia}
+                alt="Croatian flag"
+                fill
+                className="absolute object-contain"
+              />
+            </div>
+            <div className="border-1 relative w-[5rem] flex-initial border-purple-400">
+              <Image
+                src={Eu}
+                alt="European flag"
+                fill
+                className="absolute object-contain"
+              />
+            </div>
+            <div className="border-1 relative w-48 border-purple-400">
+              <Image
+                src={EuInvestmentFunds}
+                alt="croatian fill flag"
+                fill
+                className="absolute object-contain"
+              />
+            </div>
+            <div className="border-1 relative w-48 border-purple-400">
+              <Image
+                src={RuralniRazvoj}
+                alt="croatian fill flag"
+                fill
+                className="absolute object-contain"
+              />
+            </div>
+          </div>
         </section>
         <section className="flex w-full flex-col bg-green-dark px-4 py-16 sm:px-16 md:items-center md:px-32 2xl:max-w-[1535px]">
           <div className="flex w-full flex-col items-start md:w-fit">
