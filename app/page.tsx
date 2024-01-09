@@ -7,6 +7,7 @@ import Home1 from "@/components/Home1"
 import "./styles.css"
 import KontaktSection from "@/components/KontaktSection"
 import Usluge from "@/components/Usluge"
+import { ArrowDownIcon } from "/public/icons/index.ts"
 
 export default function Home() {
   return (
@@ -22,8 +23,13 @@ export default function Home() {
           />
           <div className="flex flex-col pt-56 lg:mt-36">
             <h1 className="header-text text-4xl font-extrabold text-background-light"></h1>
-            <button className="mt-8 w-48 bg-green-dark px-4 py-2 text-background-light">
-              Istraži Ponudu
+            <button className="mt-8 flex w-fit items-stretch bg-green-dark text-background-light">
+              <div className="flex items-end bg-green-light px-3 py-2">
+                <ArrowDownIcon className="h-auto w-6" />
+              </div>
+              <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
+                Istraži Ponudu
+              </p>
             </button>
           </div>
         </section>
