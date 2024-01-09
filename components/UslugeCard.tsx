@@ -18,7 +18,7 @@ const UslugeCard = ({
 }: UslugeCardProps) => {
   return (
     <div
-      className={`relative z-0 flex h-48 flex-col items-center justify-around overflow-hidden rounded-lg text-center text-background-light ${
+      className={`relative z-0 flex h-56 flex-col items-center justify-around overflow-hidden rounded-lg text-center text-background-light xl:h-56 2xl:h-72 ${
         cardType === "small" ? "col-span-1" : "col-span-1 lg:col-span-2"
       }`}
     >
