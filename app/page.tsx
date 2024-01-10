@@ -71,8 +71,8 @@ export default function Home() {
           <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
             SAZNAJ VIŠE
           </button>
-          <div className="flex h-44 w-full justify-between gap-8">
-            <div className="border-1 relative w-24 border-purple-400">
+          <div className="xs:grid-rows-[5rem_7rem] mt-16 grid  grid-cols-2 grid-rows-3 place-items-center gap-x-10 sm:grid-cols-2 sm:grid-rows-2  md:max-w-[38rem] md:grid-cols-4 md:grid-rows-1 md:justify-items-start xl:self-center 2xl:max-w-[50rem]">
+            <div className="place xs:justify-self-center relative min-h-[5rem] min-w-[5rem] max-w-[10rem] place-self-end sm:order-1 md:justify-self-start ">
               <Image
                 src={Croatia}
                 alt="Croatian flag"
@@ -80,7 +80,7 @@ export default function Home() {
                 className="absolute object-contain"
               />
             </div>
-            <div className="border-1 relative w-[5rem] flex-initial border-purple-400">
+            <div className="align-self-center xs:justify-self-center relative h-16 w-16 justify-self-start sm:order-3 md:w-[4.3rem]">
               <Image
                 src={Eu}
                 alt="European flag"
@@ -88,7 +88,7 @@ export default function Home() {
                 className="absolute object-contain"
               />
             </div>
-            <div className="border-1 relative w-48 border-purple-400">
+            <div className="xs:col-span-1  relative col-span-2 h-full min-w-40 place-self-center sm:order-4 md:w-40">
               <Image
                 src={EuInvestmentFunds}
                 alt="croatian fill flag"
@@ -96,7 +96,7 @@ export default function Home() {
                 className="absolute object-contain"
               />
             </div>
-            <div className="border-1 relative w-48 border-purple-400">
+            <div className="xs:col-span-1 relative col-span-2 h-full w-40 place-self-center sm:order-2 md:w-40">
               <Image
                 src={RuralniRazvoj}
                 alt="croatian fill flag"
