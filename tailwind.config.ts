@@ -20,6 +20,9 @@ const config: Config = {
         "green-dark": "#011e0e",
         "green-light": "#066437",
       },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [require("@tailwindcss/container-queries")],
