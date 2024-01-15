@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="absolute bottom-8 left-0 right-0 mx-auto text-center">
-        © 2024 Anemora Natura d.o.o.
+        © {new Date().getFullYear()} Anemora Natura d.o.o.
       </p>
     </footer>
   )
