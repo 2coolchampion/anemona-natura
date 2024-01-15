@@ -13,6 +13,7 @@ import Eu from "../public/partners-images/eu.png"
 import EuInvestmentFunds from "../public/partners-images/euInvestmentFunds.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
 import EUFondovi from "@/components/EUFondoviSection"
+import ONamaSection from "@/components/ONamaSection"
 
 export default function Home() {
   return (
@@ -42,37 +43,7 @@ export default function Home() {
         {/* <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" /> */}
         <Usluge />
         <EUFondovi />
-        <section className="flex w-full flex-col bg-green-dark px-4 py-16 sm:px-16 md:items-center md:px-32 2xl:max-w-[1535px]">
-          <div className="flex w-full flex-col items-start md:w-fit">
-            <div className="mt-10 flex items-center justify-between self-stretch">
-              <h2 className="text-3xl font-extrabold text-background-light">
-                O NAMA
-              </h2>
-              <div className="-mr-4 h-[12px] w-[150px] bg-background-light sm:hidden"></div>
-            </div>
-            <p className="font-sm mt-8 text-background-light sm:w-[36rem] ">
-              Anemona Natura d.o.o. nudi specijalne usluge i savjetovanja u
-              šumarstvu.
-            </p>
-            <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-              Nudimo usluge doznake stabala i otpreme drvnih sortimenata, usluge
-              održivog gospodarenja šumom, provodimo lovnogospodarske planove te
-              nudimo identifikaciju katastarskih čestica na terenu kao i
-              procjenu vrijednosti šume i šumskog zemljišta.
-            </p>
-            <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-              Osim toga pružamo uslugu organizacije, savjetovanja i pripreme
-              projekata iz Europskih fondova. Specijalizirani smo u izradi
-              projekata za podmjeru 8.5.1. - konverzije šuma. Pripremamo i
-              izrađujemo cjelokupnu dokumentaciju za potrebe projekta iz
-              Europskih strukturnih i investicijskih fondova.
-            </p>
-            <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-              Sjedište naše tvrtke nalazi se u Karlovcu, no rad uspješno
-              obavljamo na području cijele Hrvatske.
-            </p>
-          </div>
-        </section>
+        <ONamaSection />
       </div>
     </>
   )
