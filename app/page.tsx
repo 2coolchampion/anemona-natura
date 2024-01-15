@@ -12,6 +12,8 @@ import Croatia from "../public/partners-images/croatia.png"
 import Eu from "../public/partners-images/eu.png"
 import EuInvestmentFunds from "../public/partners-images/euInvestmentFunds.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
+import EUFondovi from "@/components/EUFondovi"
+
 export default function Home() {
   return (
     <>
@@ -39,73 +41,7 @@ export default function Home() {
         <KontaktSection className="relative w-screen rounded-lg bg-background-green-light lg:hidden" />
         {/* <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" /> */}
         <Usluge />
-        <section className="relative z-0 mt-20 flex w-screen flex-col px-4 py-16 sm:px-16 md:px-32 lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
-          <Image
-            src={SadnjaImage}
-            fill
-            alt="background image"
-            className="-z-10 object-cover opacity-40"
-          />
-          <div className="mt-10 flex items-center justify-between">
-            <h2 className="text-3xl font-extrabold text-green-dark lg:before:absolute lg:before:left-0 lg:before:top-[7.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-green-dark lg:after:absolute lg:after:right-0 lg:after:top-[7.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-green-dark">
-              {" "}
-              EU FONDOVI - PODMJERA 8.5.1{" "}
-            </h2>{" "}
-            <div className="-mr-4 h-[50px] w-[12px] flex-none bg-green-dark  sm:-mr-16 sm:h-[10px] sm:w-[100px] lg:hidden"></div>
-          </div>
-          <h3 className="font-xs mt-1 font-light">
-            TIP OPERACIJE 8.5.1 KONVERZIJA ŠUMA
-          </h3>
-          <p className="font-sm mt-6 max-w-md flex-none">
-            Izrada programa konverzije degradiranih šumskih sastojina i šumskih
-            kultura.
-          </p>
-          <p className="font-md mt-6 max-w-md">
-            Do sada smo našim zadovoljnim klijentima osigurali preko{" "}
-            <strong className="whitespace-nowrap font-extrabold">
-              3 milijuna eura
-            </strong>{" "}
-            bespovratnih sredstava. U nastavku saznajte više o našim projektima
-            te kako možete postati korisnik ove mjere.
-          </p>
-          <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
-            SAZNAJ VIŠE
-          </button>
-          <div className="mt-16 grid grid-cols-2  grid-rows-3 place-items-center gap-x-10 xs:grid-rows-[5rem_7rem] sm:grid-cols-2 sm:grid-rows-2  md:max-w-[38rem] md:grid-cols-4 md:grid-rows-1 md:justify-items-start xl:self-center 2xl:max-w-[50rem]">
-            <div className="place relative min-h-[5rem] min-w-[5rem] max-w-[10rem] place-self-end xs:justify-self-center sm:order-1 md:justify-self-start ">
-              <Image
-                src={Croatia}
-                alt="Croatian flag"
-                fill
-                className="absolute object-contain"
-              />
-            </div>
-            <div className="align-self-center relative h-16 w-16 justify-self-start xs:justify-self-center sm:order-3 md:w-[4.3rem]">
-              <Image
-                src={Eu}
-                alt="European flag"
-                fill
-                className="absolute object-contain"
-              />
-            </div>
-            <div className="relative  col-span-2 h-full min-w-40 place-self-center xs:col-span-1 sm:order-4 md:w-40">
-              <Image
-                src={EuInvestmentFunds}
-                alt="croatian fill flag"
-                fill
-                className="absolute object-contain"
-              />
-            </div>
-            <div className="relative col-span-2 h-full w-40 place-self-center xs:col-span-1 sm:order-2 md:w-40">
-              <Image
-                src={RuralniRazvoj}
-                alt="croatian fill flag"
-                fill
-                className="absolute object-contain"
-              />
-            </div>
-          </div>
-        </section>
+        <EUFondovi />
         <section className="flex w-full flex-col bg-green-dark px-4 py-16 sm:px-16 md:items-center md:px-32 2xl:max-w-[1535px]">
           <div className="flex w-full flex-col items-start md:w-fit">
             <div className="mt-10 flex items-center justify-between self-stretch">
