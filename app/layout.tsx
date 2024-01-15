@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Nav from "../components/navigation/Navigation"
+import Footer from "@/components/Footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,10 +23,7 @@ export default function RootLayout({
         <main className="main-container flex min-h-screen w-auto flex-col items-center justify-start overflow-hidden">
           {children}
         </main>
-        <footer className="w-full bg-green-dark py-8 text-center text-xs text-white">
-          {" "}
-          © 2024 Anemora Natura d.o.o.
-        </footer>
+        <Footer />
         <div className="breakpointer fixed bottom-8 right-8 flex h-8 w-8 items-center justify-center bg-orange-600 p-1 text-white sm:bg-green-500 md:bg-orange-300 lg:bg-blue-500 xl:bg-lime-400 xl:text-black 2xl:bg-pink-500 2xl:text-white"></div>
       </body>
     </html>
