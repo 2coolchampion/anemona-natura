@@ -12,7 +12,7 @@ import Croatia from "../public/partners-images/croatia.png"
 import Eu from "../public/partners-images/eu.png"
 import EuInvestmentFunds from "../public/partners-images/euInvestmentFunds.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
-import EUFondovi from "@/components/EUFondovi"
+import EUFondovi from "@/components/EUFondoviSection"
 
 export default function Home() {
   return (
