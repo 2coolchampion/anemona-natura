@@ -6,9 +6,9 @@ const sendEmail = async (formData: FormData) => {
   const email = formData.get("email")
   const ime = formData.get("ime")
   const kontaktTel = formData.get("kontaktTel")
-  const poruka = formData.get("poruka")
+  const poruka = formData.get("poruka") as string
 
-  if (!poruka) {
+  if (!poruka || poruka.trim() === "") {
     return {
       error: "Poruka je obavezna!",
     }
