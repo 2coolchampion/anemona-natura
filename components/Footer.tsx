@@ -2,9 +2,9 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="relative flex h-64 w-full flex-col justify-center bg-green-dark py-8 text-center text-xs text-white">
-      <div className="flex h-fit w-full justify-center">
-        <div className="border- flex flex-col items-start border-r border-dashed pr-32">
+    <footer className="relative flex h-12 w-full flex-col justify-center bg-green-dark text-center text-xs text-white lg:h-64 lg:py-8">
+      <div className="hidden h-fit w-full justify-center lg:flex">
+        <div className="flex flex-col items-start border-r border-dashed pr-32">
           <h4 className="text-sm font-medium">STRANICE</h4>
           <ul className="mt-2 flex flex-col flex-wrap items-start font-light leading-6">
             <li className="text-white">Naslovnica</li>
@@ -29,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="absolute bottom-5 left-0 right-0 mx-auto text-center">
+      <p className="absolute bottom-4 left-0 right-0 mx-auto text-center font-light lg:bottom-5">
         © {new Date().getFullYear()} Anemora Natura d.o.o.
       </p>
     </footer>
