@@ -88,9 +88,9 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
               </label>
               <input
                 type="phone"
-                name="kontakt-telefon"
+                name="kontaktTel"
                 className="w-full border-b-4 border-b-green-dark bg-transparent"
-                id="kontakt-telefon"
+                id="kontaktTel"
               />
             </div>
             <div className="felx felx-col ">
