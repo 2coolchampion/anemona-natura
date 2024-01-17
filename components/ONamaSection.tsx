@@ -2,7 +2,7 @@ import React from "react"
 
 const ONamaSection = () => {
   return (
-    <section className="flex w-full flex-col bg-green-dark px-4 py-16 sm:px-16 md:items-center md:px-32 2xl:max-w-[1535px]">
+    <section className="flex w-full flex-col bg-green-dark px-4 py-16 sm:px-16 md:items-center md:px-32 lg:pb-24 2xl:max-w-[1535px]">
       <div className="flex w-full flex-col items-start md:w-fit">
         <div className="mt-10 flex items-center justify-between self-stretch">
           <h2 className="text-3xl font-extrabold text-background-light">
