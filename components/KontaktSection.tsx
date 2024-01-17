@@ -25,14 +25,13 @@ const KontaktSection = ({ className }: KontaktSectionProps) => {
           <div className="flex  w-full items-center gap-4 p-4 sm:px-0">
             <PersonIcon className="h-8 w-8 text-background-light" />
 
-            <div className="text-background-light">
-              Vlasnica <br /> Sabrina Hribar
-            </div>
+            <div className="text-background-light">VL. Sabrina Hribar</div>
           </div>
           <div className="flex w-full items-center gap-4 p-4 sm:px-0">
-            <PinIcon className="h-9 text-background-light" />
+            <PinIcon className="h-9 self-start text-background-light" />
             <div className="text-background-light">
-              Adreasa1 <br /> Adresa 2
+              Anemona Natura d.o.o. <br /> M.J. Šporera 20 <br /> 47 000
+              Karlovac, Hrvatska
             </div>
           </div>
           <div className="flex w-full items-center gap-4 p-4 sm:px-0">
