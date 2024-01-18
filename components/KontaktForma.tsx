@@ -2,15 +2,33 @@
 
 import { SendIcon } from "/public/icons/index.ts"
 import sendEmail from "@/actions/sendEmail"
+import z from "zod"
+
+const oprukaSchema = z.object({
+  ime: z.string(),
+  email: z.string(),
+  kontaktTel: z.string(),
+  poruka: z.string(),
+})
 
 const KontaktFroma = () => {
+  const clientSendEmail = async (formData: FormData) => {
+    // construct new poruka object
+
+    const poruka = {
+      ime: formData.get("ime"),
+      email: formData.get("email"),
+      tel: formData.get("tel"),
+      poruka: formData.get("poruka"),
+    }
+
+    // zod client-side validation
+
+    await sendEmail(formData)
+  }
+
   return (
-    <form
-      action={async (formData) => {
-        "use server"
-        await sendEmail(formData)
-      }}
-    >
+    <form action={clientSendEmail}>
       <div className="felx felx-col ">
         <label htmlFor="ime" className="relative top-4 font-semibold">
           IME I PREZIME
@@ -42,9 +60,9 @@ const KontaktFroma = () => {
         </label>
         <input
           type="phone"
-          name="kontaktTel"
+          name="tel"
           className="w-full border-b-4 border-b-green-dark bg-transparent"
-          id="kontaktTel"
+          id="tel"
         />
       </div>
       <div className="felx felx-col ">
