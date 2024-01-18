@@ -2,14 +2,7 @@
 
 import { SendIcon } from "/public/icons/index.ts"
 import sendEmail from "@/actions/sendEmail"
-import z from "zod"
-
-const oprukaSchema = z.object({
-  ime: z.string(),
-  email: z.string(),
-  kontaktTel: z.string(),
-  poruka: z.string(),
-})
+import { porukaSchema } from "@/lib/types"
 
 const KontaktFroma = () => {
   const clientSendEmail = async (formData: FormData) => {
@@ -23,8 +16,22 @@ const KontaktFroma = () => {
     }
 
     // zod client-side validation
+    const result = porukaSchema.safeParse(poruka)
+    if (!result.success) {
+      //output error message if something is wrong in the client-side validation
+      let errorMessage = ""
+      result.error.issues.forEach((issue) => {
+        errorMessage += `${issue.path}: ${issue.message}.\n`
+      })
 
-    await sendEmail(formData)
+      console.warn(errorMessage)
+      return
+    }
+
+    const response = await sendEmail(result.data)
+    if (response?.error) {
+      console.warn(response.error)
+    }
   }
 
   return (
