@@ -1,12 +1,31 @@
+"use server"
+
+import { Poruka, porukaSchema } from "@/lib/types"
 import { Resend } from "resend"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-const sendEmail = async (formData: FormData) => {
-  const email = formData.get("email")
-  const ime = formData.get("ime")
-  const tel = formData.get("tel")
-  const poruka = formData.get("poruka") as string
+const sendEmail = async (porukaData: unknown) => {
+  // server-side validation
+  const result = porukaSchema.safeParse(porukaData)
+  if (!result.success) {
+    //output error message
+    let errorMessage = ""
+    result.error.issues.forEach((issue) => {
+      errorMessage += `${issue.path}: ${issue.message}.\n`
+    })
+
+    return {
+      error: errorMessage,
+    }
+  }
+
+  const porukaTyped = porukaData as Poruka
+
+  const email = porukaTyped.email
+  const ime = porukaTyped.ime
+  const tel = porukaTyped.kontaktTel
+  const poruka = porukaTyped.poruka
 
   if (!poruka || poruka.trim() === "") {
     return {
@@ -21,8 +40,6 @@ const sendEmail = async (formData: FormData) => {
     reply_to: email as string,
     text: `Poruka: ${poruka} || Email: ${email}`,
   })
-
-  console.log(formData)
 }
 
 export default sendEmail
