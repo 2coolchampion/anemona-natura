@@ -2,21 +2,34 @@
 
 import { SendIcon } from "/public/icons/index.ts"
 import sendEmail from "@/actions/sendEmail"
-import { porukaSchema } from "@/lib/types"
+import { porukaSchema, Poruka } from "@/lib/types"
+import z from "zod"
+import { useForm, SubmitHandler } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 
 const KontaktFroma = () => {
-  const clientSendEmail = async (formData: FormData) => {
-    // construct new poruka object
+  const { handleSubmit, register } = useForm<Poruka>({
+    resolver: zodResolver(porukaSchema),
+    defaultValues: {
+      ime: "Exaplinno HernandezzZZzzZZz",
+      email: "exampleemail@gmail.com",
+      tel: "022 111 222",
+      poruka: "Default poruka",
+    },
+  })
 
-    const poruka = {
-      ime: formData.get("ime"),
-      email: formData.get("email"),
-      tel: formData.get("tel"),
-      poruka: formData.get("poruka"),
-    }
+  const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
+    // construct new poruka object
+    // const poruka = {
+    //   ime: data.get("ime",
+    //   email: formData.get("email"),
+    //   tel: formData.get("tel"),
+    //   poruka: formData.get("poruka"),
+    // }
 
     // zod client-side validation
-    const result = porukaSchema.safeParse(poruka)
+    console.log("data: ", data)
+    const result = porukaSchema.safeParse(data)
     if (!result.success) {
       //output error message if something is wrong in the client-side validation
       let errorMessage = ""
@@ -30,17 +43,18 @@ const KontaktFroma = () => {
 
     const response = await sendEmail(result.data)
     if (response?.error) {
-      console.warn(response.error)
+      console.error(response.error)
     }
   }
 
   return (
-    <form action={clientSendEmail}>
+    <form onSubmit={handleSubmit(clientSendEmail)}>
       <div className="felx felx-col ">
         <label htmlFor="ime" className="relative top-4 font-semibold">
           IME I PREZIME
         </label>
         <input
+          {...register("ime")}
           type="name"
           name="ime"
           className="w-full border-b-4 border-b-green-dark bg-transparent"
@@ -52,6 +66,7 @@ const KontaktFroma = () => {
           EMAIL
         </label>
         <input
+          {...register("email")}
           type="email"
           name="email"
           className="w-full border-b-4 border-b-green-dark bg-transparent"
@@ -59,14 +74,12 @@ const KontaktFroma = () => {
         />
       </div>
       <div className="felx felx-col ">
-        <label
-          htmlFor="kontakt-telefon"
-          className="relative top-4 font-semibold"
-        >
+        <label htmlFor="tel" className="relative top-4 font-semibold">
           KONTAKT TELEFON
         </label>
         <input
-          type="phone"
+          {...register("tel")}
+          type="tel"
           name="tel"
           className="w-full border-b-4 border-b-green-dark bg-transparent"
           id="tel"
@@ -77,13 +90,17 @@ const KontaktFroma = () => {
           PORUKA
         </label>
         <textarea
+          {...register("poruka")}
           className=" mt-2 h-32 w-full rounded-lg border-4 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
         />
       </div>
-      <button className="flex items-center justify-center rounded-lg bg-green-light p-2 font-extrabold text-white">
+      <button
+        type="submit"
+        className="flex items-center justify-center rounded-lg bg-green-light p-2 font-extrabold text-white"
+      >
         POŠALJI PORUKU
         <SendIcon className="ml-2 w-4 text-white" />
       </button>

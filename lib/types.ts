@@ -10,8 +10,8 @@ export const porukaSchema = z.object({
     .max(100, {
       message: "Ime ne moze biti duže od 100 karaktera",
     }),
-  kontaktTel: z.number().optional(),
   email: z.string().email(),
+  tel: z.string().optional(),
   poruka: z.string(),
 })
 

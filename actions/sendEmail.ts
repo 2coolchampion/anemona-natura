@@ -24,7 +24,7 @@ const sendEmail = async (porukaData: unknown) => {
 
   const email = porukaTyped.email
   const ime = porukaTyped.ime
-  const tel = porukaTyped.kontaktTel
+  const tel = porukaTyped.tel
   const poruka = porukaTyped.poruka
 
   if (!poruka || poruka.trim() === "") {
