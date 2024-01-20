@@ -11,10 +11,10 @@ const KontaktFroma = () => {
   const { handleSubmit, register } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),
     defaultValues: {
-      ime: "Exaplinno HernandezzZZzzZZz",
-      email: "exampleemail@gmail.com",
-      tel: "022 111 222",
-      poruka: "Default poruka",
+      ime: "",
+      email: "",
+      tel: "",
+      poruka: "",
     },
   })
 
