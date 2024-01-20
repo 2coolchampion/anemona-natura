@@ -41,10 +41,10 @@ const KontaktFroma = () => {
 
   return (
     <form
-      className="flex flex-col gap-10 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
+      className="flex flex-col gap-6 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
       onSubmit={handleSubmit(clientSendEmail)}
     >
-      <div className="felx felx-col relative ">
+      <div className="felx felx-col relative">
         <input
           {...register("ime")}
           type="name"
@@ -60,7 +60,7 @@ const KontaktFroma = () => {
           IME I PREZIME
         </label>
       </div>
-      <div className="felx felx-col relative">
+      <div className="felx felx-col relative mt-8">
         <input
           {...register("email")}
           type="email"
@@ -76,7 +76,7 @@ const KontaktFroma = () => {
           EMAIL
         </label>
       </div>
-      <div className="felx felx-col relative">
+      <div className="felx felx-col relative mt-8">
         <input
           {...register("tel")}
           type="tel"
@@ -92,7 +92,7 @@ const KontaktFroma = () => {
           KONTAKT TELEFON
         </label>
       </div>
-      <div className="felx felx-col relative">
+      <div className="felx felx-col relative mt-8">
         <label htmlFor="poruka" className="font-semibold">
           PORUKA
         </label>
@@ -109,7 +109,7 @@ const KontaktFroma = () => {
         className="flex items-center justify-center rounded-lg bg-green-light p-2 font-extrabold text-white"
       >
         POŠALJI PORUKU
-        <SendIcon className="ml-2 w-4 text-white" />
+        <SendIcon className="ml-2 w-6 text-white" />
       </button>
     </form>
   )
