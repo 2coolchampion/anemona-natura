@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react"
 import "./styles.css"
+import { HamMenuIcon } from "@/public/icons"
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false)
@@ -26,12 +27,14 @@ const Nav = () => {
 
   return (
     <nav
-      className={`nav bg-background-light fixed z-10 flex h-16 w-full justify-between p-2 drop-shadow-lg transition-transform ${
+      className={`nav fixed z-10 flex h-16 w-full justify-between bg-background-light p-2 drop-shadow-lg transition-transform ${
         isHidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="bg-green-dark h-full w-[180px]"></div>
-      <div className="bg-green-dark h-full w-[50px]"></div>
+      <div className="h-full w-[180px] bg-green-dark"></div>
+      <div className="flex h-full items-center justify-center">
+        <HamMenuIcon className="w-10 text-green-dark" />
+      </div>
     </nav>
   )
 }
