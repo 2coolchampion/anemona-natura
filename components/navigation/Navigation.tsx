@@ -3,10 +3,12 @@
 import React, { useEffect, useRef, useState } from "react"
 import "./styles.css"
 import { HamMenuIcon } from "@/public/icons"
+import { XIcon } from "@/public/icons"
 import Logo from "@/public/logo.svg"
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false)
+  const [isOpened, setIsOpened] = useState(false)
   const prevScrollPositionRef = useRef(0)
 
   useEffect(() => {
@@ -36,7 +38,17 @@ const Nav = () => {
         <Logo className="w-40" />
       </div>
       <div className="flex items-center justify-center">
-        <HamMenuIcon className="w-10 text-green-dark" />
+        {isOpened ? (
+          <XIcon
+            onClick={() => setIsOpened(false)}
+            className="w-8 text-green-dark"
+          />
+        ) : (
+          <HamMenuIcon
+            onClick={() => setIsOpened(true)}
+            className="w-10 text-green-dark"
+          />
+        )}
       </div>
     </nav>
   )
