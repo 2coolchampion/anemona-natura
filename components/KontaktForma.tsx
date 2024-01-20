@@ -41,52 +41,64 @@ const KontaktFroma = () => {
 
   return (
     <form
-      className="flex flex-col gap-10"
+      className="flex flex-col gap-10 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
       onSubmit={handleSubmit(clientSendEmail)}
     >
-      <div className="felx felx-col ">
-        <label htmlFor="ime" className="relative top-4 font-semibold">
-          IME I PREZIME
-        </label>
+      <div className="felx felx-col relative ">
         <input
           {...register("ime")}
           type="name"
           name="ime"
-          className="w-full border-b-4 border-b-green-dark bg-transparent"
+          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
           id="ime"
+          placeholder="Ime i Prezime..."
         />
-      </div>
-      <div className="felx felx-col ">
-        <label htmlFor="email" className="relative top-4 font-semibold">
-          EMAIL
+        <label
+          htmlFor="ime"
+          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+        >
+          IME I PREZIME
         </label>
+      </div>
+      <div className="felx felx-col relative">
         <input
           {...register("email")}
           type="email"
           name="email"
-          className="w-full border-b-4 border-b-green-dark bg-transparent"
+          placeholder="Email..."
+          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
           id="email"
         />
-      </div>
-      <div className="felx felx-col ">
-        <label htmlFor="tel" className="relative top-4 font-semibold">
-          KONTAKT TELEFON
+        <label
+          htmlFor="email"
+          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+        >
+          EMAIL
         </label>
+      </div>
+      <div className="felx felx-col relative">
         <input
           {...register("tel")}
           type="tel"
           name="tel"
-          className="w-full border-b-4 border-b-green-dark bg-transparent"
+          placeholder="Kontakt broj..."
+          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
           id="tel"
         />
+        <label
+          htmlFor="tel"
+          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+        >
+          KONTAKT TELEFON
+        </label>
       </div>
-      <div className="felx felx-col ">
+      <div className="felx felx-col relative">
         <label htmlFor="poruka" className="font-semibold">
           PORUKA
         </label>
         <textarea
           {...register("poruka")}
-          className=" mt-2 h-32 w-full rounded-lg border-4 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
+          className=" mt-2 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
