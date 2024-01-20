@@ -14,7 +14,7 @@ type KontaktSectionProps = {
 const KontaktSection = ({ className }: KontaktSectionProps) => {
   return (
     <div className={className}>
-      <section className="w-full bg-green-dark px-4 py-16 pb-20 sm:px-16 md:px-32">
+      <section className="w-full bg-green-dark px-4 py-16 sm:px-16 md:px-32">
         <div className="mt-10 flex items-center">
           <h2 className="mr-auto text-3xl font-extrabold text-background-light lg:hidden">
             KONTAKT
