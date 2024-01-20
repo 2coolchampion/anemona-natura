@@ -49,7 +49,7 @@ const KontaktFroma = () => {
           {...register("ime")}
           type="name"
           name="ime"
-          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
+          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="ime"
           placeholder="Ime i Prezime..."
         />
@@ -66,7 +66,7 @@ const KontaktFroma = () => {
           type="email"
           name="email"
           placeholder="Email..."
-          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
+          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="email"
         />
         <label
@@ -82,7 +82,7 @@ const KontaktFroma = () => {
           type="tel"
           name="tel"
           placeholder="Kontakt broj..."
-          className="peer-data-[has-value]: peer w-full border-b-4 border-b-green-dark  bg-transparent placeholder-transparent focus:outline-none"
+          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="tel"
         />
         <label
