@@ -40,7 +40,10 @@ const KontaktFroma = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(clientSendEmail)}>
+    <form
+      className="flex flex-col gap-10"
+      onSubmit={handleSubmit(clientSendEmail)}
+    >
       <div className="felx felx-col ">
         <label htmlFor="ime" className="relative top-4 font-semibold">
           IME I PREZIME
