@@ -19,14 +19,6 @@ const KontaktFroma = () => {
   })
 
   const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
-    // construct new poruka object
-    // const poruka = {
-    //   ime: data.get("ime",
-    //   email: formData.get("email"),
-    //   tel: formData.get("tel"),
-    //   poruka: formData.get("poruka"),
-    // }
-
     // zod client-side validation
     console.log("data: ", data)
     const result = porukaSchema.safeParse(data)
