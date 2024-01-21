@@ -4,15 +4,22 @@ export const porukaSchema = z.object({
   ime: z
     .string()
     .trim()
-    .min(1, {
-      message: "Ime je obavezno",
-    })
     .max(100, {
-      message: "Ime ne moze biti duže od 100 karaktera",
-    }),
-  email: z.string().email(),
-  tel: z.string().optional(),
-  poruka: z.string(),
+      message: "Ime ne moze biti duže od 100 karaktera!",
+    })
+    .optional(),
+  email: z
+    .string()
+    .min(1, { message: "Email je obavezan!" })
+    .email({ message: "Unesite validnu email adresu" }),
+  tel: z
+    .string()
+    .min(1, { message: "Broj telefona je obavezan!" })
+    .refine((val) => /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/.test(val), {
+      message: "Unesite validan broj telefona",
+    })
+    .optional(),
+  poruka: z.string().min(1, { message: "Poruka je obavezna!" }),
 })
 
 export type Poruka = z.infer<typeof porukaSchema>

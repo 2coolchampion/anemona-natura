@@ -40,6 +40,10 @@ const sendEmail = async (porukaData: unknown) => {
     reply_to: email as string,
     text: `Poruka: ${poruka} || Email: ${email}`,
   })
+
+  return {
+    sucess: "Poruka je uspesno poslana!",
+  }
 }
 
 export default sendEmail

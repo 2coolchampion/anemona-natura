@@ -8,7 +8,12 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 
 const KontaktFroma = () => {
-  const { handleSubmit, register } = useForm<Poruka>({
+  const {
+    handleSubmit,
+    register,
+    setError,
+    formState: { errors },
+  } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),
     defaultValues: {
       ime: "",
@@ -19,9 +24,16 @@ const KontaktFroma = () => {
   })
 
   const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
-    const response = await sendEmail(data)
-    if (response?.error) {
-      console.error(response.error)
+    console.log("submitting form")
+    try {
+      const response = await sendEmail(data)
+      if (response?.error) {
+        setError("root", { message: response.error })
+      } else {
+        console.log(response)
+      }
+    } catch (error) {
+      console.error(error)
     }
   }
 
@@ -39,6 +51,7 @@ const KontaktFroma = () => {
           id="ime"
           placeholder="Ime i Prezime..."
         />
+        {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
         <label
           htmlFor="ime"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -55,6 +68,7 @@ const KontaktFroma = () => {
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="email"
         />
+        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
         <label
           htmlFor="email"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -71,6 +85,7 @@ const KontaktFroma = () => {
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="tel"
         />
+        {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
         <label
           htmlFor="tel"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -89,6 +104,9 @@ const KontaktFroma = () => {
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
         />
+        {errors.poruka && (
+          <p className="text-red-500">{errors.poruka.message}</p>
+        )}
       </div>
       <button
         type="submit"
@@ -97,6 +115,7 @@ const KontaktFroma = () => {
         POŠALJI PORUKU
         <SendIcon className="ml-2 w-6 text-white" />
       </button>
+      {errors.root && <p className="text-red-500">{errors.root.message}</p>}
     </form>
   )
 }
