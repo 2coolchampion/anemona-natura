@@ -5,6 +5,7 @@ import "./styles.css"
 import { HamMenuIcon } from "@/public/icons"
 import { XIcon } from "@/public/icons"
 import Logo from "@/public/logo.svg"
+import NavLinks from "./navLinks"
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false)
@@ -37,6 +38,7 @@ const Nav = () => {
       <div className="flex items-center justify-center">
         <Logo className="w-40" />
       </div>
+      <NavLinks />
       <div className="flex items-center justify-center">
         {isOpened ? (
           <XIcon
