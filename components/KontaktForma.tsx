@@ -19,21 +19,7 @@ const KontaktFroma = () => {
   })
 
   const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
-    // zod client-side validation
-    console.log("data: ", data)
-    const result = porukaSchema.safeParse(data)
-    if (!result.success) {
-      //output error message if something is wrong in the client-side validation
-      let errorMessage = ""
-      result.error.issues.forEach((issue) => {
-        errorMessage += `${issue.path}: ${issue.message}.\n`
-      })
-
-      console.warn(errorMessage)
-      return
-    }
-
-    const response = await sendEmail(result.data)
+    const response = await sendEmail(data)
     if (response?.error) {
       console.error(response.error)
     }
