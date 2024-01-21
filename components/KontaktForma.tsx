@@ -94,12 +94,12 @@ const KontaktFroma = () => {
         </label>
       </div>
       <div className="felx felx-col relative mt-8">
-        <label htmlFor="poruka" className="font-semibold">
+        <label htmlFor="poruka" className=" relative -top-2 font-semibold">
           PORUKA
         </label>
         <textarea
           {...register("poruka")}
-          className=" mt-2 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
+          className="mt-1 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
