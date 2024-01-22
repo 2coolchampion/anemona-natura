@@ -4,7 +4,7 @@ const EUProjekti = () => {
   return (
     <MainWrapper>
       <section className="mt-48 text-center font-bold">
-        EU Projekti Page
+        EU Projekti... Work in progress
       </section>
     </MainWrapper>
   )

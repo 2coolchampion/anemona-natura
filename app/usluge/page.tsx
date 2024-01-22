@@ -1,7 +1,13 @@
-import React from "react"
+import MainWrapper from "@/components/ui/main"
 
 const Usluge = () => {
-  return <div className="mt-48 font-bold">Usluge</div>
+  return (
+    <MainWrapper>
+      <section className="mt-48 text-center font-bold">
+        Usluge... Work in progress
+      </section>
+    </MainWrapper>
+  )
 }
 
 export default Usluge
