@@ -18,7 +18,7 @@ import ONamaSection from "@/components/ONamaSection"
 export default function Home() {
   return (
     <>
-      <div className="flex w-screen flex-col justify-center bg-background-light lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
+      <div className="flex w-screen flex-col justify-center bg-background-light xl:max-w-[80vw] 2xl:w-4/5 2xl:max-w-[1535px]">
         <section className="relative z-0 h-[66vh] max-h-[650px] w-full bg-indigo-400 px-4 sm:px-16  md:px-32 2xl:max-w-[1535px] landscape:h-[100vh]">
           <Image
             src={HeroImage}
