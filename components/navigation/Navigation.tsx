@@ -36,33 +36,37 @@ const Nav = () => {
   return (
     <>
       <header className="fixed top-0 z-20 w-full">
-        <nav
-          className={`nav flex h-16 w-full justify-between bg-background-light px-4 py-2 ${
+        <div
+          className={`w-full bg-background-light ${
             isOpened ? "" : "shadow-lg"
           } transition-transform ${
             isHidden ? "-translate-y-full" : "translate-y-0"
           }`}
         >
-          {/* LOGO */}
-          <Link href={"/"} className="flex items-center justify-center">
-            <Logo className="w-40" />
-          </Link>
-          {/* NAVIGATION LINKS - MD */}
-          <div className="hidden md:flex md:flex-row">
-            <NavLinks />
-          </div>
-          {/* HAM MENU ICON */}
-          <button
-            onClick={() => setIsOpened(!isOpened)}
-            className="flex items-center justify-center md:hidden"
+          <nav
+            className={`nav mx-auto flex h-16 w-full justify-between px-4 py-2 2xl:max-w-[1535px] `}
           >
-            {isOpened ? (
-              <XIcon className="w-8 text-green-dark" />
-            ) : (
-              <HamMenuIcon className="w-10 text-green-dark" />
-            )}
-          </button>
-        </nav>
+            {/* LOGO */}
+            <Link href={"/"} className="flex items-center justify-center">
+              <Logo className="w-40" />
+            </Link>
+            {/* NAVIGATION LINKS - MD */}
+            <div className="hidden md:flex md:flex-row">
+              <NavLinks />
+            </div>
+            {/* HAM MENU ICON */}
+            <button
+              onClick={() => setIsOpened(!isOpened)}
+              className="flex items-center justify-center md:hidden"
+            >
+              {isOpened ? (
+                <XIcon className="w-8 text-green-dark" />
+              ) : (
+                <HamMenuIcon className="w-10 text-green-dark" />
+              )}
+            </button>
+          </nav>
+        </div>
         {/* NAVIGATION LINKS - MOBILE */}
         <div
           className={`drop-shadow-2xl transition-transform ${
