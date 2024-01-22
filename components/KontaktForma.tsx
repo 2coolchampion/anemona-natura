@@ -1,6 +1,6 @@
 "use client"
 
-import { SendIcon } from "/public/icons/index.ts"
+import { SendIcon } from "@/components/icons"
 import sendEmail from "@/actions/sendEmail"
 import { porukaSchema, Poruka } from "@/lib/types"
 import z from "zod"

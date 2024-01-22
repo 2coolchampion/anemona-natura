@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef, useState } from "react"
 import "./styles.css"
-import { HamMenuIcon, MailIcon, PhoneIcon } from "@/public/icons"
-import { XIcon } from "@/public/icons"
+import { HamMenuIcon, MailIcon, PhoneIcon } from "@/components/icons"
+import { XIcon } from "@/components/icons"
 import Logo from "@/public/logo.svg"
 import NavLinks from "./navLinks"
 

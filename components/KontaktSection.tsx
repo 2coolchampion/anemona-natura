@@ -1,10 +1,5 @@
 import React from "react"
-import {
-  PersonIcon,
-  PhoneIcon,
-  PinIcon,
-  MailIcon,
-} from "/public/icons/index.ts"
+import { PersonIcon, PhoneIcon, PinIcon, MailIcon } from "@/components/icons"
 import KontaktForma from "./KontaktForma"
 
 type KontaktSectionProps = {

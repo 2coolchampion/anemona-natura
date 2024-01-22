@@ -1,4 +1,4 @@
-import { PersonIcon, PhoneIcon, MailIcon } from "../public/icons"
+import { PersonIcon, PhoneIcon, MailIcon } from "./icons"
 const Footer = () => {
   return (
     <footer className="relative flex h-12 w-full flex-col justify-center bg-green-dark text-center text-xs text-background-light lg:h-64 lg:py-8">
