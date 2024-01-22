@@ -4,6 +4,7 @@ import Croatia from "/public/partners-images/croatia.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
 import EuInvestmentFunds from "/public/partners-images/euInvestmentFunds.png"
 import Eu from "/public/partners-images/eu.png"
+import Link from "next/link"
 
 const EUFondovi = () => {
   return (
@@ -37,9 +38,13 @@ const EUFondovi = () => {
           bespovratnih sredstava. U nastavku saznajte više o našim projektima te
           kako možete postati korisnik ove mjere.
         </p>
-        <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
-          SAZNAJ VIŠE
-        </button>
+
+        <Link href="/eu-projekti">
+          <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
+            SAZNAJ VIŠE
+          </button>
+        </Link>
+
         <div className="mb-10 mt-24 grid grid-cols-2  grid-rows-3 place-items-center gap-x-10 xs:grid-rows-[5rem_7rem] sm:grid-cols-2 sm:grid-rows-2  md:max-w-[38rem] md:grid-cols-4 md:grid-rows-1 md:justify-items-start 2xl:max-w-[50rem] 2xl:grid-cols-[7rem_6rem_10rem_10rem]">
           <div className="relative min-h-[5rem] min-w-[5rem] max-w-[10rem] place-self-end xs:justify-self-center sm:order-1 md:justify-self-start 2xl:w-[6rem]">
             <Image
