@@ -50,7 +50,7 @@ const Images: ImageObject[] = [
 
 const Usluge = () => {
   return (
-    <section className="relative flex w-screen flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] lg:min-w-[1023px] lg:max-w-[80vw] 2xl:max-w-[1535px]">
+    <section className="relative flex flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[34rem] ">
       <div className="mt-10 flex items-center">
         <h2
           id="usluge"
