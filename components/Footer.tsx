@@ -1,4 +1,5 @@
 import { PersonIcon, PhoneIcon, MailIcon } from "./icons"
+import Link from "next/link"
 const Footer = () => {
   return (
     <footer className="relative flex h-12 w-full flex-col justify-center bg-green-dark text-center text-xs text-background-light lg:h-64 lg:py-8">
@@ -6,9 +7,15 @@ const Footer = () => {
         <div className="flex flex-col items-start border-r border-dashed pr-32">
           <h4 className="text-sm font-medium">STRANICE</h4>
           <ul className="mt-2 flex flex-col flex-wrap items-start font-light leading-6">
-            <li className="text-background-light">Naslovnica</li>
-            <li className="text-background-light">Usluge</li>
-            <li className="text-background-light">EU Projekti</li>
+            <li className="text-background-light">
+              <Link href="/">Naslovnica</Link>
+            </li>
+            <li className="text-background-light">
+              <Link href="/usluge">Usluge</Link>
+            </li>
+            <li className="text-background-light">
+              <Link href="/eu-projekti">EU Projekti</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col items-start px-32">
