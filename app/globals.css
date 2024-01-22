@@ -6,6 +6,10 @@ body {
   @apply bg-background-dark;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .breakpointer::after {
   content: "a ";
 }

@@ -33,9 +33,12 @@ export default function Home() {
               <div className="flex items-end bg-green-light px-3 py-2">
                 <ArrowDownIcon className="h-auto w-6" />
               </div>
-              <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
+              <a
+                href="#usluge"
+                className="inline whitespace-nowrap px-5 py-2 text-xl font-bold"
+              >
                 Istraži Ponudu
-              </p>
+              </a>
             </button>
           </div>
         </section>
