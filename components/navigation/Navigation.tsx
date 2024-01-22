@@ -35,7 +35,7 @@ const Nav = () => {
 
   return (
     <>
-      <header className="fixed top-0 z-20 w-full">
+      <header className="sticky top-0 z-20 w-full">
         <nav
           className={`nav flex h-16 w-full justify-between bg-background-light px-4 py-2 ${
             isOpened ? "" : "shadow-lg"
