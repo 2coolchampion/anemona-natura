@@ -14,11 +14,12 @@ import EuInvestmentFunds from "../public/partners-images/euInvestmentFunds.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
 import EUFondovi from "@/components/EUFondoviSection"
 import ONamaSection from "@/components/ONamaSection"
+import MainWrapper from "@/components/ui/main"
 
 export default function Home() {
   return (
     <>
-      <div className="flex w-screen flex-col justify-center bg-background-light xl:max-w-[80vw] 2xl:w-4/5 2xl:max-w-[1535px]">
+      <MainWrapper>
         <section className="relative z-0 h-[66vh] max-h-[650px] w-full bg-indigo-400 px-4 sm:px-16  md:px-32 2xl:max-w-[1535px] landscape:h-[100vh]">
           <Image
             src={HeroImage}
@@ -46,7 +47,7 @@ export default function Home() {
         <Usluge />
         <EUFondovi />
         <ONamaSection />
-      </div>
+      </MainWrapper>
     </>
   )
 }
