@@ -6,6 +6,7 @@ import { HamMenuIcon, MailIcon, PhoneIcon } from "@/components/icons"
 import { XIcon } from "@/components/icons"
 import Logo from "@/public/logo.svg"
 import NavLinks from "./navLinks"
+import Link from "next/link"
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false)
@@ -43,9 +44,9 @@ const Nav = () => {
           }`}
         >
           {/* LOGO */}
-          <div className="flex items-center justify-center">
+          <Link href={"/"} className="flex items-center justify-center">
             <Logo className="w-40" />
-          </div>
+          </Link>
           {/* NAVIGATION LINKS - MD */}
           <div className="hidden md:flex md:flex-row">
             <NavLinks />
