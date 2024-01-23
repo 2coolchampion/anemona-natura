@@ -1,4 +1,5 @@
 import KontaktAdresa from "./KontaktAdresa"
+import KontaktFromaV2 from "./KontaktFormaV2"
 
 const KontaktFormaLG = () => {
   return (
@@ -7,7 +8,7 @@ const KontaktFormaLG = () => {
 
       <div className="flex justify-end px-8">
         <div className="w-96">
-          <KontaktFroma />
+          <KontaktFromaV2 />
         </div>
       </div>
 
