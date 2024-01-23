@@ -65,7 +65,7 @@ const KontaktFormaV2 = () => {
         />
         {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
       </div>
-      <div className="felx felx-col relative mt-8">
+      <div className="felx felx-col relative">
         <label
           htmlFor="email"
           className="font-semibold text-white hover:cursor-pointer"
@@ -81,7 +81,7 @@ const KontaktFormaV2 = () => {
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
       </div>
-      <div className="felx felx-col relative mt-8">
+      <div className="felx felx-col relative">
         <label
           htmlFor="tel"
           className="font-semibold text-white hover:cursor-pointer"
@@ -97,7 +97,7 @@ const KontaktFormaV2 = () => {
         />
         {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
       </div>
-      <div className="felx felx-col relative mt-8">
+      <div className="felx felx-col relative">
         <label htmlFor="poruka" className="font-semibold text-white">
           PORUKA
         </label>
