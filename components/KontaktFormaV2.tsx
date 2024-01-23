@@ -62,7 +62,6 @@ const KontaktFormaV2 = () => {
           name="ime"
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3  focus:border-white/20 focus:bg-white/30"
           id="ime"
-          placeholder="Ime i Prezime..."
         />
         {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
       </div>
@@ -77,7 +76,6 @@ const KontaktFormaV2 = () => {
           {...register("email")}
           type="email"
           name="email"
-          placeholder="Email..."
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="email"
         />
@@ -94,7 +92,6 @@ const KontaktFormaV2 = () => {
           {...register("tel")}
           type="tel"
           name="tel"
-          placeholder="Kontakt broj..."
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="tel"
         />
