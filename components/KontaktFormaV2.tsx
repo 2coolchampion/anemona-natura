@@ -50,6 +50,12 @@ const KontaktFormaV2 = () => {
       onSubmit={handleSubmit(clientSendEmailAPI)}
     >
       <div className="felx felx-col relative">
+        <label
+          htmlFor="ime"
+          className="font-semibold text-white hover:cursor-pointer"
+        >
+          IME I PREZIME
+        </label>
         <input
           {...register("ime")}
           type="name"
@@ -59,14 +65,14 @@ const KontaktFormaV2 = () => {
           placeholder="Ime i Prezime..."
         />
         {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
-        <label
-          htmlFor="ime"
-          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-        >
-          IME I PREZIME
-        </label>
       </div>
       <div className="felx felx-col relative mt-8">
+        <label
+          htmlFor="email"
+          className="font-semibold text-white hover:cursor-pointer"
+        >
+          EMAIL
+        </label>
         <input
           {...register("email")}
           type="email"
@@ -76,14 +82,14 @@ const KontaktFormaV2 = () => {
           id="email"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-        <label
-          htmlFor="email"
-          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-        >
-          EMAIL
-        </label>
       </div>
       <div className="felx felx-col relative mt-8">
+        <label
+          htmlFor="tel"
+          className="font-semibold text-white hover:cursor-pointer"
+        >
+          KONTAKT TELEFON
+        </label>
         <input
           {...register("tel")}
           type="tel"
@@ -93,15 +99,9 @@ const KontaktFormaV2 = () => {
           id="tel"
         />
         {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
-        <label
-          htmlFor="tel"
-          className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-        >
-          KONTAKT TELEFON
-        </label>
       </div>
       <div className="felx felx-col relative mt-8">
-        <label htmlFor="poruka" className=" relative -top-2 font-semibold">
+        <label htmlFor="poruka" className="font-semibold text-white">
           PORUKA
         </label>
         <textarea
