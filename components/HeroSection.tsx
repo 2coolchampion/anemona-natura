@@ -5,7 +5,7 @@ import KontaktFormaLG from "./KontaktFormaLG"
 
 const HeroSection = () => {
   return (
-    <section className="relative z-0 h-[66vh] max-h-[650px] w-full bg-green-dark px-4 sm:px-16  md:px-32 2xl:max-w-[1535px] landscape:h-[100vh]">
+    <section className="relative z-0 h-[66vh] max-h-[650px] w-full bg-green-dark px-4 sm:px-16 md:px-32  lg:max-h-[750px] 2xl:max-w-[1535px] landscape:h-[100vh]">
       <Image
         src={HeroImage}
         alt="hero image"
