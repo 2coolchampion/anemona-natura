@@ -23,24 +23,48 @@ const KontaktFroma = () => {
     },
   })
 
-  const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
-    console.log("submitting form")
+  const clientSendEmailAPI: SubmitHandler<Poruka> = async (data) => {
     try {
-      const response = await sendEmail(data)
-      if (response?.error) {
-        setError("root", { message: response.error })
-      } else {
-        console.log(response)
+      const result = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!result.ok) {
+        throw new Error("Network response was not ok")
       }
+
+      const responseData = await result.json()
+      console.log(responseData)
+      // Handle success or error response accordingly
     } catch (error) {
-      console.error(error)
+      console.error("There was a problem with the fetch operation:", error)
+      // Handle the error
     }
   }
+
+  // SERVER ACTIONS (NOT WORKING WITH NETLIFY)
+  // const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
+  //   console.log("submitting form")
+  //   try {
+  //     const response = await sendEmail(data)
+  //     if (response?.error) {
+  //       setError("root", { message: response.error })
+  //     } else {
+  //       console.log(response)
+  //     }
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
 
   return (
     <form
       className="flex flex-col gap-6 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
-      onSubmit={handleSubmit(clientSendEmail)}
+      onSubmit={handleSubmit(clientSendEmailAPI)}
     >
       <div className="felx felx-col relative">
         <input
