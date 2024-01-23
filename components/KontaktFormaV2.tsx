@@ -46,7 +46,7 @@ const KontaktFormaV2 = () => {
 
   return (
     <form
-      className="flex flex-col gap-6 text-green-dark has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
+      className="flex flex-col gap-6 text-green-dark has-[:focus]:outline-none [&_button]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
       onSubmit={handleSubmit(clientSendEmailAPI)}
     >
       <div className="felx felx-col relative">
@@ -117,10 +117,10 @@ const KontaktFormaV2 = () => {
       </div>
       <button
         type="submit"
-        className="flex items-center justify-center rounded-lg bg-green-light p-2 font-extrabold text-white"
+        className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-green-dark/30 focus:bg-white"
       >
         POŠALJI PORUKU
-        <SendIcon className="ml-2 w-6 text-white" />
+        <SendIcon className="ml-2 w-6 text-green-dark" />
       </button>
       {errors.root && <p className="text-red-500">{errors.root.message}</p>}
     </form>
