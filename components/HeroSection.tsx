@@ -12,8 +12,8 @@ const HeroSection = () => {
         className="absolute inset-0 -z-10 object-cover object-left-bottom"
         priority
       />
-      <div className="flex flex-col pt-56 lg:mt-36">
-        <h1 className="header-text text-4xl font-extrabold text-background-light"></h1>
+      <div className="lg:pt-38 flex flex-col pt-56 lg:items-center">
+        <h1 className="header-text text-4xl font-extrabold text-background-light lg:text-center"></h1>
         <a href="#usluge">
           <button className="mt-8 flex w-fit items-stretch bg-green-dark text-background-light">
             <div className="flex items-end bg-green-light px-3 py-2">
