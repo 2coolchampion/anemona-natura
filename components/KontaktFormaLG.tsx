@@ -3,7 +3,7 @@ import KontaktFromaV2 from "./KontaktFormaV2"
 
 const KontaktFormaLG = () => {
   return (
-    <div className="-mx-16 mt-56 hidden rounded-lg bg-gradient-to-t from-green-dark/45  to-white/5 pb-16 backdrop-blur-xl lg:grid lg:grid-cols-2 lg:grid-rows-[1fr_5fr]">
+    <div className="mt-56 hidden w-[65vw] min-w-[60rem] max-w-[71rem] rounded-lg bg-gradient-to-t from-green-dark/45  to-white/5 pb-16 backdrop-blur-xl lg:grid lg:grid-cols-2 lg:grid-rows-[1fr_5fr]">
       <div className="col-span-2 flex items-start justify-center">
         <div className="mt-5 rounded-md  bg-green-dark px-4 py-1 text-lg font-semibold tracking-wide text-background-light">
           <h2>KONTAKT</h2>
