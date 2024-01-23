@@ -46,7 +46,7 @@ const KontaktFormaV2 = () => {
 
   return (
     <form
-      className="flex flex-col gap-6 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
+      className="flex flex-col gap-6 text-green-dark has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
       onSubmit={handleSubmit(clientSendEmailAPI)}
     >
       <div className="felx felx-col relative">
@@ -60,7 +60,7 @@ const KontaktFormaV2 = () => {
           {...register("ime")}
           type="name"
           name="ime"
-          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
+          className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3  focus:border-white/20 focus:bg-white/30"
           id="ime"
           placeholder="Ime i Prezime..."
         />
@@ -78,7 +78,7 @@ const KontaktFormaV2 = () => {
           type="email"
           name="email"
           placeholder="Email..."
-          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
+          className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="email"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
@@ -95,7 +95,7 @@ const KontaktFormaV2 = () => {
           type="tel"
           name="tel"
           placeholder="Kontakt broj..."
-          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
+          className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="tel"
         />
         {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
@@ -106,7 +106,7 @@ const KontaktFormaV2 = () => {
         </label>
         <textarea
           {...register("poruka")}
-          className="mt-1 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
+          className="mt-2 h-32 w-full rounded-md border-2 border-white/5 bg-white/20 p-4 placeholder:text-white focus:border-white/20 focus:bg-white/30"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
