@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { ArrowDownIcon } from "@/components/icons"
 import HeroImage from "../public/hero-images/v1-darkened.jpg"
+import KontaktFormaLG from "./KontaktFormaLG"
 
 const HeroSection = () => {
   return (
@@ -25,6 +26,7 @@ const HeroSection = () => {
           </button>
         </a>
       </div>
+      <KontaktFormaLG />
     </section>
   )
 }
