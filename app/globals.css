@@ -54,4 +54,5 @@ html {
   background-image: url("/textures/bg-green-40.png");
   background-repeat: repeat;
   background-size: 51px 46px;
+  contain: paint;
 }
