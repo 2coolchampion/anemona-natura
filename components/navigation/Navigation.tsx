@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react"
 import "./styles.css"
-import { HamMenuIcon, MailIcon, PhoneIcon } from "@/components/icons"
+import { HamMenuIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons"
 import { XIcon } from "@/components/icons"
 import Logo from "@/public/logo.svg"
 import NavLinks from "./navLinks"
@@ -37,35 +37,49 @@ const Nav = () => {
     <>
       <header className="fixed top-0 z-20 w-full">
         <div
-          className={`w-full bg-background-light ${
-            isOpened ? "" : "shadow-lg"
-          } transition-transform ${
+          className={`transition-transform ${
             isHidden ? "-translate-y-full" : "translate-y-0"
-          }`}
+          } ${isOpened ? "" : "shadow-xl"}`}
         >
-          <nav
-            className={`nav mx-auto flex h-16 w-full justify-between px-4 py-2 2xl:max-w-[1535px] `}
-          >
-            {/* LOGO */}
-            <Link href={"/"} className="flex items-center justify-center">
-              <Logo className="w-40" />
-            </Link>
-            {/* NAVIGATION LINKS - MD */}
-            <div className="hidden md:flex md:flex-row">
-              <NavLinks />
+          <div className="hidden w-full justify-end gap-5 bg-green-dark py-2 pr-4 md:flex">
+            <div className="flex items-center gap-2 text-sm text-background-light">
+              <PhoneIcon className="h-5 w-5" />
+              <a href="tel:%2B385992868188">+385 99 286 8188</a>
             </div>
-            {/* HAM MENU ICON */}
-            <button
-              onClick={() => setIsOpened(!isOpened)}
-              className="flex items-center justify-center md:hidden"
-            >
-              {isOpened ? (
-                <XIcon className="w-8 text-green-dark" />
-              ) : (
-                <HamMenuIcon className="w-10 text-green-dark" />
-              )}
-            </button>
-          </nav>
+            <div className="flex items-center gap-2 text-sm text-background-light">
+              <MailIcon className="h-5 w-5" />
+              <a href="mailto:anemona.natura.info@gmail.com">
+                anemona.natura.info@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-background-light">
+              <PinIcon className="h-5 w-5" />
+              <p>M.J. Šporera 20, 47000 Karlovac</p>
+            </div>
+          </div>
+          <div className="w-full bg-background-light">
+            <nav className="nav mx-auto flex h-16 w-full justify-between px-4 py-2 2xl:max-w-[1535px]">
+              {/* LOGO */}
+              <Link href={"/"} className="flex items-center justify-center">
+                <Logo className="w-40" />
+              </Link>
+              {/* NAVIGATION LINKS - MD */}
+              <div className="hidden md:flex md:flex-row">
+                <NavLinks />
+              </div>
+              {/* HAM MENU ICON */}
+              <button
+                onClick={() => setIsOpened(!isOpened)}
+                className="flex items-center justify-center md:hidden"
+              >
+                {isOpened ? (
+                  <XIcon className="w-8 text-green-dark" />
+                ) : (
+                  <HamMenuIcon className="w-10 text-green-dark" />
+                )}
+              </button>
+            </nav>
+          </div>
         </div>
         {/* NAVIGATION LINKS - MOBILE */}
         <div
