@@ -103,7 +103,7 @@ const KontaktFormaV2 = () => {
         </label>
         <textarea
           {...register("poruka")}
-          className="mt-2 h-32 w-full rounded-md border-2 border-white/5 bg-white/20 p-4 placeholder:text-white focus:border-white/20 focus:bg-white/30"
+          className="mt-2 h-32 w-full rounded-md border-2 border-white/5 bg-white/20 p-4 placeholder:text-white focus:border-white/20 focus:bg-white/30 lg:resize-none"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
