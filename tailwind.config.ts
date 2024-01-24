@@ -19,6 +19,7 @@ const config: Config = {
         "background-green-light": "#CFD5C4",
         "green-dark": "#011e0e",
         "green-light": "#066437",
+        "green-super-light": "#627c5a",
       },
       screens: {
         xs: "480px",
