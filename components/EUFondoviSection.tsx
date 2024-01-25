@@ -40,7 +40,7 @@ const EUFondovi = () => {
         </p>
 
         <Link href="/eu-projekti">
-          <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light">
+          <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light transition-colors duration-75 ease-out hover:bg-green-light">
             SAZNAJ VIŠE
           </button>
         </Link>
