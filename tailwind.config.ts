@@ -18,6 +18,7 @@ const config: Config = {
         "background-dark": "#DCD7D2",
         "background-green-light": "#CFD5C4",
         "green-dark": "#011e0e",
+        "green-dark-hover": "#012310",
         "green-light": "#066437",
         "green-super-light": "#627c5a",
       },
