@@ -3,6 +3,7 @@ import { ArrowDownIcon } from "@/components/icons"
 import HeroImage from "../public/hero-images/v1-darkened.jpg"
 import KontaktFormaLG from "./KontaktFormaLG"
 import Glow from "@/public/Blobs/glow.svg"
+import BGBlur from "@/public/Blobs/bg-blur.svg"
 
 const HeroSection = () => {
   return (
@@ -14,11 +15,12 @@ const HeroSection = () => {
         className="absolute inset-0 -z-10 object-cover object-left-bottom"
         priority
       />
-      <div className="flex flex-col pt-56 lg:items-center lg:pt-80">
+      <div className="group flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
-          <Glow className="pointer-events-none inset-0 top-12 z-10 hidden scale-[200%] lg:absolute lg:block" />
+          <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 transition-opacity duration-1000 ease-in group-hover:opacity-70 lg:absolute lg:block" />
+          <BGBlur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>
-        <a href="#usluge" className="mt-8">
+        <a href="#usluge" className="z-20 mt-8">
           <button className=" group flex w-fit items-stretch overflow-clip rounded-md bg-green-dark text-background-light backdrop-blur-sm transition-all duration-200 hover:bg-green-dark/95">
             <div className="flex items-end bg-green-light px-3 py-2 transition-all duration-200 group-hover:bg-green-light/80">
               <ArrowDownIcon className="mb-[2px] h-auto w-6" />
