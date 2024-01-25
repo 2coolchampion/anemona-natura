@@ -61,7 +61,7 @@ const Usluge = () => {
         <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-green-dark lg:hidden"></div>
       </div>
       <div className="mt-16 flex flex-col items-center">
-        <div className="grid w-full max-w-[26rem] grid-cols-1 grid-rows-6 gap-5 md:max-w-[30rem] lg:max-w-3xl lg:grid-cols-3 lg:grid-rows-3 2xl:max-w-5xl">
+        <div className="grid w-full max-w-[26rem] grid-cols-1 grid-rows-6 gap-5 md:max-w-[30rem] lg:max-w-3xl lg:grid-cols-3 lg:grid-rows-3">
           {Images.map((image, index) => (
             <UslugeCard
               key={index}
