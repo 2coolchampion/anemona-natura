@@ -41,20 +41,22 @@ const Nav = () => {
             isHidden ? "-translate-y-full" : "translate-y-0"
           } ${isOpened ? "" : "shadow-xl"}`}
         >
-          <div className="hidden w-full justify-end gap-5 bg-green-dark py-2 pr-4 md:flex">
-            <div className="flex items-center gap-2 text-sm text-background-light">
-              <PhoneIcon className="h-5 w-5" />
-              <a href="tel:%2B385992868188">+385 99 286 8188</a>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-background-light">
-              <MailIcon className="h-5 w-5" />
-              <a href="mailto:anemona.natura.info@gmail.com">
-                anemona.natura.info@gmail.com
-              </a>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-background-light">
-              <PinIcon className="h-5 w-5" />
-              <p>M.J. Šporera 20, 47000 Karlovac</p>
+          <div className="hidden w-full justify-center bg-green-dark py-2 md:flex ">
+            <div className="flex w-full justify-end gap-5 pr-4 2xl:max-w-[1535px]">
+              <div className="flex items-center gap-2 text-sm text-background-light">
+                <PhoneIcon className="h-5 w-5" />
+                <a href="tel:%2B385992868188">+385 99 286 8188</a>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-background-light">
+                <MailIcon className="h-5 w-5" />
+                <a href="mailto:anemona.natura.info@gmail.com">
+                  anemona.natura.info@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-background-light">
+                <PinIcon className="h-5 w-5" />
+                <p>M.J. Šporera 20, 47000 Karlovac</p>
+              </div>
             </div>
           </div>
           <div className="w-full bg-background-light">
