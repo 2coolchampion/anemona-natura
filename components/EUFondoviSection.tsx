@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const EUFondovi = () => {
   return (
-    <section className="relative z-0 mt-20 flex flex-col px-4 py-16 sm:px-16 md:px-32">
+    <section className="relative z-0 flex flex-col px-4 py-16 sm:px-16 md:px-32">
       <div className=" w-full lg:flex lg:max-w-3xl lg:flex-col 2xl:max-w-5xl">
         <Image
           src={SadnjaImage}
