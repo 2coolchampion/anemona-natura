@@ -1,6 +1,7 @@
 import React from "react"
 import UslugeCard from "./UslugeCard"
 import { CardType } from "./UslugeCard"
+import UslugeBG from "@/public/Blobs/usluge-bg.svg"
 
 type ImageObject = {
   usluga: string
@@ -50,7 +51,8 @@ const Images: ImageObject[] = [
 
 const Usluge = () => {
   return (
-    <section className="relative flex flex-col px-4 pb-16 sm:px-16 md:px-32 lg:mt-[42rem] ">
+    <section className="relative z-0 flex flex-col px-4 pb-36 sm:px-16 md:px-32 lg:mt-[46rem] ">
+      <UslugeBG className="absolute bottom-36 left-0 -z-10 hidden rotate-180 opacity-35 sm:block" />
       <div className="mt-10 flex items-center">
         <h2
           id="usluge"
@@ -60,7 +62,7 @@ const Usluge = () => {
         </h2>
         <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-green-dark lg:hidden"></div>
       </div>
-      <div className="mt-16 flex flex-col items-center">
+      <div className="mt-36 flex flex-col items-center">
         <div className="grid w-full max-w-[26rem] grid-cols-1 grid-rows-6 gap-5 md:max-w-[30rem] lg:max-w-3xl lg:grid-cols-3 lg:grid-rows-3">
           {Images.map((image, index) => (
             <UslugeCard
