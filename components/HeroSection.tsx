@@ -2,8 +2,7 @@ import Image from "next/image"
 import { ArrowDownIcon } from "@/components/icons"
 import HeroImage from "../public/hero-images/v1-darkened.jpg"
 import KontaktFormaLG from "./KontaktFormaLG"
-import Glow from "@/components/blobs/glow.svg"
-import BGBlur from "@/components/blobs/bg-blur.svg"
+import { Glow, Bg_blur } from "@/components/blobs"
 
 const HeroSection = () => {
   return (
@@ -18,7 +17,7 @@ const HeroSection = () => {
       <div className="group flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
           <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 transition-opacity duration-1000 ease-in group-hover:opacity-70 lg:absolute lg:block" />
-          <BGBlur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
+          <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>
         <a href="#usluge" className="z-20 mt-8">
           <button className=" group flex w-fit items-stretch overflow-clip rounded-md bg-green-dark text-background-light backdrop-blur-sm transition-all duration-200 hover:bg-green-dark/95">
