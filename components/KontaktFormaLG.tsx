@@ -1,10 +1,10 @@
 import KontaktAdresa from "./KontaktAdresa"
 import KontaktFromaV2 from "./KontaktFormaV2"
-import BlobBrown from "../public/blobs/b-b.svg"
-import BlobDark from "@/public/Blobs/b-dark.svg"
-import BlobGreen from "../public/blobs/b-green.svg"
-import Leaf from "../public/blobs/leaf.svg"
-import LeafBottom from "../public/blobs/leaf-bottom.svg"
+import BlobBrown from "@/components/blobs/b-b.svg"
+import BlobDark from "@/components/blobs/b-dark.svg"
+import BlobGreen from "@/components/blobs/b-green.svg"
+import Leaf from "@/components/blobs/leaf.svg"
+import LeafBottom from "@/components/blobs/leaf-bottom.svg"
 
 const KontaktFormaLG = () => {
   return (

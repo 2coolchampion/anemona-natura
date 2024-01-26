@@ -2,8 +2,8 @@ import Image from "next/image"
 import { ArrowDownIcon } from "@/components/icons"
 import HeroImage from "../public/hero-images/v1-darkened.jpg"
 import KontaktFormaLG from "./KontaktFormaLG"
-import Glow from "@/public/Blobs/glow.svg"
-import BGBlur from "@/public/Blobs/bg-blur.svg"
+import Glow from "@/components/blobs/glow.svg"
+import BGBlur from "@/components/blobs/bg-blur.svg"
 
 const HeroSection = () => {
   return (
