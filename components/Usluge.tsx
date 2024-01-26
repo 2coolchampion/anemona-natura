@@ -1,7 +1,7 @@
 import React from "react"
 import UslugeCard from "./UslugeCard"
 import { CardType } from "./UslugeCard"
-import UslugeBG from "@/public/Blobs/usluge-bg.svg"
+import { Usluge_bg } from "@/components/blobs"
 
 type ImageObject = {
   usluga: string
@@ -52,7 +52,7 @@ const Images: ImageObject[] = [
 const Usluge = () => {
   return (
     <section className="relative z-0 flex flex-col px-4 pb-36 sm:px-16 md:px-32 lg:mt-[46rem] ">
-      <UslugeBG className="absolute bottom-36 left-0 -z-10 hidden rotate-180 opacity-35 sm:block" />
+      <Usluge_bg className="absolute bottom-36 left-0 -z-10 hidden rotate-180 opacity-35 sm:block" />
       <div className="mt-10 flex items-center">
         <h2
           id="usluge"
