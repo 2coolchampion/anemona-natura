@@ -9,7 +9,7 @@ import { B_b, B_dark, B_green, Leaf, Leaf_bottom } from "@/components/blobs"
 
 const KontaktFormaLG = () => {
   return (
-    <div className="textured relative mt-56 hidden w-[65vw] min-w-[60rem] max-w-[71rem] overflow-clip rounded-lg border-2 border-white border-opacity-60 pb-16 backdrop-blur-xl before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-b before:from-white/55 before:to-white/35 before:content-[''] lg:grid lg:grid-cols-2 lg:grid-rows-[1.2fr_5fr]">
+    <div className="textured absolute -bottom-[38rem] hidden w-[65vw] min-w-[60rem] max-w-[71rem] overflow-clip rounded-lg border-2 border-white border-opacity-60 pb-16 backdrop-blur-xl before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-b before:from-white/55 before:to-white/35 before:content-[''] lg:grid lg:grid-cols-2 lg:grid-rows-[1.2fr_5fr]">
       <B_b className="absolute -right-8 -top-16 -z-10 opacity-20 blur-2xl" />
       <B_dark className="absolute -bottom-8 -left-36 -z-10 opacity-30 blur-2xl" />
       <B_green className="absolute -bottom-16 -right-64 -z-20 opacity-15" />
