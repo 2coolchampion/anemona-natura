@@ -24,7 +24,7 @@ const navLinks = () => {
     <ul className="text-md mt-8 flex flex-col gap-4 px-4 py-2 text-3xl md:m-0 md:flex-row md:items-center md:gap-6 md:p-0 md:text-base ">
       {NavLinks.map((link) => {
         return (
-          <li>
+          <li key={link.name}>
             <Link
               href={link.href}
               key={link.name}
