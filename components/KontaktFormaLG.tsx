@@ -17,7 +17,7 @@ const KontaktFormaLG = () => {
       <Leaf className="absolute  -right-24 -top-16 -z-20  opacity-75" />
       <Leaf_bottom className="absolute -bottom-[25rem] -left-[38rem] -z-20 opacity-15" />
       <div className="col-span-2 flex items-center justify-center">
-        <div className=" rounded-md  bg-green-dark px-4 py-2 text-lg font-semibold tracking-wide text-background-light">
+        <div className=" mb-6 rounded-md bg-green-dark px-4 py-2 text-lg font-semibold tracking-wide text-background-light">
           <h2>KONTAKT</h2>
         </div>
       </div>
