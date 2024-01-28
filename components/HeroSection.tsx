@@ -14,20 +14,21 @@ const HeroSection = () => {
         className="absolute inset-0 -z-10 object-cover object-left-bottom"
         priority
       />
-      <div className="group flex flex-col pt-56 lg:items-center lg:pt-80">
+      <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
           <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 transition-opacity duration-1000 ease-in group-hover:opacity-70 lg:absolute lg:block" />
           <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>
-        <a href="#usluge" className="z-20 mt-8">
-          <button className=" group flex w-fit items-stretch overflow-clip rounded-md bg-green-dark text-background-light backdrop-blur-sm transition-all duration-200 hover:bg-green-dark-hover">
-            <div className="group-hover:bg-green-light-hover flex items-end bg-green-light px-3 py-2 transition-all duration-200">
-              <ArrowDownIcon className="mb-[2px] h-auto w-6" />
-            </div>
-            <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
-              Istraži Ponudu
-            </p>
-          </button>
+        <a
+          href="#usluge"
+          className="group/button z-20 mt-8 flex w-fit items-stretch overflow-clip rounded-md bg-green-dark text-background-light transition-all duration-200 hover:bg-green-dark-hover"
+        >
+          <div className="flex items-end bg-green-light px-3 py-2 transition-all duration-200 group-hover/button:bg-green-light-hover">
+            <ArrowDownIcon className="mb-[2px] h-auto w-6" />
+          </div>
+          <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
+            Istraži Ponudu
+          </p>
         </a>
       </div>
       <KontaktFormaLG />
