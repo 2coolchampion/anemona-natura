@@ -75,7 +75,9 @@ const KontaktFroma = () => {
           id="ime"
           placeholder="Ime i Prezime..."
         />
-        {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
+        {errors.ime && (
+          <p className="mt-1 text-red-500">{errors.ime.message}</p>
+        )}
         <label
           htmlFor="ime"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -92,7 +94,9 @@ const KontaktFroma = () => {
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="email"
         />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+        {errors.email && (
+          <p className="mt-1 text-red-500">{errors.email.message}</p>
+        )}
         <label
           htmlFor="email"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -109,7 +113,9 @@ const KontaktFroma = () => {
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="tel"
         />
-        {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
+        {errors.tel && (
+          <p className="mt-1 text-red-500">{errors.tel.message}</p>
+        )}
         <label
           htmlFor="tel"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
@@ -129,7 +135,7 @@ const KontaktFroma = () => {
           placeholder="Upišite svoju poruku ovdje..."
         />
         {errors.poruka && (
-          <p className="text-red-500">{errors.poruka.message}</p>
+          <p className="mt-1 text-red-500">{errors.poruka.message}</p>
         )}
       </div>
       <button
@@ -139,7 +145,9 @@ const KontaktFroma = () => {
         POŠALJI PORUKU
         <SendIcon className="ml-2 w-6 text-white" />
       </button>
-      {errors.root && <p className="text-red-500">{errors.root.message}</p>}
+      {errors.root && (
+        <p className="mt-1 text-red-500">{errors.root.message}</p>
+      )}
     </form>
   )
 }

@@ -63,7 +63,9 @@ const KontaktFormaV2 = () => {
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3  focus:border-white/20 focus:bg-white/30"
           id="ime"
         />
-        {errors.ime && <p className="text-red-500">{errors.ime.message}</p>}
+        {errors.ime && (
+          <p className="mt-1 text-red-500">{errors.ime.message}</p>
+        )}
       </div>
       <div className="felx felx-col relative">
         <label
@@ -79,7 +81,9 @@ const KontaktFormaV2 = () => {
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="email"
         />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+        {errors.email && (
+          <p className="mt-1 text-red-500">{errors.email.message}</p>
+        )}
       </div>
       <div className="felx felx-col relative">
         <label
@@ -95,7 +99,9 @@ const KontaktFormaV2 = () => {
           className="mt-2 w-full rounded-md border-2 border-white/5 bg-white/20 px-3 py-3 focus:border-white/20 focus:bg-white/30 "
           id="tel"
         />
-        {errors.tel && <p className="text-red-500">{errors.tel.message}</p>}
+        {errors.tel && (
+          <p className="mt-1 text-red-500">{errors.tel.message}</p>
+        )}
       </div>
       <div className="felx felx-col relative">
         <label htmlFor="poruka" className="font-semibold text-white">
@@ -109,7 +115,7 @@ const KontaktFormaV2 = () => {
           placeholder="Upišite svoju poruku ovdje..."
         />
         {errors.poruka && (
-          <p className="text-red-500">{errors.poruka.message}</p>
+          <p className="mt-1 text-red-500">{errors.poruka.message}</p>
         )}
       </div>
       <button
@@ -119,7 +125,9 @@ const KontaktFormaV2 = () => {
         POŠALJI PORUKU
         <SendIcon className="ml-2 w-6 text-green-dark" />
       </button>
-      {errors.root && <p className="text-red-500">{errors.root.message}</p>}
+      {errors.root && (
+        <p className="mt-1 text-red-500">{errors.root.message}</p>
+      )}
     </form>
   )
 }
