@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { ArrowDownIcon } from "@/components/icons"
-import HeroImage from "../public/hero-images/v1-darkened.jpg"
+import HeroImage from "@/public/hero-images/v1.png"
+import HeroImageMD from "@/public/hero-images/v1-cropped.png"
+import HeroImageXS from "@/public/hero-images/v1-cropped-xs.png"
 import KontaktFormaLG from "./KontaktFormaLG"
 import { Glow, Bg_blur } from "@/components/blobs"
 
@@ -11,9 +13,30 @@ const HeroSection = () => {
         src={HeroImage}
         alt="hero image"
         fill
-        className="absolute inset-0 -z-10 object-cover object-left-bottom"
+        className="absolute inset-0 -z-10 hidden object-cover object-left-bottom md:block"
         priority
+        quality={100}
       />
+      <div className="absolute inset-0 after:absolute after:inset-0 after:bg-black/15 md:hidden">
+        <Image
+          src={HeroImageMD}
+          alt="hero image"
+          fill
+          className="absolute inset-0 -z-10 hidden object-cover object-left-bottom sm:block"
+          priority
+          quality={100}
+        />
+      </div>
+      <div className="absolute inset-0 after:absolute after:inset-0 after:bg-black/15 md:hidden">
+        <Image
+          src={HeroImageXS}
+          alt="hero image"
+          fill
+          className="absolute inset-0 -z-10 object-cover md:hidden"
+          priority
+          quality={100}
+        />
+      </div>
       <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
           <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 transition-opacity duration-1000 ease-in group-hover:opacity-70 lg:absolute lg:block" />
