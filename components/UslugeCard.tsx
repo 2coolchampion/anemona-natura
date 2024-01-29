@@ -8,7 +8,7 @@ export type CardType = "small" | "big"
 
 export type UslugeCardProps = {
   nazivUsluge: string
-  cardType: string
+  cardType: CardType
   imgSrc: string
   imgAlt: string
 }
@@ -37,6 +37,7 @@ const UslugeCard = ({
         src={imgSrc}
         alt={imgAlt}
         fill
+        sizes="(max-width: 768px) 80vw, (max-width: 1028px) 50vw, (min-width: 1029px) 500px"
         className="-z-20 scale-105 object-cover transition-all duration-1000 group-hover:scale-100"
       />
     </div>
