@@ -15,6 +15,8 @@ const EUFondovi = () => {
           fill
           alt="background image"
           className="-z-10 object-cover opacity-40"
+          sizes="(min-width: 1024px) 1536px, 100vw"
+          quality={100}
         />
         <div className="mt-10 flex items-center justify-between">
           <h2 className="text-3xl font-extrabold text-green-dark lg:before:absolute lg:before:left-0 lg:before:top-[7.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-green-dark lg:after:absolute lg:after:right-0 lg:after:top-[7.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-green-dark">
