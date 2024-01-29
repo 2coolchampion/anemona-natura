@@ -39,7 +39,7 @@ const HeroSection = () => {
       </div>
       <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
-          <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 transition-opacity duration-1000 ease-in group-hover:opacity-70 lg:absolute lg:block" />
+          <Glow className="pointer-events-none top-12 z-10 hidden scale-[235%] opacity-30 lg:absolute lg:block" />
           <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>
         <a
