@@ -6,8 +6,14 @@ import { porukaSchema, Poruka } from "@/lib/types"
 import z from "zod"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { useRef } from "react"
 
 const KontaktFroma = () => {
+  const imeRef = useRef<HTMLInputElement>(null)
+  const emailRef = useRef<HTMLInputElement>(null)
+  const telRef = useRef<HTMLInputElement>(null)
+  const porukaRef = useRef<HTMLTextAreaElement>(null)
+
   const {
     handleSubmit,
     register,
@@ -61,6 +67,12 @@ const KontaktFroma = () => {
   //   }
   // }
 
+  const focusRef = (ref: React.RefObject<HTMLElement>) => {
+    if (ref && ref.current) {
+      ref.current.focus()
+    }
+  }
+
   return (
     <form
       className="flex flex-col gap-6 has-[:focus]:outline-none [&_input]:outline-none [&_textarea]:outline-none"
@@ -71,9 +83,10 @@ const KontaktFroma = () => {
           {...register("ime")}
           type="name"
           name="ime"
-          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
+          className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none "
           id="ime"
           placeholder="Ime i Prezime..."
+          ref={imeRef}
         />
         {errors.ime && (
           <p className="mt-1 text-red-500">{errors.ime.message}</p>
@@ -81,6 +94,7 @@ const KontaktFroma = () => {
         <label
           htmlFor="ime"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+          onClick={() => focusRef(imeRef)}
         >
           IME I PREZIME
         </label>
@@ -93,6 +107,7 @@ const KontaktFroma = () => {
           placeholder="Email..."
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="email"
+          ref={emailRef}
         />
         {errors.email && (
           <p className="mt-1 text-red-500">{errors.email.message}</p>
@@ -100,6 +115,7 @@ const KontaktFroma = () => {
         <label
           htmlFor="email"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+          onClick={() => focusRef(emailRef)}
         >
           EMAIL
         </label>
@@ -112,6 +128,7 @@ const KontaktFroma = () => {
           placeholder="Kontakt broj..."
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="tel"
+          ref={telRef}
         />
         {errors.tel && (
           <p className="mt-1 text-red-500">{errors.tel.message}</p>
@@ -119,12 +136,17 @@ const KontaktFroma = () => {
         <label
           htmlFor="tel"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
+          onClick={() => focusRef(telRef)}
         >
           KONTAKT TELEFON
         </label>
       </div>
       <div className="felx felx-col relative mt-8">
-        <label htmlFor="poruka" className=" relative -top-2 font-semibold">
+        <label
+          htmlFor="poruka"
+          className=" relative -top-2 cursor-pointer font-semibold"
+          onClick={() => focusRef(porukaRef)}
+        >
           PORUKA
         </label>
         <textarea
@@ -133,6 +155,7 @@ const KontaktFroma = () => {
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
+          ref={porukaRef}
         />
         {errors.poruka && (
           <p className="mt-1 text-red-500">{errors.poruka.message}</p>
