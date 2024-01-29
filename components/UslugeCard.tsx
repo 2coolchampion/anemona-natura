@@ -26,12 +26,14 @@ const UslugeCard = ({
       onClick={() => {
         router.push("/usluge")
       }}
-      className={`after:content[' '] group relative z-0 flex h-56 cursor-pointer  flex-col items-center justify-around overflow-hidden rounded-lg bg-green-dark text-center text-gray-100 after:absolute after:inset-0 after:bg-black/10 xl:h-56 ${
+      className={`group relative z-0 flex h-56 cursor-pointer flex-col items-center overflow-hidden rounded-lg bg-green-dark text-center text-white after:absolute after:inset-0 after:bg-black/10 xl:h-56 ${
         cardType === "small" ? "col-span-1" : "col-span-1 lg:col-span-2"
       }`}
     >
-      <h4 className="z-20 text-xl font-bold">{nazivUsluge}</h4>
-      <button className="z-20">Saznaj više...</button>
+      <h4 className="z-20 mt-8 text-xl font-bold">{nazivUsluge}</h4>
+      <button className="absolute inset-x-auto bottom-6 z-20">
+        Saznaj više...
+      </button>
       <div className="absolute inset-0 z-10 bg-black/20"></div>
       <Image
         src={imgSrc}
