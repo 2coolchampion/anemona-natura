@@ -108,7 +108,7 @@ const Nav = () => {
       </header>
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 z-10 bg-black transition-opacity duration-1000 ease-out ${
+        className={`fixed inset-0 z-10 h-[130%] bg-black transition-opacity duration-1000 ease-out ${
           isOpened && !isHidden ? "opacity-50" : "opacity-0"
         }`}
         style={{ pointerEvents: isOpened ? "auto" : "none" }}
