@@ -21,15 +21,17 @@ const navLinks = () => {
   const pathname = usePathname()
 
   return (
-    <ul className="text-md mt-8 flex flex-col gap-4 px-4 py-2 text-3xl md:m-0 md:flex-row md:items-center md:gap-6 md:p-0 md:text-base ">
+    <ul className="mt-8 flex flex-col gap-4 px-4 py-2 text-xl md:m-0 md:flex-row md:items-center md:gap-6 md:p-0 md:text-base ">
       {NavLinks.map((link) => {
+        const isActive = pathname === link.href
+
         return (
           <li key={link.name}>
             <Link
               href={link.href}
               key={link.name}
               className={`hover-underline-animation relative ${
-                pathname.includes(link.href) ? "font-medium" : ""
+                isActive ? "font-medium" : ""
               }`}
             >
               {link.name}
