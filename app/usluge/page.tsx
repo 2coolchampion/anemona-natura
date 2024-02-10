@@ -8,7 +8,7 @@ const Usluge = () => {
           Naše Usluge
         </h1>
         <h2 className="mt-8 text-lg font-bold text-green-dark">
-          Doznaka I Orprema
+          Doznaka I Otprema
         </h2>
         <ul className="mt-2 list-disc">
           <li>Doznaka stabala</li>
@@ -54,7 +54,7 @@ const Usluge = () => {
           </li>
         </ul>
         <h2 className="mt-8 text-lg font-bold text-green-dark">
-          Procjena vrijdnosti šume i šumskog zemljišta
+          Procjena vrijednosti šume i šumskog zemljišta
         </h2>
         <ul className="mt-2 list-disc">
           <li>Izrada elaborata procjene vrijednosti šumskih sastojina</li>
