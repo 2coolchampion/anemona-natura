@@ -14,10 +14,16 @@ export const porukaSchema = z.object({
     .email({ message: "Unesite validnu email adresu" }),
   tel: z
     .string()
-    .refine((val) => /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/.test(val), {
-      message: "Unesite validan broj telefona",
-    })
-    .optional(),
+    .optional()
+    .refine(
+      (val) =>
+        val === undefined ||
+        val === "" ||
+        /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/.test(val),
+      {
+        message: "Unesite validan broj telefona",
+      }
+    ),
   poruka: z.string().min(1, { message: "Poruka je obavezna!" }),
 })
 
