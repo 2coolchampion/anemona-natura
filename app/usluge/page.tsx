@@ -13,7 +13,7 @@ const Usluge = () => {
         >
           Doznaka I Otprema
         </h2>
-        <ul className="mt-2 list-disc">
+        <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
           <li>Doznaka stabala</li>
           <li className="mt-1 lg:mt-0">Otprema drvnih sortimenata</li>
         </ul>
@@ -23,7 +23,7 @@ const Usluge = () => {
         >
           Procjena vrijednosti šume i šumskog zemljišta
         </h2>
-        <ul className="mt-2 list-disc">
+        <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
           <li>Izrada elaborata procjene vrijednosti šumskih sastojina</li>
           <li className="mt-1 lg:mt-0">
             Procjena vrijednosti šuma i šumskog zemljišta{" "}
@@ -56,7 +56,7 @@ const Usluge = () => {
         >
           Lovnogospodarski Planovi
         </h2>
-        <ul className="mt-2 list-disc">
+        <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
           <li>Lovnogospodarska osnova</li>
           <li className="mt-1 lg:mt-0">Program uzgoja divljači</li>
           <li className="mt-1 lg:mt-0">Program zaštite divljači</li>
@@ -68,7 +68,7 @@ const Usluge = () => {
         >
           Šumskogospodarski Planovi
         </h2>
-        <ul className="mt-2 list-disc">
+        <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
           <li>Osnova gospodarenja gospodarskom jedinicom</li>
           <li className="mt-1 lg:mt-0">
             Program gospodarenja gospodarskom jedinicom s planom upravljanja
@@ -96,7 +96,7 @@ const Usluge = () => {
         >
           Otkup drvnih sortimenata
         </h2>
-        <ul className="mt-2 list-disc">
+        <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
           <li>...</li>
         </ul>
       </section>
