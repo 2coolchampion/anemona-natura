@@ -11,6 +11,7 @@ export type UslugeCardProps = {
   cardType: CardType
   imgSrc: string
   imgAlt: string
+  route: string
 }
 
 const UslugeCard = ({
@@ -18,13 +19,14 @@ const UslugeCard = ({
   cardType,
   imgSrc,
   imgAlt,
+  route,
 }: UslugeCardProps) => {
   const router = useRouter()
 
   return (
     <div
       onClick={() => {
-        router.push("/usluge")
+        router.push(`${route}`)
       }}
       className={`group relative z-0 flex h-56 cursor-pointer flex-col items-center overflow-hidden rounded-lg bg-green-dark text-center text-white after:absolute after:inset-0 after:bg-black/10 xl:h-56 ${
         cardType === "small" ? "col-span-1" : "col-span-1 lg:col-span-2"

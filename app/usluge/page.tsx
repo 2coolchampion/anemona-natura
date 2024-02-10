@@ -7,14 +7,20 @@ const Usluge = () => {
         <h1 className="text-center text-3xl font-extrabold text-green-dark">
           Naše Usluge
         </h1>
-        <h2 className="mt-8 text-lg font-bold text-green-dark">
+        <h2
+          id="doznaka-i-otprema"
+          className="mt-8 text-lg font-bold text-green-dark"
+        >
           Doznaka I Otprema
         </h2>
         <ul className="mt-2 list-disc">
           <li>Doznaka stabala</li>
           <li>Otprema drvnih sortimenata</li>
         </ul>
-        <h2 className="mt-8 text-lg font-bold text-green-dark">
+        <h2
+          id="procjenja-vrijednosti-sume-i-sumskog-zemljista"
+          className="mt-8 text-lg font-bold text-green-dark"
+        >
           Procjena vrijednosti šume i šumskog zemljišta
         </h2>
         <ul className="mt-2 list-disc">
@@ -32,7 +38,10 @@ const Usluge = () => {
           </li>
           <li>Sve ostale usluge vještačenja u šumarstvu</li>
         </ul>
-        <h2 className="mt-8 text-lg font-bold text-green-dark">
+        <h2
+          id="lovnogospodarski-planovi"
+          className="mt-8 text-lg font-bold text-green-dark"
+        >
           Lovnogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
@@ -41,7 +50,10 @@ const Usluge = () => {
           <li>Program zaštite divljači</li>
           <li>Revizija lovnogospodarskih planova</li>
         </ul>
-        <h2 className="mt-8 text-lg font-bold text-green-dark">
+        <h2
+          id="sumskogospodarski-planovi"
+          className="mt-8 text-lg font-bold text-green-dark"
+        >
           Šumskogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
@@ -62,7 +74,10 @@ const Usluge = () => {
             osoba
           </li>
         </ul>
-        <h2 className="mt-8 text-lg font-bold text-green-dark">
+        <h2
+          id="otkup-drvnih-sortimenata"
+          className="mt-8 text-lg font-bold text-green-dark"
+        >
           Otkup drvnih sortimenata
         </h2>
         <ul className="mt-2 list-disc">

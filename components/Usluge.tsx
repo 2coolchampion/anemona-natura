@@ -8,6 +8,7 @@ type ImageObject = {
   imgSrc: string
   imgAlt: string
   cardType: CardType
+  route: string
 }
 
 const Images: ImageObject[] = [
@@ -16,36 +17,42 @@ const Images: ImageObject[] = [
     imgSrc: "/usluge/forest_truck_full_of_logs.png",
     imgAlt: "Kamion odvozi trupce",
     cardType: "small",
+    route: "/usluge/#doznaka-i-otprema",
   },
   {
     usluga: "EU Fondovi",
     imgSrc: "/usluge/handshake.png",
     imgAlt: "muškarci se rukuju",
     cardType: "big",
+    route: "/eu-projekti",
   },
   {
     usluga: "Procjena vrijednosti šume i šumskog zemljišta",
     imgSrc: "/usluge/map.png",
     imgAlt: "Osoba pokazuje penkalom na karti",
     cardType: "big",
+    route: "/usluge/#procjenja-vrijednosti-sume-i-sumskog-zemljista",
   },
   {
     usluga: "Izrada lovno gospodarskih planova",
     imgSrc: "/usluge/hogs.png",
     imgAlt: "divlje svinje u šumi",
     cardType: "small",
+    route: "/usluge/#lovnogospodarski-planovi",
   },
   {
     usluga: "Izrada šumsko gospodarskih planova",
     imgSrc: "/usluge/beech.png",
     imgAlt: "bukva",
     cardType: "small",
+    route: "/usluge/#sumskogospodarski-planovi",
   },
   {
     usluga: "Otkup drvnih sortimenata",
     imgSrc: "/usluge/timber_assortments.png",
     imgAlt: "naslagana narezana drva",
     cardType: "big",
+    route: "/usluge/#otkup-drvnih-sortimenata",
   },
 ]
 
@@ -71,6 +78,7 @@ const Usluge = () => {
               imgSrc={image.imgSrc}
               imgAlt={image.imgAlt}
               cardType={image.cardType}
+              route={image.route}
             />
           ))}
         </div>
