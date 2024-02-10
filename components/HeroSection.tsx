@@ -109,9 +109,9 @@ const HeroSection = () => {
         </h1>
         <a
           href="#usluge"
-          className="group/button z-20 mt-8 flex w-fit items-stretch overflow-clip rounded-md bg-green-dark text-background-light transition-all duration-200 hover:bg-green-dark-hover"
+          className="group/button relative z-20 mt-8 flex w-fit items-stretch overflow-clip rounded-md bg-green-light text-background-light transition-all duration-75 after:absolute after:inset-0 after:-z-10 after:bg-gradient-to-r after:from-green-light after:to-green-light-hover after:to-50% after:transition-opacity after:duration-75 hover:bg-green-light-hover hover:after:opacity-15"
         >
-          <div className="flex items-end bg-green-light px-3 py-2 transition-all duration-200 group-hover/button:bg-green-light-hover">
+          <div className="flex items-end bg-green-light-hover px-3 py-2 transition-all duration-75 group-hover/button:bg-[#23AC59]">
             <ArrowDownIcon className="mb-[2px] h-auto w-6" />
           </div>
           <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
