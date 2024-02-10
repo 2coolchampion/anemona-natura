@@ -4,17 +4,17 @@ const Usluge = () => {
   return (
     <MainWrapper>
       <section className="my-44 px-11">
-        <h1 className="text-center text-3xl font-extrabold text-green-dark text-opacity-40">
+        <h1 className="text-center text-3xl font-extrabold text-green-dark">
           Naše Usluge
         </h1>
-        <h2 className="mt-8 text-lg font-medium text-green-dark">
+        <h2 className="mt-8 text-lg font-bold text-green-dark">
           Doznaka I Orprema
         </h2>
         <ul className="mt-2 list-disc">
           <li>Doznaka stabala</li>
           <li>Otprema drvnih sortimenata</li>
         </ul>
-        <h2 className="mt-8 text-lg font-medium text-green-dark">
+        <h2 className="mt-8 text-lg font-bold text-green-dark">
           Lovnogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
@@ -23,7 +23,7 @@ const Usluge = () => {
           <li>Program zaštite divljači</li>
           <li>Revizija lovnogospodarskih planova</li>
         </ul>
-        <h2 className="mt-8 text-lg font-medium text-green-dark">
+        <h2 className="mt-8 text-lg font-bold text-green-dark">
           Šumskogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
@@ -44,7 +44,7 @@ const Usluge = () => {
             osoba
           </li>
         </ul>
-        <h2 className="mt-8 text-lg font-medium text-green-dark">
+        <h2 className="mt-8 text-lg font-bold text-green-dark">
           Identifikacija katastarskih čestica
         </h2>
         <ul className="mt-2 list-disc">
@@ -53,7 +53,9 @@ const Usluge = () => {
             registriranim u Državnoj geodetskoj upravi
           </li>
         </ul>
-        <h2>Procjena vrijdnosti šume i šumskog zemljišta</h2>
+        <h2 className="mt-8 text-lg font-bold text-green-dark">
+          Procjena vrijdnosti šume i šumskog zemljišta
+        </h2>
         <ul className="mt-2 list-disc">
           <li>Izrada elaborata procjene vrijednosti šumskih sastojina</li>
           <li>Procjena vrijednosti šuma i šumskog zemljišta </li>
