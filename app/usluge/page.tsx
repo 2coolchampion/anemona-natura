@@ -3,80 +3,96 @@ import MainWrapper from "@/components/ui/main"
 const Usluge = () => {
   return (
     <MainWrapper>
-      <section className="my-44 px-11">
-        <h1 className="text-center text-3xl font-extrabold text-green-dark">
+      <section className="my-24 px-6 md:my-32 lg:my-44 lg:px-11">
+        <h1 className="text-3xl font-extrabold text-green-dark lg:text-center">
           Naše Usluge
         </h1>
         <h2
           id="doznaka-i-otprema"
-          className="mt-8 text-lg font-bold text-green-dark"
+          className="mt-8 text-2xl font-bold text-green-dark"
         >
           Doznaka I Otprema
         </h2>
         <ul className="mt-2 list-disc">
           <li>Doznaka stabala</li>
-          <li>Otprema drvnih sortimenata</li>
+          <li className="mt-1 lg:mt-0">Otprema drvnih sortimenata</li>
         </ul>
         <h2
           id="procjenja-vrijednosti-sume-i-sumskog-zemljista"
-          className="mt-8 text-lg font-bold text-green-dark"
+          className="mt-8 text-2xl font-bold text-green-dark"
         >
           Procjena vrijednosti šume i šumskog zemljišta
         </h2>
         <ul className="mt-2 list-disc">
           <li>Izrada elaborata procjene vrijednosti šumskih sastojina</li>
-          <li>Procjena vrijednosti šuma i šumskog zemljišta </li>
-          <li>Izračun vrijednosti drvne mase na panju</li>
-          <li>Izračun vrijednosti šumskih šteta</li>
-          <li>Izračun prihoda i rashoda u šumama</li>
-          <li>Izračun sječivih mogućnosti šumskih sastojina</li>
-          <li>Izračun vrijednosti pojedinačnih stabala</li>
-          <li>Izračun tržišne vrijednosti šumskog zemljišta</li>
-          <li>
+          <li className="mt-1 lg:mt-0">
+            Procjena vrijednosti šuma i šumskog zemljišta{" "}
+          </li>
+          <li className="mt-1 lg:mt-0">
+            Izračun vrijednosti drvne mase na panju
+          </li>
+          <li className="mt-1 lg:mt-0">Izračun vrijednosti šumskih šteta</li>
+          <li className="mt-1 lg:mt-0">Izračun prihoda i rashoda u šumama</li>
+          <li className="mt-1 lg:mt-0">
+            Izračun sječivih mogućnosti šumskih sastojina
+          </li>
+          <li className="mt-1 lg:mt-0">
+            Izračun vrijednosti pojedinačnih stabala
+          </li>
+          <li className="mt-1 lg:mt-0">
+            Izračun tržišne vrijednosti šumskog zemljišta
+          </li>
+          <li className="mt-1 lg:mt-0">
             Procjena vrijednosti šuma na trasama dalekovoda, vodovoda, prometne
             i ostale infrastrukture
           </li>
-          <li>Sve ostale usluge vještačenja u šumarstvu</li>
+          <li className="mt-1 lg:mt-0">
+            Sve ostale usluge vještačenja u šumarstvu
+          </li>
         </ul>
         <h2
           id="lovnogospodarski-planovi"
-          className="mt-8 text-lg font-bold text-green-dark"
+          className="mt-8 text-2xl font-bold text-green-dark"
         >
           Lovnogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
           <li>Lovnogospodarska osnova</li>
-          <li>Program uzgoja divljači</li>
-          <li>Program zaštite divljači</li>
-          <li>Revizija lovnogospodarskih planova</li>
+          <li className="mt-1 lg:mt-0">Program uzgoja divljači</li>
+          <li className="mt-1 lg:mt-0">Program zaštite divljači</li>
+          <li className="mt-1 lg:mt-0">Revizija lovnogospodarskih planova</li>
         </ul>
         <h2
           id="sumskogospodarski-planovi"
-          className="mt-8 text-lg font-bold text-green-dark"
+          className="mt-8 text-2xl font-bold text-green-dark"
         >
           Šumskogospodarski Planovi
         </h2>
         <ul className="mt-2 list-disc">
           <li>Osnova gospodarenja gospodarskom jedinicom</li>
-          <li>
+          <li className="mt-1 lg:mt-0">
             Program gospodarenja gospodarskom jedinicom s planom upravljanja
             područjem ekološke mreže
           </li>
-          <li>Program gospodarenja šumama privatnih posjednika</li>
-          <li>
+          <li className="mt-1 lg:mt-0">
+            Program gospodarenja šumama privatnih posjednika
+          </li>
+          <li className="mt-1 lg:mt-0">
             Program gospodarenja šumama posebne namjene za potrebe obrane
             Republike Hrvatske
           </li>
-          <li>Program gospodarenja šumskim sjemenskim objektima</li>
-          <li>Program zaštite, njege i obnove šuma</li>
-          <li>
+          <li className="mt-1 lg:mt-0">
+            Program gospodarenja šumskim sjemenskim objektima
+          </li>
+          <li className="mt-1 lg:mt-0">Program zaštite, njege i obnove šuma</li>
+          <li className="mt-1 lg:mt-0">
             Program gospodarenja šumama posebne namjene kojima gospodari Pravna
             osoba
           </li>
         </ul>
         <h2
           id="otkup-drvnih-sortimenata"
-          className="mt-8 text-lg font-bold text-green-dark"
+          className="mt-8 text-2xl font-bold text-green-dark"
         >
           Otkup drvnih sortimenata
         </h2>
