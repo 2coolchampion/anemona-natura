@@ -29,10 +29,6 @@ const Nav = () => {
     }
   }, [])
 
-  const logHidden = () => {
-    console.log(isHidden)
-  }
-
   return (
     <>
       <header className="fixed top-0 z-20 w-full">
