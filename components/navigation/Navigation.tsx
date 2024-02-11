@@ -11,6 +11,7 @@ import Link from "next/link"
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false) // Hidden means that the nav is not visible
   const [isOpened, setIsOpened] = useState(false) // Opened is used by the mobile menu (mobile menu is expanded/opened)
+  const touchStartX = useRef(0)
   const prevScrollPositionRef = useRef(0)
 
   useEffect(() => {
@@ -26,6 +27,26 @@ const Nav = () => {
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      touchStartX.current = e.changedTouches[0].screenX
+    }
+    const handleTouchEnd = (e) => {
+      const touchEndX = e.changedTouches[0].screenX
+      const distance = touchEndX - touchStartX.current
+      // Detect a swipe from right to left on the right side of the screen
+      if (distance < -50 && touchStartX.current > window.innerWidth - 100) {
+        setIsOpened(true) // Open the mobile menu
+      }
+    }
+    document.addEventListener("touchstart", handleTouchStart)
+    document.addEventListener("touchend", handleTouchEnd)
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart)
+      document.removeEventListener("touchend", handleTouchEnd)
     }
   }, [])
 
