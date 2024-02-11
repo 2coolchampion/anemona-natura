@@ -9,8 +9,8 @@ import NavLinks from "./navLinks"
 import Link from "next/link"
 
 const Nav = () => {
-  const [isHidden, setIsHidden] = useState(false)
-  const [isOpened, setIsOpened] = useState(false)
+  const [isHidden, setIsHidden] = useState(false) // Hidden means that the nav is not visible
+  const [isOpened, setIsOpened] = useState(false) // Opened is used by the mobile menu (mobile menu is expanded/opened)
   const prevScrollPositionRef = useRef(0)
 
   useEffect(() => {
