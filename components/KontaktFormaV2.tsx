@@ -120,7 +120,7 @@ const KontaktFormaV2 = () => {
       </div>
       <button
         type="submit"
-        className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-green-dark/30 focus:bg-white"
+        className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-[#656150] focus:bg-white"
       >
         POŠALJI PORUKU
         <SendIcon className="ml-2 w-6 text-green-dark" />
