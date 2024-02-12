@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
     })
 
     return {
-      sucess: "Poruka je uspesno poslana!",
+      success: "Poruka je uspesno poslana!",
     }
   }
 
