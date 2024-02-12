@@ -31,10 +31,10 @@ const Nav = () => {
   }, [])
 
   useEffect(() => {
-    const handleTouchStart = (e) => {
+    const handleTouchStart = (e: TouchEvent) => {
       touchStartX.current = e.changedTouches[0].screenX
     }
-    const handleTouchEnd = (e) => {
+    const handleTouchEnd = (e: TouchEvent) => {
       const touchEndX = e.changedTouches[0].screenX
       const distance = touchEndX - touchStartX.current
       // Detect a swipe from right to left on the right side of the screen
