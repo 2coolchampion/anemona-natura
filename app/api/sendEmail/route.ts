@@ -35,16 +35,23 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: "franvidicek@gmail.com",
-      subject: `📬 Nova poruka - ${ime} - ${tel}`,
-      reply_to: email as string,
-      text: `Poruka: ${poruka} || Email: ${email}`,
-    })
+    try {
+      // const data = await resend.emails.send({
+      //   from: "Acme <onboarding@resend.dev>",
+      //   to: "franvidicek@gmail.com",
+      //   subject: `📬 Nova poruka - ${ime} - ${tel}`,
+      //   reply_to: email as string,
+      //   text: `Poruka: ${poruka} || Email: ${email}`,
+      // })
 
-    return {
-      success: "Poruka je uspesno poslana!",
+      return {
+        success: "Poruka je uspješno poslana!",
+      }
+    } catch (error) {
+      console.log(error)
+      return {
+        error: "Došlo je do greške prilikom slanja poruke!",
+      }
     }
   }
 
