@@ -41,7 +41,9 @@ const KontaktFormaV2 = () => {
 
       // Handle success or error response
       responseData.success
-        ? toast.success(responseData.success)
+        ? toast(<ToastSuccess message={responseData.success} />, {
+            unstyled: true,
+          })
         : toast.error(responseData.error)
     } catch (error) {
       // Handle the fetching error
@@ -136,17 +138,6 @@ const KontaktFormaV2 = () => {
           <p className="mt-1 text-red-500">{errors.root.message}</p>
         )}
       </form>
-      <button
-        className="rounded-xl bg-slate-800 p-2 text-white"
-        onClick={() =>
-          toast(<ToastSuccess />, {
-            duration: Infinity,
-            unstyled: true,
-          })
-        }
-      >
-        BUTTON
-      </button>
     </div>
   )
 }
