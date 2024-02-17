@@ -3,21 +3,23 @@
 import { SendIcon } from "@/components/icons"
 import sendEmail from "@/actions/sendEmail"
 import { porukaSchema, Poruka } from "@/lib/types"
-import z from "zod"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useRef } from "react"
+import { toast } from "sonner"
+import ToastSuccess from "./toast/ToastSuccess"
 
 const KontaktFroma = () => {
-  const imeRef = useRef<HTMLInputElement>(null)
-  const emailRef = useRef<HTMLInputElement>(null)
-  const telRef = useRef<HTMLInputElement>(null)
-  const porukaRef = useRef<HTMLTextAreaElement>(null)
+  const imeRef = useRef<HTMLInputElement | null>(null)
+  const emailRef = useRef<HTMLInputElement | null>(null)
+  const telRef = useRef<HTMLInputElement | null>(null)
+  const porukaRef = useRef<HTMLTextAreaElement | null>(null)
 
   const {
     handleSubmit,
     register,
     setError,
+    setFocus,
     formState: { errors },
   } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),
@@ -28,6 +30,11 @@ const KontaktFroma = () => {
       poruka: "",
     },
   })
+
+  const { ref: imeRefRHF, ...imeRest } = register("ime")
+  const { ref: emailRefRHF, ...emailRest } = register("email")
+  const { ref: telRefRHF, ...telRest } = register("tel")
+  const { ref: porukaRefRHF, ...porukaRest } = register("poruka")
 
   const clientSendEmailAPI: SubmitHandler<Poruka> = async (data) => {
     try {
@@ -44,10 +51,17 @@ const KontaktFroma = () => {
       }
 
       const responseData = await result.json()
-      console.log(responseData)
-      // Handle success or error response accordingly
+
+      // Handle success or error response
+      responseData.success
+        ? toast(<ToastSuccess message={responseData.success} />, {
+            unstyled: true,
+            position: "top-center",
+          })
+        : toast.error(responseData.error)
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error)
+      toast.error("Nešto nije u redu. Pokusajte ponovo kasnije.")
       // Handle the error
     }
   }
@@ -80,13 +94,16 @@ const KontaktFroma = () => {
     >
       <div className="felx felx-col relative">
         <input
-          {...register("ime")}
+          {...imeRest}
+          ref={(element) => {
+            imeRef.current = element
+            imeRefRHF(element)
+          }}
           type="name"
           name="ime"
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none "
           id="ime"
           placeholder="Ime i Prezime..."
-          ref={imeRef}
         />
         {errors.ime && (
           <p className="mt-1 text-red-500">{errors.ime.message}</p>
@@ -94,20 +111,23 @@ const KontaktFroma = () => {
         <label
           htmlFor="ime"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-          onClick={() => focusRef(imeRef)}
+          onClick={() => setFocus("ime")}
         >
           IME I PREZIME
         </label>
       </div>
       <div className="felx felx-col relative mt-8">
         <input
-          {...register("email")}
+          {...emailRest}
+          ref={(element) => {
+            emailRef.current = element
+            emailRefRHF(element)
+          }}
           type="email"
           name="email"
           placeholder="Email..."
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="email"
-          ref={emailRef}
         />
         {errors.email && (
           <p className="mt-1 text-red-500">{errors.email.message}</p>
@@ -115,20 +135,23 @@ const KontaktFroma = () => {
         <label
           htmlFor="email"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-          onClick={() => focusRef(emailRef)}
+          onClick={() => setFocus("email")}
         >
           EMAIL
         </label>
       </div>
       <div className="felx felx-col relative mt-8">
         <input
-          {...register("tel")}
+          {...telRest}
+          ref={(element) => {
+            telRef.current = element
+            telRefRHF(element)
+          }}
           type="tel"
           name="tel"
           placeholder="Kontakt broj..."
           className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
           id="tel"
-          ref={telRef}
         />
         {errors.tel && (
           <p className="mt-1 text-red-500">{errors.tel.message}</p>
@@ -136,7 +159,7 @@ const KontaktFroma = () => {
         <label
           htmlFor="tel"
           className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
-          onClick={() => focusRef(telRef)}
+          onClick={() => setFocus("tel")}
         >
           KONTAKT TELEFON
         </label>
@@ -145,17 +168,20 @@ const KontaktFroma = () => {
         <label
           htmlFor="poruka"
           className=" relative -top-2 cursor-pointer font-semibold"
-          onClick={() => focusRef(porukaRef)}
+          onClick={() => setFocus("poruka")}
         >
           PORUKA
         </label>
         <textarea
-          {...register("poruka")}
+          {...porukaRest}
+          ref={(element) => {
+            porukaRef.current = element
+            porukaRefRHF(element)
+          }}
           className="mt-1 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
           id="poruka"
           name="poruka"
           placeholder="Upišite svoju poruku ovdje..."
-          ref={porukaRef}
         />
         {errors.poruka && (
           <p className="mt-1 text-red-500">{errors.poruka.message}</p>
