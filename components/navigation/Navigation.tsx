@@ -7,12 +7,29 @@ import { XIcon } from "@/components/icons"
 import Logo from "@/public/logo.svg"
 import NavLinks from "./navLinks"
 import Link from "next/link"
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false) // Hidden means that the nav is not visible
   const [isOpened, setIsOpened] = useState(false) // Opened is used by the mobile menu (mobile menu is expanded/opened)
   const touchStartX = useRef(0)
   const prevScrollPositionRef = useRef(0)
+
+  const { rive, RiveComponent } = useRive({
+    src: "/rive/xicon.riv",
+    stateMachines: "Default",
+    autoplay: true,
+  })
+
+  const onClickInput = useStateMachineInput(rive, "Default", "Click")
+
+  if (rive) {
+    console.dir(rive.contents)
+  }
+
+  useEffect(() => {
+    onClickInput && onClickInput.fire()
+  }, [isOpened])
 
   useEffect(() => {
     function handleScroll() {
@@ -91,11 +108,12 @@ const Nav = () => {
                 onClick={() => setIsOpened(!isOpened)}
                 className="flex items-center justify-center md:hidden"
               >
-                {isOpened ? (
-                  <XIcon className="w-8 text-green-dark" />
-                ) : (
-                  <HamMenuIcon className="w-10 text-green-dark" />
-                )}
+                <RiveComponent
+                  className="h-16 w-24"
+                  onClick={() => {
+                    setIsOpened(!isOpened)
+                  }}
+                />
               </button>
             </nav>
           </div>
