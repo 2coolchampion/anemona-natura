@@ -6,6 +6,8 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner"
 import ToastSuccess from "./toast/ToastSuccess"
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
+import { useEffect } from "react"
 
 const KontaktFormaV2 = () => {
   const {
@@ -22,6 +24,14 @@ const KontaktFormaV2 = () => {
       poruka: "",
     },
   })
+
+  useEffect(() => {
+    if (isFlyingInput) {
+      isSubmitting
+        ? (isFlyingInput.value = true)
+        : (isFlyingInput.value = false)
+    }
+  }, [isSubmitting])
 
   const clientSendEmailAPI: SubmitHandler<Poruka> = async (data) => {
     try {
@@ -50,7 +60,17 @@ const KontaktFormaV2 = () => {
       console.error("There was a problem with the fetch operation:", error)
       toast.error("Something went wrong. Please try again later.")
     }
+
+    await new Promise((resolve) => setTimeout(resolve, 300))
   }
+
+  const { rive, RiveComponent } = useRive({
+    src: "/rive/sendIconGreen.riv",
+    stateMachines: "Fly",
+    autoplay: true,
+  })
+
+  const isFlyingInput = useStateMachineInput(rive, "Fly", "isFlying")
 
   return (
     <div>
@@ -132,8 +152,8 @@ const KontaktFormaV2 = () => {
           className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 text-lg font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-[#656150] focus:bg-white"
           disabled={isSubmitting}
         >
-          {isSubmitting ? "..." : "Pošalji Poruku"}
-          <SendIcon className="ml-2 w-6 text-green-dark" />
+          {isSubmitting ? "" : "Pošalji Poruku"}
+          <RiveComponent className="ml-2 h-8 w-8 text-green-dark" />
         </button>
         {errors.root && (
           <p className="mt-1 text-red-500">{errors.root.message}</p>
