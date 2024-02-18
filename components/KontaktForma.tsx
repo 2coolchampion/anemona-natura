@@ -20,7 +20,7 @@ const KontaktFroma = () => {
     register,
     setError,
     setFocus,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),
     defaultValues: {
@@ -64,6 +64,8 @@ const KontaktFroma = () => {
       toast.error("Nešto nije u redu. Pokusajte ponovo kasnije.")
       // Handle the error
     }
+
+    await new Promise((resolve) => setTimeout(resolve, 5000))
   }
 
   // SERVER ACTIONS (NOT WORKING WITH NETLIFY)
@@ -189,10 +191,13 @@ const KontaktFroma = () => {
       </div>
       <button
         type="submit"
-        className="flex items-center justify-center rounded-lg bg-green-light p-2 font-extrabold text-white"
+        className={`flex items-center justify-center rounded-lg bg-green-light p-2 px-3 py-3 text-lg font-extrabold text-white hover:bg-green-light-hover hover:shadow-lg focus:bg-green-light-hover ${
+          isSubmitting ? "cursor-wait bg-green-light-hover" : ""
+        }`}
+        disabled={isSubmitting}
       >
-        POŠALJI PORUKU
-        <SendIcon className="ml-2 w-6 text-white" />
+        {isSubmitting ? "..." : "Pošalji Poruku"}
+        <SendIcon className="ml-2 w-6" />
       </button>
       {errors.root && (
         <p className="mt-1 text-red-500">{errors.root.message}</p>
