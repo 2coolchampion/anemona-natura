@@ -12,7 +12,7 @@ const KontaktFormaV2 = () => {
     handleSubmit,
     register,
     setError,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),
     defaultValues: {
@@ -129,9 +129,10 @@ const KontaktFormaV2 = () => {
         </div>
         <button
           type="submit"
-          className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-[#656150] focus:bg-white"
+          className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 text-lg font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-[#656150] focus:bg-white"
+          disabled={isSubmitting}
         >
-          POŠALJI PORUKU
+          {isSubmitting ? "..." : "Pošalji Poruku"}
           <SendIcon className="ml-2 w-6 text-green-dark" />
         </button>
         {errors.root && (
