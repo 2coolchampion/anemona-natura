@@ -23,10 +23,6 @@ const Nav = () => {
 
   const onClickInput = useStateMachineInput(rive, "Default", "Click")
 
-  if (rive) {
-    console.dir(rive.contents)
-  }
-
   useEffect(() => {
     onClickInput && onClickInput.fire()
   }, [isOpened])
