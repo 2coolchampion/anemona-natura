@@ -108,12 +108,7 @@ const Nav = () => {
                 onClick={() => setIsOpened(!isOpened)}
                 className="flex items-center justify-center md:hidden"
               >
-                <RiveComponent
-                  className="h-16 w-24"
-                  onClick={() => {
-                    setIsOpened(!isOpened)
-                  }}
-                />
+                <RiveComponent className="h-16 w-24" />
               </button>
             </nav>
           </div>
