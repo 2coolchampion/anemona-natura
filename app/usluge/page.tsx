@@ -97,7 +97,10 @@ const Usluge = () => {
           Otkup drvnih sortimenata
         </h2>
         <ul className="mt-2 list-disc" style={{ listStyleType: "square" }}>
-          <li>...</li>
+          <li className="mt-1 lg:mt-0">
+            Kupujemo drvne sortimente svih vrsta na panju, uz panj, na pomoćnom
+            stovarištu
+          </li>
         </ul>
       </section>
     </MainWrapper>
