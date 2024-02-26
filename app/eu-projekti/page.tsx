@@ -10,7 +10,7 @@ import Slika6 from "@/public/eu-projekti-images/6.png"
 const EUProjekti = () => {
   return (
     <MainWrapper>
-      <section className="mt-48 px-6 lg:px-11">
+      <section className="mt-28 px-6 md:mt-36 lg:px-11">
         <div className="flex max-w-[55rem] flex-col">
           <h1 className="text-3xl font-extrabold text-green-dark">
             EU PROJEKTI PODMJERA 8.5.1. - KONVERZIJA DEGRADIRANIH ŠUMSKIH
