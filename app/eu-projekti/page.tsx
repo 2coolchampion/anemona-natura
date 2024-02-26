@@ -3,13 +3,13 @@ import MainWrapper from "@/components/ui/main"
 const EUProjekti = () => {
   return (
     <MainWrapper>
-      <section className="mt-48 font-bold">
-        <div className="flex flex-col bg-gray-300">
-          <h1>
+      <section className="mt-48 px-6 lg:px-11">
+        <div className="flex max-w-[55rem] flex-col">
+          <h1 className="text-3xl font-extrabold text-green-dark">
             EU PROJEKTI PODMJERA 8.5.1. - KONVERZIJA DEGRADIRANIH ŠUMSKIH
             SASTOJINA I ŠUMSKIH KULTURA
           </h1>
-          <p>
+          <p className="mt-4 max-w-[42rem]">
             klijentima pružamo uslugu organizacije, savjetovanja i pripreme
             projekata iz Europskih fondova. Specijalizirani smo u izradi
             projekata za podmjeru 8.5.1. — konverzija degradiranih šumskih
@@ -17,12 +17,12 @@ const EUProjekti = () => {
             dokumentaciju za potrebe projekta iz Europskih strukturnih i
             investicijskih fondova.
           </p>
-          <p>
+          <p className="mt-2 max-w-[42rem]">
             Prihvatljivi korisnici su šumoposjednici u skladu sa člankom 14.
             Zakona o šumama („Narodne novine", br. 68/2018, 115/2018, 98/2019,
             32/2020 i 145/20) te udruge šumoposjednika.{" "}
           </p>
-          <p>
+          <p className="mt-2 max-w-[42rem]">
             Cilj pokretanja projekta je dodjela sredstava za prevođenje
             degradiranih šumskih sastojina, šumskih sastojina narušene strukture
             po vrstama drveća i šumskih kultura u,mješovite sastojine autohtonih
