@@ -39,17 +39,17 @@ const ImagesDisplay = () => {
     return (
       <Carousel
         opts={{ align: "end", loop: true }}
-        className="h-fit justify-center"
+        className="mt-16 h-fit rounded-md bg-green-dark"
       >
         <CarouselContent>
           {Slike.map((slika, index) => {
             return (
               <CarouselItem key={index}>
-                <div className="flex justify-center">
+                <div className="flex h-full justify-center">
                   <Image
                     alt={slika.alt}
                     src={slika.src}
-                    className="object-cover"
+                    className="object-contain"
                     width={slika.w}
                     height={slika.h}
                   />
