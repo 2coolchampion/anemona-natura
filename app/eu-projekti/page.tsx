@@ -1,11 +1,6 @@
 import MainWrapper from "@/components/ui/main"
 import Image from "next/image"
-import Slika1 from "@/public/eu-projekti-images/1.png"
-import Slika2 from "@/public/eu-projekti-images/2.png"
-import Slika3 from "@/public/eu-projekti-images/3.png"
-import Slika4 from "@/public/eu-projekti-images/4.png"
-import Slika5 from "@/public/eu-projekti-images/5.png"
-import Slika6 from "@/public/eu-projekti-images/6.png"
+import ImageDisplay from "@/components/ImageDisplay"
 
 const EUProjekti = () => {
   return (
@@ -37,27 +32,7 @@ const EUProjekti = () => {
             uspješne i ostvarene projekte koje možete pogledati u nastavku.
           </p>
         </div>
-        <div className="my-16 grid h-[70rem] w-full grid-cols-6 grid-rows-3 gap-3">
-          {/* TODO - Add appropriate alt tags */}
-          <div className="relative col-span-3">
-            <Image alt="slika" fill src={Slika1} className="object-cover" />
-          </div>
-          <div className="relative col-span-3 bg-gray-200">
-            <Image alt="slika" fill src={Slika2} className="object-cover" />
-          </div>
-          <div className="relative col-span-2 bg-gray-300">
-            <Image alt="slika" fill src={Slika3} className="object-cover" />
-          </div>
-          <div className="relative col-span-4 bg-gray-400">
-            <Image alt="slika" fill src={Slika4} className="object-cover" />
-          </div>
-          <div className="relative col-span-3 bg-gray-500">
-            <Image alt="slika" fill src={Slika5} className="object-cover" />
-          </div>
-          <div className="relative col-span-3 bg-gray-600">
-            <Image alt="slika" fill src={Slika6} className="object-cover" />
-          </div>
-        </div>
+        <ImageDisplay />
       </section>
     </MainWrapper>
   )
