@@ -62,6 +62,7 @@ const ImagesDisplay = () => {
     )
   } else {
     return (
+      // TODO add resopnsive height - make the grid larger as screen width gets wider
       <div className="my-16 grid h-[70rem] w-full grid-cols-6 grid-rows-3 gap-3">
         <div className="relative col-span-3">
           <Image
