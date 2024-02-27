@@ -5,6 +5,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
 
@@ -39,7 +41,7 @@ const ImagesDisplay = () => {
     return (
       <Carousel
         opts={{ align: "end", loop: true }}
-        className="mt-16 h-fit rounded-md bg-green-dark"
+        className="relative mt-16 h-fit rounded-md bg-green-dark"
       >
         <CarouselContent>
           {Slike.map((slika, index) => {
@@ -58,6 +60,8 @@ const ImagesDisplay = () => {
             )
           })}{" "}
         </CarouselContent>
+        <CarouselPrevious className="absolute bottom-8 left-8 scale-125 border-green-dark bg-green-dark text-background-light hover:border-green-dark-hover hover:bg-green-dark-hover hover:text-white" />
+        <CarouselNext className="bottom-8 right-8 scale-125 border-green-dark bg-green-dark text-background-light hover:border-green-dark-hover hover:bg-green-dark-hover hover:text-white" />
       </Carousel>
     )
   } else {
