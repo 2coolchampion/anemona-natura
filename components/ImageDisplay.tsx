@@ -77,19 +77,19 @@ const ImagesDisplay = () => {
             className="object-cover"
           />
         </div>
-        <div className="relative col-span-3 bg-gray-200">
+        <div className="relative col-span-3">
           <Image alt="slika" fill src={Slike[1].src} className="object-cover" />
         </div>
-        <div className="relative col-span-2 bg-gray-300">
+        <div className="relative col-span-2">
           <Image alt="slika" fill src={Slike[2].src} className="object-cover" />
         </div>
-        <div className="relative col-span-4 bg-gray-400">
+        <div className="relative col-span-4">
           <Image alt="slika" fill src={Slike[3].src} className="object-cover" />
         </div>
-        <div className="relative col-span-3 bg-gray-500">
+        <div className="relative col-span-3">
           <Image alt="slika" fill src={Slike[4].src} className="object-cover" />
         </div>
-        <div className="relative col-span-3 bg-gray-600">
+        <div className="relative col-span-3">
           <Image alt="slika" fill src={Slike[5].src} className="object-cover" />
         </div>
       </div>
