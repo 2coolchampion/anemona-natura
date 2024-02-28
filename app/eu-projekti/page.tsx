@@ -12,7 +12,7 @@ const EUProjekti = () => {
             SASTOJINA I ŠUMSKIH KULTURA
           </h1>
           <p className="mt-4 max-w-[42rem]">
-            klijentima pružamo uslugu organizacije, savjetovanja i pripreme
+            Klijentima pružamo uslugu organizacije, savjetovanja i pripreme
             projekata iz Europskih fondova. Specijalizirani smo u izradi
             projekata za podmjeru 8.5.1. — konverzija degradiranih šumskih
             sastojina i šumskih kultura. Pripremamo i izrađujemo cjelokupnu
