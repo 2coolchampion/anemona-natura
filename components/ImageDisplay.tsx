@@ -13,12 +13,48 @@ import Image from "next/image"
 // TODO add appropriate alt tags
 
 const Slike = [
-  { src: "/eu-projekti-images/1.png", alt: "alt", w: 650, h: 488 },
-  { src: "/eu-projekti-images/2.png", alt: "alt", w: 650, h: 488 },
-  { src: "/eu-projekti-images/3.png", alt: "alt", w: 422, h: 622 },
-  { src: "/eu-projekti-images/4.png", alt: "alt", w: 871, h: 622 },
-  { src: "/eu-projekti-images/5.png", alt: "alt", w: 650, h: 487 },
-  { src: "/eu-projekti-images/6.png", alt: "alt", w: 650, h: 488 },
+  {
+    src: "/eu-projekti-images/1.png",
+    alt: "alt",
+    w: 650,
+    h: 488,
+    divClassName: "col-span-3",
+  },
+  {
+    src: "/eu-projekti-images/2.png",
+    alt: "alt",
+    w: 650,
+    h: 488,
+    divClassName: "col-span-3",
+  },
+  {
+    src: "/eu-projekti-images/3.png",
+    alt: "alt",
+    w: 422,
+    h: 622,
+    divClassName: "col-span-2",
+  },
+  {
+    src: "/eu-projekti-images/4.png",
+    alt: "alt",
+    w: 871,
+    h: 622,
+    divClassName: "col-span-4",
+  },
+  {
+    src: "/eu-projekti-images/5.png",
+    alt: "alt",
+    w: 650,
+    h: 487,
+    divClassName: "col-span-3",
+  },
+  {
+    src: "/eu-projekti-images/6.png",
+    alt: "alt",
+    w: 650,
+    h: 488,
+    divClassName: "col-span-3",
+  },
 ]
 
 const ImagesDisplay = () => {
@@ -69,29 +105,18 @@ const ImagesDisplay = () => {
     return (
       // TODO add resopnsive height - make the grid larger as screen width gets wider
       <div className="my-16 grid h-[70rem] w-full grid-cols-6 grid-rows-3 gap-3">
-        <div className="relative col-span-3">
-          <Image
-            alt={Slike[0].alt}
-            fill
-            src={Slike[0].src}
-            className="object-cover"
-          />
-        </div>
-        <div className="relative col-span-3">
-          <Image alt="slika" fill src={Slike[1].src} className="object-cover" />
-        </div>
-        <div className="relative col-span-2">
-          <Image alt="slika" fill src={Slike[2].src} className="object-cover" />
-        </div>
-        <div className="relative col-span-4">
-          <Image alt="slika" fill src={Slike[3].src} className="object-cover" />
-        </div>
-        <div className="relative col-span-3">
-          <Image alt="slika" fill src={Slike[4].src} className="object-cover" />
-        </div>
-        <div className="relative col-span-3">
-          <Image alt="slika" fill src={Slike[5].src} className="object-cover" />
-        </div>
+        {Slike.map((slika, i) => {
+          return (
+            <div key={i} className={`relative ${slika.divClassName}`}>
+              <Image
+                alt={slika.alt}
+                fill
+                src={slika.src}
+                className="object-cover"
+              />
+            </div>
+          )
+        })}
       </div>
     )
   }
