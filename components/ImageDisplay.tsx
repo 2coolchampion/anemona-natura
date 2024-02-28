@@ -22,7 +22,7 @@ const Slike = [
 ]
 
 const ImagesDisplay = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768)
+  const [isMobile, setIsMobile] = useState<null | boolean>(null)
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +32,7 @@ const ImagesDisplay = () => {
         setIsMobile(false)
       }
     }
+    handleResize()
     window.addEventListener("resize", handleResize)
     // Cleanup function
     return () => window.removeEventListener("resize", handleResize)
