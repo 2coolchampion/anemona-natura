@@ -78,7 +78,7 @@ const ImagesDisplay = () => {
     return (
       <Carousel
         opts={{ align: "end", loop: true }}
-        className="relative mt-16 h-fit rounded-md bg-green-dark"
+        className="relative my-16 h-fit rounded-md bg-green-dark"
       >
         <CarouselContent>
           {Slike.map((slika, index) => {
