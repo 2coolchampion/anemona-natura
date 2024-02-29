@@ -55,6 +55,7 @@ const EUFondovi = () => {
               alt="Croatian flag"
               fill
               className="absolute object-contain"
+              sizes="90px"
             />
           </div>
           <div className=" relative h-16 w-16 self-center justify-self-start xs:justify-self-center sm:order-3 md:w-[4.3rem] 2xl:order-2 2xl:w-[5rem]">
@@ -63,6 +64,7 @@ const EUFondovi = () => {
               alt="European flag"
               fill
               className="absolute object-contain"
+              sizes="90px"
             />
           </div>
           <div className="relative  col-span-2 h-full min-w-40 place-self-center xs:col-span-1 sm:order-4 md:w-40">
@@ -71,6 +73,7 @@ const EUFondovi = () => {
               alt="croatian fill flag"
               fill
               className="absolute object-contain"
+              sizes="170px"
             />
           </div>
           <div className="relative col-span-2 h-full w-40 place-self-center xs:col-span-1 sm:order-2 md:w-40">
@@ -79,6 +82,7 @@ const EUFondovi = () => {
               alt="croatian fill flag"
               fill
               className="absolute object-contain"
+              sizes="170px"
             />
           </div>
         </div>

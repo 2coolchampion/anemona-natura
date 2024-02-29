@@ -83,15 +83,14 @@ const ImagesDisplay = () => {
         <CarouselContent>
           {Slike.map((slika, index) => {
             return (
-              // TODO: Add sizes prop to images
               <CarouselItem key={index}>
-                <div className="flex h-full justify-center">
+                <div className="relative flex h-[24rem] w-full justify-center md:h-[40rem]">
                   <Image
                     alt={slika.alt}
                     src={slika.src}
                     className="object-contain"
-                    width={slika.w}
-                    height={slika.h}
+                    fill
+                    sizes="95vw"
                   />
                 </div>
               </CarouselItem>
@@ -104,17 +103,16 @@ const ImagesDisplay = () => {
     )
   } else {
     return (
-      // TODO: add resopnsive height - make the grid larger as screen width gets wider
       <div className="my-16 grid h-[100rem] w-full grid-cols-6 grid-rows-3 gap-3">
         {Slike.map((slika, i) => {
           return (
-            // TODO: add sizes prop to images
             <div key={i} className={`relative ${slika.divClassName}`}>
               <Image
                 alt={slika.alt}
                 fill
                 src={slika.src}
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 46vw, (max-width: 1919px) 37vw, 717px"
               />
             </div>
           )
