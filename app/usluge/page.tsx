@@ -3,7 +3,7 @@ import MainWrapper from "@/components/ui/main"
 const Usluge = () => {
   return (
     <MainWrapper>
-      <section className="my-24 px-6 md:my-32 lg:my-44 lg:px-11">
+      <section className="mb-12 mt-24 px-6 md:mb-16 md:mt-32 lg:mb-24 lg:mt-44 lg:px-11">
         <h1 className="text-3xl font-extrabold text-green-dark lg:text-center">
           Naše Usluge
         </h1>
