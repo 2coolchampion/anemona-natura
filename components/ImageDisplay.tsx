@@ -83,6 +83,7 @@ const ImagesDisplay = () => {
         <CarouselContent>
           {Slike.map((slika, index) => {
             return (
+              // TODO: Add sizes prop to images
               <CarouselItem key={index}>
                 <div className="flex h-full justify-center">
                   <Image
@@ -103,10 +104,11 @@ const ImagesDisplay = () => {
     )
   } else {
     return (
-      // TODO add resopnsive height - make the grid larger as screen width gets wider
       <div className="my-16 grid h-[70rem] w-full grid-cols-6 grid-rows-3 gap-3">
+      // TODO: add resopnsive height - make the grid larger as screen width gets wider
         {Slike.map((slika, i) => {
           return (
+            // TODO: add sizes prop to images
             <div key={i} className={`relative ${slika.divClassName}`}>
               <Image
                 alt={slika.alt}
