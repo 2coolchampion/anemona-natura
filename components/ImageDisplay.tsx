@@ -104,8 +104,8 @@ const ImagesDisplay = () => {
     )
   } else {
     return (
-      <div className="my-16 grid h-[70rem] w-full grid-cols-6 grid-rows-3 gap-3">
       // TODO: add resopnsive height - make the grid larger as screen width gets wider
+      <div className="my-16 grid h-[100rem] w-full grid-cols-6 grid-rows-3 gap-3">
         {Slike.map((slika, i) => {
           return (
             // TODO: add sizes prop to images
