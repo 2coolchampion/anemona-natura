@@ -13,7 +13,7 @@ const EUFondovi = () => {
         <Image
           src={SadnjaImage}
           fill
-          alt="background image"
+          alt=""
           className="-z-10 object-cover opacity-40"
           sizes="(min-width: 1024px) 1536px, 100vw"
           quality={100}
@@ -50,7 +50,7 @@ const EUFondovi = () => {
           <div className="relative min-h-[5rem] min-w-[5rem] max-w-[10rem] place-self-end xs:justify-self-center sm:order-1 md:justify-self-start 2xl:w-[6rem]">
             <Image
               src={Croatia}
-              alt="Croatian flag"
+              alt="Zastava Republike Hrvatske"
               fill
               className="absolute object-contain"
               sizes="90px"
@@ -59,7 +59,7 @@ const EUFondovi = () => {
           <div className=" relative h-16 w-16 self-center justify-self-start xs:justify-self-center sm:order-3 md:w-[4.3rem] 2xl:order-2 2xl:w-[5rem]">
             <Image
               src={Eu}
-              alt="European flag"
+              alt="Zastava Europske Unije"
               fill
               className="absolute object-contain"
               sizes="90px"
@@ -68,7 +68,7 @@ const EUFondovi = () => {
           <div className="relative  col-span-2 h-full min-w-40 place-self-center xs:col-span-1 sm:order-4 md:w-40">
             <Image
               src={EuInvestmentFunds}
-              alt="croatian fill flag"
+              alt="Logotip - Program ruralnog razvoja"
               fill
               className="absolute object-contain"
               sizes="170px"
@@ -77,7 +77,7 @@ const EUFondovi = () => {
           <div className="relative col-span-2 h-full w-40 place-self-center xs:col-span-1 sm:order-2 md:w-40">
             <Image
               src={RuralniRazvoj}
-              alt="croatian fill flag"
+              alt="Logo - Europski strukturni i investicijski fondovi"
               fill
               className="absolute object-contain"
               sizes="170px"

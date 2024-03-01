@@ -97,7 +97,7 @@ const HeroSection = () => {
         <img
           src={`${road_1535_jpg.src}`}
           srcSet={`${road_640_jpg.src} 640w, ${road_1535_jpg.src} 1535w, ${road_3070_jpg.src} 3070w `}
-          alt="hero image"
+          alt=""
           className="absolute inset-0 -z-10 h-full w-full opacity-60 sm:opacity-100 md:block"
           style={{ objectFit: "cover", objectPosition: "50% 0%" }}
         />

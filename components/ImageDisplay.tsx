@@ -10,47 +10,45 @@ import {
 } from "@/components/ui/carousel"
 import Image from "next/image"
 
-// TODO add appropriate alt tags
-
 const Slike = [
   {
     src: "/eu-projekti-images/1.png",
-    alt: "alt",
+    alt: "",
     w: 650,
     h: 488,
     divClassName: "col-span-3",
   },
   {
     src: "/eu-projekti-images/2.png",
-    alt: "alt",
+    alt: "",
     w: 650,
     h: 488,
     divClassName: "col-span-3",
   },
   {
     src: "/eu-projekti-images/3.png",
-    alt: "alt",
+    alt: "",
     w: 422,
     h: 622,
     divClassName: "col-span-2",
   },
   {
     src: "/eu-projekti-images/4.png",
-    alt: "alt",
+    alt: "",
     w: 871,
     h: 622,
     divClassName: "col-span-4",
   },
   {
     src: "/eu-projekti-images/5.png",
-    alt: "alt",
+    alt: "",
     w: 650,
     h: 487,
     divClassName: "col-span-3",
   },
   {
     src: "/eu-projekti-images/6.png",
-    alt: "alt",
+    alt: "",
     w: 650,
     h: 488,
     divClassName: "col-span-3",
