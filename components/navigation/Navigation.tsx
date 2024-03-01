@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react"
 import "./styles.css"
+// TODO: remove unused HamMenuIcon and XIcon from the codebase
 import { HamMenuIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons"
 import { XIcon } from "@/components/icons"
 import Logo from "@/public/logo.svg"
