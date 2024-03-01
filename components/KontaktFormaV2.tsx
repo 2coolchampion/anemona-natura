@@ -7,6 +7,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner"
 import ToastSuccess from "./toast/ToastSuccess"
+import ToastError from "./toast/ToastError"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
 import { useEffect } from "react"
 
@@ -54,11 +55,18 @@ const KontaktFormaV2 = () => {
         ? toast(<ToastSuccess message={responseData.success} />, {
             unstyled: true,
           })
-        : toast.error(responseData.error)
+        : toast(<ToastError message={responseData.error} />, { unstyled: true })
     } catch (error) {
       // Handle the fetching error
       console.error("There was a problem with the fetch operation:", error)
-      toast.error("Something went wrong. Please try again later.")
+      toast(
+        <ToastError
+          message={
+            "Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno preko e-maila/telefonom."
+          }
+        />,
+        { unstyled: true }
+      )
     }
 
     await new Promise((resolve) => setTimeout(resolve, 300))
