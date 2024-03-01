@@ -1,5 +1,7 @@
 "use client"
 
+// Form for smaller screens
+
 import { SendIcon } from "@/components/icons"
 import sendEmail from "@/actions/sendEmail"
 import { porukaSchema, Poruka } from "@/lib/types"
