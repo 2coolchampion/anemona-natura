@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react"
 import { toast } from "sonner"
 import ToastSuccess from "./toast/ToastSuccess"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
+import ToastError from "./toast/ToastError"
 
 const KontaktFroma = () => {
   const imeRef = useRef<HTMLInputElement | null>(null)
@@ -66,10 +67,16 @@ const KontaktFroma = () => {
             unstyled: true,
             position: "top-center",
           })
-        : toast.error(responseData.error)
+        : toast(<ToastError message={responseData.error} />, {
+            unstyled: true,
+            position: "top-center",
+          })
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error)
-      toast.error("Nešto nije u redu. Pokusajte ponovo kasnije.")
+      toast(
+        <ToastError message="Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno preko e-maila/telefonom." />,
+        { unstyled: true, position: "top-center" }
+      )
       // Handle the error
     }
 
