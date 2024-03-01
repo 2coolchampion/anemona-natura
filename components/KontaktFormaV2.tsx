@@ -2,7 +2,6 @@
 
 // Form for larger screens
 
-import { SendIcon } from "@/components/icons"
 import { porukaSchema, Poruka } from "@/lib/types"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -15,7 +14,6 @@ const KontaktFormaV2 = () => {
   const {
     handleSubmit,
     register,
-    setError,
     formState: { errors, isSubmitting },
   } = useForm<Poruka>({
     resolver: zodResolver(porukaSchema),

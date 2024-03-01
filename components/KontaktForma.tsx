@@ -2,8 +2,6 @@
 
 // Form for smaller screens
 
-import { SendIcon } from "@/components/icons"
-import sendEmail from "@/actions/sendEmail"
 import { porukaSchema, Poruka } from "@/lib/types"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -21,7 +19,6 @@ const KontaktFroma = () => {
   const {
     handleSubmit,
     register,
-    setError,
     setFocus,
     formState: { errors, isSubmitting },
   } = useForm<Poruka>({
@@ -77,27 +74,6 @@ const KontaktFroma = () => {
     }
 
     await new Promise((resolve) => setTimeout(resolve, 300))
-  }
-
-  // SERVER ACTIONS (NOT WORKING WITH NETLIFY)
-  // const clientSendEmail: SubmitHandler<Poruka> = async (data) => {
-  //   console.log("submitting form")
-  //   try {
-  //     const response = await sendEmail(data)
-  //     if (response?.error) {
-  //       setError("root", { message: response.error })
-  //     } else {
-  //       console.log(response)
-  //     }
-  //   } catch (error) {
-  //     console.error(error)
-  //   }
-  // }
-
-  const focusRef = (ref: React.RefObject<HTMLElement>) => {
-    if (ref && ref.current) {
-      ref.current.focus()
-    }
   }
 
   const { rive, RiveComponent } = useRive({
