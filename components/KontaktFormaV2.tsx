@@ -62,7 +62,7 @@ const KontaktFormaV2 = () => {
       toast(
         <ToastError
           message={
-            "Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno preko e-maila/telefonom."
+            "Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno putem e-maila/telefonom."
           }
         />,
         { unstyled: true }

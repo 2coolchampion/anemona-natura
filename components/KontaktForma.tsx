@@ -74,7 +74,7 @@ const KontaktFroma = () => {
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error)
       toast(
-        <ToastError message="Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno preko e-maila/telefonom." />,
+        <ToastError message="Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno putem e-maila/telefonom." />,
         { unstyled: true, position: "top-center" }
       )
       // Handle the error
