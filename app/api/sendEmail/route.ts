@@ -37,6 +37,8 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // TODO: Check if email is sucesfully sent and then send a messageReceivedConfirmation Email
+    // TODO: The {ime} is not required so make sure you take into account that subject might not have it so there needs to be dynamic subject line
     try {
       const data = await resend.emails.send({
         from: "Acme <onboarding@resend.dev>",
