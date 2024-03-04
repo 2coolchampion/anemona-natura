@@ -24,6 +24,9 @@ const messageReceivedConfirmation = () => {
     return `${day}/${month}/${year}`
   }
 
+  // TODO: Insert images
+  // TODO: Add spacing
+  // TODO: Broj telefona nije ispravan
   return (
     <Html>
       <Head />
