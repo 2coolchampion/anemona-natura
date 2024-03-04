@@ -1,7 +1,7 @@
 import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
-import MessageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
+import InitialMessage from "@/emails/initialMessage"
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
         to: "franvidicek@gmail.com",
         subject: `📬 Nova poruka - ${ime} - ${tel}`,
         reply_to: email as string,
-        react: MessageReceivedConfirmation({
+        react: InitialMessage({
           ime: ime,
           email: email,
           tel: tel,
