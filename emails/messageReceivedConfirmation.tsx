@@ -125,7 +125,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
               </Row>
               <Row>
                 <Text style={text} className="mt-8">
-                  {poruka}
+                  <div dangerouslySetInnerHTML={{ __html: poruka }} />
                 </Text>
               </Row>
             </Section>

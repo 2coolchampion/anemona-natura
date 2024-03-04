@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
     }
 
     const porukaTyped = porukaData as Poruka
+    const porukaWithLineBreaks = porukaTyped.poruka.replace(/\n/g, "<br>")
 
     const email = porukaTyped.email
     const ime = porukaTyped.ime
