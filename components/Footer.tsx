@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="mt-2 flex flex-col flex-wrap items-start font-light leading-6">
             <li className="text-background-light">
               <PersonIcon className="mr-2 inline-block h-4 w-4 fill-current" />
-              VL. Sabrina Hribar
+              Sabrina Hribar
             </li>
             <li className="text-background-light">
               {" "}
