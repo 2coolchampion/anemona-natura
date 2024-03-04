@@ -77,8 +77,8 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
       </Head>
       <Body>
         <Tailwind>
-          <Container className="bg-[#011e0e] px-8 py-4">
-            <Section className="text-white">
+          <Container>
+            <Section className="bg-[#011e0e] px-8 py-4 text-white">
               <Row>
                 <Column>
                   <Text style={text} className="mb-4 text-[#e7e4e1]">
@@ -104,9 +104,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 </Column>
               </Row>
             </Section>
-          </Container>
-          <Container className="bg-[#dcd7d2] px-8 pb-12 pt-8">
-            <Section>
+            <Section className="bg-[#dcd7d2] px-8 pb-12 pt-8">
               <Row>
                 <Column>
                   <Text
