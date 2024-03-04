@@ -33,7 +33,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
         {/* Inter font weight 400 - latin */}
         <Font
           fontFamily="Inter"
-          fallbackFontFamily="Helvetica"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
           webFont={{
             url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
             format: "woff2",
@@ -44,7 +44,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
         {/* Inter font weight 400 - latin-ext */}
         <Font
           fontFamily="Inter"
-          fallbackFontFamily="Helvetica"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
           webFont={{
             url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
             format: "woff2",
@@ -55,7 +55,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
         {/* Inter font weight 800 - latin */}
         <Font
           fontFamily="Inter"
-          fallbackFontFamily="Helvetica"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
           webFont={{
             url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
             format: "woff2",
@@ -66,7 +66,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
         {/* Inter font weight 800 - latin-ext */}
         <Font
           fontFamily="Inter"
-          fallbackFontFamily="Helvetica"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
           webFont={{
             url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
             format: "woff2",
