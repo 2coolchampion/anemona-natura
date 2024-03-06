@@ -28,7 +28,6 @@ const messageReceivedConfirmation = () => {
     : "http://localhost:3001" // Use the dev server port
 
   // TODO: Add spacing
-  // TODO: Broj telefona nije ispravan
   return (
     <Html>
       <Head />
@@ -72,11 +71,10 @@ const messageReceivedConfirmation = () => {
                   />
                 </Column>
                 <Column className="pl-8">
-                  <Text style={text}>
-                    Ovo je samo obavjest da smo zaprimili vašu poruku, odgovor
-                    stiže ćim nađemo vremena, ukoliko je hitno, nazovite na broj
-                    telefona:{" "}
-                    <span className="font-extrabold">084 382 312</span>
+                  <Text style={text} className="text-lg">
+                    Hvala Vam što ste nas kontaktirali. Ovim putem želimo
+                    potvrditi da smo uspješno primili Vašu poruku. Naš tim će
+                    obraditi Vaš upit i odgovoriti u najkraćem mogućem roku.{" "}
                   </Text>
                 </Column>
               </Row>
@@ -84,8 +82,8 @@ const messageReceivedConfirmation = () => {
             <Section className="bg-[#DCD7D2] px-8 py-4 text-[#011e0e]">
               <Row>
                 <Column>
-                  <Text style={text} className="text-2xl">
-                    Poruka
+                  <Text style={text} className="text-2xl font-semibold">
+                    Kopija Vaše Poruke:
                   </Text>
                 </Column>
                 <Column>
