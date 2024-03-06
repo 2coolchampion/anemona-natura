@@ -8,7 +8,6 @@ import {
   Row,
   Column,
   Container,
-  Preview,
   Img,
 } from "@react-email/components"
 import * as React from "react"
@@ -30,9 +29,6 @@ const messageReceivedConfirmation = () => {
   return (
     <Html>
       <Head />
-      <Preview>
-        Get your order summary, estimated delivery date and more
-      </Preview>
       <Body>
         <Tailwind>
           <Container>
