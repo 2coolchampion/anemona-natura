@@ -2,7 +2,6 @@ import {
   Body,
   Html,
   Head,
-  Font,
   Tailwind,
   Text,
   Section,
@@ -11,7 +10,6 @@ import {
   Container,
   Preview,
 } from "@react-email/components"
-import { Hepta_Slab } from "next/font/google"
 import * as React from "react"
 
 const messageReceivedConfirmation = () => {
