@@ -89,7 +89,10 @@ const messageReceivedConfirmation = () => {
                   </Text>
                 </Column>
                 <Column>
-                  <Section className="h-2 w-12 bg-[#011e0e]"></Section>
+                  <Section
+                    align="right"
+                    className="h-2 w-12 bg-[#011e0e]"
+                  ></Section>
                 </Column>
               </Row>
               <Text style={text}>
