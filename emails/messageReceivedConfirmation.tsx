@@ -27,7 +27,6 @@ const messageReceivedConfirmation = () => {
     ? "https://${process.env.URL}"
     : "http://localhost:3001" // Use the dev server port
 
-  // TODO: Add spacing
   return (
     <Html>
       <Head />
@@ -37,7 +36,7 @@ const messageReceivedConfirmation = () => {
       <Body>
         <Tailwind>
           <Container>
-            <Section className="bg-[#011e0e] px-8 py-4 text-[#e7e4e1]">
+            <Section className="bg-[#011e0e] px-14 py-6 text-[#e7e4e1]">
               <Row>
                 <Column>
                   <Img
@@ -52,7 +51,7 @@ const messageReceivedConfirmation = () => {
                 </Column>
               </Row>
             </Section>
-            <Section className="bg-[#066437] px-8 py-4 text-[#e7e4e1]">
+            <Section className="bg-[#066437] px-14 py-8 text-[#e7e4e1]">
               <Row>
                 <Column>
                   <Text style={text} className="text-3xl">
@@ -60,7 +59,7 @@ const messageReceivedConfirmation = () => {
                   </Text>
                 </Column>
               </Row>
-              <Row>
+              <Row className="mt-4">
                 <Column>
                   <Img
                     // src={`${baseUrl}/assets-email/check-email-optimized.png`}
@@ -70,7 +69,7 @@ const messageReceivedConfirmation = () => {
                     height="57"
                   />
                 </Column>
-                <Column className="pl-8">
+                <Column className="pl-10">
                   <Text style={text} className="text-lg">
                     Hvala Vam što ste nas kontaktirali. Ovim putem želimo
                     potvrditi da smo uspješno primili Vašu poruku. Naš tim će
@@ -79,7 +78,7 @@ const messageReceivedConfirmation = () => {
                 </Column>
               </Row>
             </Section>
-            <Section className="bg-[#DCD7D2] px-8 py-4 text-[#011e0e]">
+            <Section className="bg-[#DCD7D2] px-14 pb-12 pt-8 text-[#011e0e]">
               <Row>
                 <Column>
                   <Text style={text} className="text-2xl font-semibold">
@@ -93,7 +92,7 @@ const messageReceivedConfirmation = () => {
                   ></Section>
                 </Column>
               </Row>
-              <Text style={text}>
+              <Text style={text} className="mt-6">
                 Primjer poruke jedne velike s složne, koristeći puno ectended
                 latinskig znakova.
               </Text>
