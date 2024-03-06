@@ -9,6 +9,7 @@ import {
   Column,
   Container,
   Preview,
+  Img,
 } from "@react-email/components"
 import * as React from "react"
 
@@ -22,7 +23,10 @@ const messageReceivedConfirmation = () => {
     return `${day}/${month}/${year}`
   }
 
-  // TODO: Insert images
+  const baseUrl = process.env.URL
+    ? "https://${process.env.URL}"
+    : "http://localhost:3001" // Use the dev server port
+
   // TODO: Add spacing
   // TODO: Broj telefona nije ispravan
   return (
@@ -37,7 +41,12 @@ const messageReceivedConfirmation = () => {
             <Section className="bg-[#011e0e] px-8 py-4 text-[#e7e4e1]">
               <Row>
                 <Column>
-                  <Text style={text}>ANEMONA NATURA d.o.o.</Text>
+                  <Img
+                    src={`${baseUrl}/assets-email/logo-email.png`}
+                    alt="Anemona Natura Logo"
+                    width="173"
+                    height="38"
+                  />
                 </Column>
                 <Column align="right">
                   <Text style={text}>{getCurrentDateFormatted()}</Text>
@@ -54,7 +63,13 @@ const messageReceivedConfirmation = () => {
               </Row>
               <Row>
                 <Column>
-                  <Text style={text}>Check</Text>
+                  <Img
+                    // src={`${baseUrl}/assets-email/check-email-optimized.png`}
+                    src={`${baseUrl}/assets-email/check-email.png`}
+                    alt="Ikona kvačice"
+                    width="72"
+                    height="57"
+                  />
                 </Column>
                 <Column className="pl-8">
                   <Text style={text}>
