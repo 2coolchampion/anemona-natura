@@ -13,10 +13,6 @@ import {
 import * as React from "react"
 import { Poruka } from "../lib/types"
 
-const baseUrl = process.env.VERCEL_URL
-  ? "https://${process.env.VERCEL_URL}"
-  : "http://localhost:3000"
-
 const Email = ({ ime, email, tel, poruka }: Poruka) => {
   const getCurrentDateFormatted = () => {
     const today = new Date()
