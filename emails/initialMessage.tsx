@@ -78,7 +78,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
       <Body>
         <Tailwind>
           <Container>
-            <Section className="bg-[#011e0e] px-8 py-4 text-white">
+            <Section className="bg-[#011e0e] px-14 py-8 text-white">
               <Row>
                 <Column>
                   <Text style={text} className="mb-4 text-[#e7e4e1]">
@@ -104,12 +104,12 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 </Column>
               </Row>
             </Section>
-            <Section className="bg-[#dcd7d2] px-8 pb-12 pt-8">
+            <Section className="bg-[#dcd7d2] px-14 pb-12 pt-8">
               <Row>
                 <Column>
                   <Text
                     style={text}
-                    className="text-2xl font-extrabold text-[#011e0e]"
+                    className="text-2xl font-semibold text-[#011e0e]"
                   >
                     Poruka:
                   </Text>
@@ -122,7 +122,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 </Column>
               </Row>
               <Row>
-                <Text style={text} className="mt-8">
+                <Text style={text} className="mt-6">
                   <div dangerouslySetInnerHTML={{ __html: poruka }} />
                 </Text>
               </Row>
