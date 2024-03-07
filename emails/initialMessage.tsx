@@ -24,7 +24,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
   }
 
   const baseUrl = process.env.URL
-    ? `https://${process.env.URL}`
+    ? `${process.env.URL}`
     : "http://localhost:3001" // Use the dev server port
 
   return (
