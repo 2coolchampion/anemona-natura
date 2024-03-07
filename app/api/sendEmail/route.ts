@@ -51,24 +51,23 @@ export async function POST(req: NextRequest) {
           poruka: porukaWithLineBreaks,
         }),
       })
-      setTimeout(async () => {
-        if (responseData.data) {
-          const emailData = await resend.emails.get(responseData.data.id)
-          if (emailData.data) {
-            if (emailData.data.last_event === "delivered") {
-              // send a confirmation email
-              const confirmationData = await resend.emails.send({
-                from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
-                to: email,
-                subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
-                react: messageReceivedConfirmation({
-                  poruka: porukaWithLineBreaks,
-                }),
-              })
-            }
+
+      if (responseData.data) {
+        const emailData = await resend.emails.get(responseData.data.id)
+        if (emailData.data) {
+          if (emailData.data.last_event === "delivered") {
+            // send a confirmation email
+            const confirmationData = await resend.emails.send({
+              from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
+              to: email,
+              subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
+              react: messageReceivedConfirmation({
+                poruka: porukaWithLineBreaks,
+              }),
+            })
           }
         }
-      }, 5500)
+      }
 
       return {
         success: "Poruka je uspješno poslana!",
