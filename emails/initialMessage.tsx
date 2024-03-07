@@ -9,6 +9,8 @@ import {
   Row,
   Column,
   Container,
+  Link,
+  Img,
 } from "@react-email/components"
 import * as React from "react"
 import { Poruka } from "../lib/types"
@@ -22,6 +24,10 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
 
     return `${day}/${month}/${year}`
   }
+
+  const baseUrl = process.env.URL
+    ? `${process.env.URL}`
+    : "http://localhost:3001" // Use the dev server port
 
   return (
     <Html lang="hr">
@@ -76,6 +82,17 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
           <Container>
             <Section className="bg-[#011e0e] px-14 py-8 text-white">
               <Row>
+                {" "}
+                <Link href="https://anemona-natura.hr">
+                  <Img
+                    src={`${baseUrl}/assets-email/logo-email.png`}
+                    alt="Anemona Natura Logo"
+                    width="173"
+                    height="38"
+                  />
+                </Link>
+              </Row>
+              <Row className="mt-4">
                 <Column>
                   <Text style={text} className="mb-4 text-[#e7e4e1]">
                     {email}
