@@ -97,7 +97,7 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
                 </Column>
               </Row>
               <Text style={text} className="mt-6">
-                {poruka}
+                <div dangerouslySetInnerHTML={{ __html: poruka }} />
               </Text>
             </Section>
             <Section className="bg-[#EBE8E6] px-14 text-[#011e0e]">
