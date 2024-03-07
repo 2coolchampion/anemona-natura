@@ -2,6 +2,7 @@ import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
 import InitialMessage from "@/emails/initialMessage"
+import messageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
@@ -37,7 +38,6 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // TODO: Check if email is sucesfully sent and then send a messageReceivedConfirmation Email
     try {
       const data = await resend.emails.send({
         from: "Acme <onboarding@resend.dev>",
@@ -53,6 +53,28 @@ export async function POST(req: NextRequest) {
           poruka: porukaWithLineBreaks,
         }),
       })
+      setTimeout(async () => {
+        if (responseData.data) {
+          const emailData = await resend.emails.get(responseData.data.id)
+          if (emailData.data) {
+            if (emailData.data.last_event === "delivered") {
+              // send a confirmation email
+              const confirmationData = await resend.emails.send({
+                from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
+                to: email,
+                subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
+                react: messageReceivedConfirmation({
+                  poruka: porukaWithLineBreaks,
+                }),
+              })
+              console.log(
+                "Confirmation email sent with this id: ",
+                confirmationData
+              )
+            }
+          }
+        }
+      }, 5000)
 
       return {
         success: "Poruka je uspješno poslana!",
