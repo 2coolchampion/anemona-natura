@@ -109,7 +109,7 @@ const KontaktFormaV2 = () => {
             htmlFor="email"
             className="font-semibold text-white hover:cursor-pointer"
           >
-            EMAIL
+            EMAIL*
           </label>
           <input
             {...register("email")}
@@ -142,7 +142,7 @@ const KontaktFormaV2 = () => {
         </div>
         <div className="felx felx-col relative">
           <label htmlFor="poruka" className="font-semibold text-white">
-            PORUKA
+            PORUKA*
           </label>
           <textarea
             {...register("poruka")}

@@ -142,7 +142,7 @@ const KontaktFroma = () => {
             className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
             onClick={() => setFocus("email")}
           >
-            EMAIL
+            EMAIL*
           </label>
         </div>
         <div className="felx felx-col relative mt-8">
@@ -175,7 +175,7 @@ const KontaktFroma = () => {
             className=" relative -top-2 cursor-pointer font-semibold"
             onClick={() => setFocus("poruka")}
           >
-            PORUKA
+            PORUKA*
           </label>
           <textarea
             {...porukaRest}
