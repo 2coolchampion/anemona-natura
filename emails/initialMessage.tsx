@@ -88,10 +88,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                   </Text>
                 </Column>
                 <Column style={tableCell} align="right">
-                  <Text
-                    style={text}
-                    className={`${ime ? "mb-4" : "mb-0"} text-[#e7e4e1]`}
-                  >
+                  <Text style={text} className="mb-4 text-[#e7e4e1]">
                     {getCurrentDateFormatted()}
                   </Text>
                   <Text style={text} className="text-sm text-[#e7e4e1]">
