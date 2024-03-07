@@ -2,7 +2,7 @@ import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
 import InitialMessage from "@/emails/initialMessage"
-import messageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
+// import messageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
@@ -52,22 +52,22 @@ export async function POST(req: NextRequest) {
         }),
       })
 
-      if (responseData.data) {
-        const emailData = await resend.emails.get(responseData.data.id)
-        if (emailData.data) {
-          if (emailData.data.last_event === "delivered") {
-            // send a confirmation email
-            const confirmationData = await resend.emails.send({
-              from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
-              to: email,
-              subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
-              react: messageReceivedConfirmation({
-                poruka: porukaWithLineBreaks,
-              }),
-            })
-          }
-        }
-      }
+      // if (responseData.data) {
+      //   const emailData = await resend.emails.get(responseData.data.id)
+      //   if (emailData.data) {
+      //     if (emailData.data.last_event === "delivered") {
+      //       // send a confirmation email
+      //       const confirmationData = await resend.emails.send({
+      //         from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
+      //         to: email,
+      //         subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
+      //         react: messageReceivedConfirmation({
+      //           poruka: porukaWithLineBreaks,
+      //         }),
+      //       })
+      //     }
+      //   }
+      // }
 
       return {
         success: "Poruka je uspješno poslana!",
