@@ -68,7 +68,7 @@ export async function POST(req: NextRequest) {
             }
           }
         }
-      }, 10000)
+      }, 2500)
 
       return {
         success: "Poruka je uspješno poslana!",
