@@ -23,10 +23,6 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
     return `${day}/${month}/${year}`
   }
 
-  const baseUrl = process.env.URL
-    ? `${process.env.URL}`
-    : "http://localhost:3001" // Use the dev server port
-
   return (
     <Html lang="hr">
       <Head>
@@ -84,7 +80,6 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                   <Text style={text} className="mb-4 text-[#e7e4e1]">
                     {email}
                   </Text>
-                  <Text>{baseUrl}</Text>
                   <Text
                     style={text}
                     className="text-xl font-extrabold text-[#e7e4e1]"
