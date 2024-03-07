@@ -100,6 +100,12 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
                 {poruka}
               </Text>
             </Section>
+            <Section className="bg-[#EBE8E6] px-14 text-[#011e0e]">
+              <Text
+                style={text}
+                className="my-2 text-center text-xs font-semibold opacity-80"
+              >
+                Molimo ne odgovarajte na ovaj email
               </Text>
             </Section>
           </Container>
