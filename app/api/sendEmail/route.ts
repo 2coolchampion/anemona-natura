@@ -39,8 +39,8 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      const data = await resend.emails.send({
-        from: "Acme <onboarding@resend.dev>",
+      const responseData = await resend.emails.send({
+        from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
         to: "franvidicek@gmail.com",
         subject: ime
           ? `📬 Nova poruka - ${ime} - ${tel}`
