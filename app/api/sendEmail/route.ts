@@ -42,9 +42,7 @@ export async function POST(req: NextRequest) {
       const responseData = await resend.emails.send({
         from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
         to: "franvidicek@gmail.com",
-        subject: ime
-          ? `📬 Nova poruka - ${ime} - ${tel}`
-          : `📬 Nova poruka - ${email} - ${tel}`,
+        subject: ime ? `📬 Nova poruka - ${ime}` : `📬 Nova poruka - ${email}`,
         reply_to: email as string,
         react: InitialMessage({
           ime: ime,
