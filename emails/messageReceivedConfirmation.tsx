@@ -78,6 +78,7 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
                     Hvala Vam što ste nas kontaktirali. Ovim putem želimo
                     potvrditi da smo uspješno primili Vašu poruku. Naš tim će
                     obraditi Vaš upit i odgovoriti u najkraćem mogućem roku.{" "}
+                    base url is: {baseUrl}
                   </Text>
                 </Column>
               </Row>
