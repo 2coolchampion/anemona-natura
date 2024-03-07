@@ -10,6 +10,7 @@ import {
   Column,
   Container,
   Img,
+  Link,
 } from "@react-email/components"
 import * as React from "react"
 
@@ -40,12 +41,14 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
             <Section className="bg-[#011e0e] px-14 py-6 text-[#e7e4e1]">
               <Row>
                 <Column>
-                  <Img
-                    src={`${baseUrl}/assets-email/logo-email.png`}
-                    alt="Anemona Natura Logo"
-                    width="173"
-                    height="38"
-                  />
+                  <Link href="https://anemona-natura.hr">
+                    <Img
+                      src={`${baseUrl}/assets-email/logo-email.png`}
+                      alt="Anemona Natura Logo"
+                      width="173"
+                      height="38"
+                    />
+                  </Link>
                 </Column>
                 <Column align="right">
                   <Text style={text}>{getCurrentDateFormatted()}</Text>
