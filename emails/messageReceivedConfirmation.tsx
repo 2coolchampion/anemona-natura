@@ -1,3 +1,4 @@
+import { Poruka } from "@/lib/types"
 import {
   Body,
   Html,
@@ -12,7 +13,11 @@ import {
 } from "@react-email/components"
 import * as React from "react"
 
-const messageReceivedConfirmation = () => {
+type PorukaProps = {
+  poruka: string
+}
+
+const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
   const getCurrentDateFormatted = () => {
     const today = new Date()
     const day = String(today.getDate()).padStart(2, "0") // Ensures two digits
@@ -89,8 +94,9 @@ const messageReceivedConfirmation = () => {
                 </Column>
               </Row>
               <Text style={text} className="mt-6">
-                Primjer poruke jedne velike s složne, koristeći puno ectended
-                latinskig znakova.
+                {poruka}
+              </Text>
+            </Section>
               </Text>
             </Section>
           </Container>
