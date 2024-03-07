@@ -67,10 +67,6 @@ export async function POST(req: NextRequest) {
                   poruka: porukaWithLineBreaks,
                 }),
               })
-              console.log(
-                "Confirmation email sent with this id: ",
-                confirmationData
-              )
             }
           }
         }
