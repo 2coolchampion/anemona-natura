@@ -28,8 +28,9 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
     return `${day}/${month}/${year}`
   }
 
+  // Can't figure out how this bullshit works, it prints this when sent from netlify env: https://${process.env.URL}
   const baseUrl = process.env.URL
-    ? "https://${process.env.URL}"
+    ? `https://${process.env.URL}`
     : "http://localhost:3001" // Use the dev server port
 
   return (
