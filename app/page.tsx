@@ -1,7 +1,4 @@
-import ImageCropTool from "@/components/ImageCropTool"
-import ContactDesktop from "@/components/ContactDesktop"
 import SadnjaImage from "../public/sadnja.png"
-import Home1 from "@/components/Home1"
 import "./styles.css"
 import KontaktSection from "@/components/KontaktSection"
 import Usluge from "@/components/Usluge"
