@@ -32,7 +32,7 @@ const UslugeCard = ({
         cardType === "small" ? "col-span-1" : "col-span-1 lg:col-span-2"
       }`}
     >
-      <h4 className="z-20 mt-8 text-xl font-bold">{nazivUsluge}</h4>
+      <h3 className="z-20 mt-8 text-xl font-bold">{nazivUsluge}</h3>
       <button className="absolute inset-x-auto bottom-6 z-20">
         Saznaj više...
       </button>
