@@ -106,6 +106,7 @@ const Nav = () => {
               <button
                 onClick={() => setIsOpened(!isOpened)}
                 className="flex items-center justify-center md:hidden"
+                aria-label="Toggle menu"
               >
                 <RiveComponent className="h-16 w-24" />
               </button>
