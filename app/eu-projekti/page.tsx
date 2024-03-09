@@ -5,6 +5,11 @@ import Croatia from "/public/partners-images/croatia.png"
 import RuralniRazvoj from "/public/partners-images/ruralniRazvoj.png"
 import EuInvestmentFunds from "/public/partners-images/euInvestmentFunds.png"
 import Eu from "/public/partners-images/eu.png"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "EU Projekti",
+}
 
 const EUProjekti = () => {
   return (
