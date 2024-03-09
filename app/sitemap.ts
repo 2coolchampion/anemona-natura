@@ -1,9 +1,7 @@
 import { MetadataRoute } from "next"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseurl = process.env.url
-    ? `${process.env.url}`
-    : "http://localhost:3000" // use the dev server port
+  const baseurl = process.env.URL
 
   return [
     {
