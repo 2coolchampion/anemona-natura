@@ -91,7 +91,11 @@ const Nav = () => {
           <div className="w-full bg-background-light">
             <nav className="nav mx-auto flex h-16 w-full justify-between px-4 py-2 2xl:max-w-[1535px]">
               {/* LOGO */}
-              <Link href={"/"} className="flex items-center justify-center">
+              <Link
+                href={"/"}
+                aria-label="Naslovnica"
+                className="flex items-center justify-center"
+              >
                 <Logo className="w-40" />
               </Link>
               {/* NAVIGATION LINKS - MD */}
