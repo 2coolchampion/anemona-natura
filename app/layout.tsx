@@ -8,9 +8,12 @@ import { Toaster } from "sonner"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Anemona Natura",
+  title: {
+    default: "Anemona Natura - Stručne usluge i savjetovanje u šumarstvu",
+    template: "%s - Anemona Natura",
+  },
   description:
-    "Anemona Natura d.o.o. je tvrtka koja pruža usluge i savjetovanje u šumarstvu. Specijalizirani su za doznaku i otpremu drvnih sortimenata, EU fondove, procjenu vrijednosti šume i šumskog zemljišta, izradu lovno gospodarskih planova i šumsko gospodarskih planova te otkup drvnih sortimenata. Posjetite nasu web stranicu i saznajte više!",
+    "Anemona Natura d.o.o. nudi usluge u šumarstvu uključujući doznaku i otpremu drvnih sortimenata, procjenu vrijednosti šume, EU fondove, i lovno gospodarske planove. Djelujemo u cijeloj Hrvatskoj sa sjedištem u Karlovcu.",
 }
 
 export default function RootLayout({
