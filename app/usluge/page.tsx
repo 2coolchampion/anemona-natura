@@ -1,4 +1,9 @@
+import { Metadata } from "next"
 import MainWrapper from "@/components/ui/main"
+
+export const metadata: Metadata = {
+  title: "Usluge",
+}
 
 const Usluge = () => {
   return (
