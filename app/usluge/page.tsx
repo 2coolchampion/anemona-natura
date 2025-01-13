@@ -172,7 +172,7 @@ const Usluge = () => {
               height={300}
               className="rounded-lg object-cover"
             />
-            <div className="right-[-18.5rem] top-6 lg:absolute">
+            <div className="right-[-18rem] top-6 lg:absolute">
               <p>Za pružanje usluge koristimo:</p>
               <ul
                 className="mt-2 list-disc"
@@ -188,7 +188,7 @@ const Usluge = () => {
             </div>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
             <Image
               src="/usluge/vangabaritetni-teret/kamion-3.jpeg"
               alt="Kamion u transportu"
