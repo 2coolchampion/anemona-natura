@@ -32,7 +32,7 @@ const Images: ImageObject[] = [
     imgSrc: "/usluge/map.png",
     imgAlt: "Osoba pokazuje kemijskom olovkom po karti",
     cardType: "big",
-    route: "/usluge/#procjenja-vrijednosti-sume-i-sumskog-zemljista",
+    route: "/usluge/#procjena-vrijednosti-sume-i-sumskog-zemljista",
   },
   {
     usluga: "Izrada lovno gospodarskih planova",
