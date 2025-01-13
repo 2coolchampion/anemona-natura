@@ -55,6 +55,13 @@ const Images: ImageObject[] = [
     cardType: "big",
     route: "/usluge/#otkup-drvnih-sortimenata",
   },
+  {
+    usluga: "Prijevoz vangabaritnog tereta",
+    imgSrc: "/usluge/vangabaritetni-teret/kamion-1.jpeg",
+    imgAlt: "Naslagana narezana drva",
+    cardType: "huge",
+    route: "/usluge/#otkup-drvnih-sortimenata",
+  },
 ]
 
 const Usluge = () => {
