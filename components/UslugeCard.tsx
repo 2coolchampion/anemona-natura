@@ -30,7 +30,7 @@ const UslugeCard = ({
         router.push(`${route}`)
       }}
       className={cn(
-        "group relative z-0 flex h-56 cursor-pointer flex-col items-center overflow-hidden rounded-lg bg-green-dark text-center text-white after:absolute after:inset-0 after:bg-black/10 xl:h-56",
+        "group relative z-0 flex h-56 cursor-pointer flex-col items-center overflow-hidden rounded-lg bg-green-dark text-center text-white after:absolute after:inset-0 after:bg-black/10",
         {
           "col-span-1": cardType === "small",
           "col-span-1 lg:col-span-2": cardType === "big",
