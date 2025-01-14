@@ -32,7 +32,7 @@ const Images: ImageObject[] = [
     imgSrc: "/usluge/map.png",
     imgAlt: "Osoba pokazuje kemijskom olovkom po karti",
     cardType: "big",
-    route: "/usluge/#procjenja-vrijednosti-sume-i-sumskog-zemljista",
+    route: "/usluge/#procjena-vrijednosti-sume-i-sumskog-zemljista",
   },
   {
     usluga: "Izrada lovno gospodarskih planova",
@@ -53,6 +53,13 @@ const Images: ImageObject[] = [
     imgSrc: "/usluge/timber_assortments.png",
     imgAlt: "Naslagana narezana drva",
     cardType: "big",
+    route: "/usluge/#otkup-drvnih-sortimenata",
+  },
+  {
+    usluga: "Prijevoz vangabaritnog tereta",
+    imgSrc: "/usluge/vangabaritetni-teret/kamion-1.jpeg",
+    imgAlt: "Naslagana narezana drva",
+    cardType: "huge",
     route: "/usluge/#otkup-drvnih-sortimenata",
   },
 ]
