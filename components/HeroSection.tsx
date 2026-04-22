@@ -103,7 +103,9 @@ const HeroSection = () => {
         />
       </picture>
       <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
-        <h1 className="header-text relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
+        <h1 className="relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
+          <span className="sm:hidden">SAVJETOVANJE I USLUGE U ŠUMARSTVU</span>
+          <span className="hidden sm:inline">SPECIJALNE USLUGE I SAVJETOVANJE U ŠUMARSTVU</span>
           {/* <Glow className="pointer-events-none top-16 z-10 hidden scale-[235%] opacity-30 lg:absolute lg:block" /> */}
           <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>

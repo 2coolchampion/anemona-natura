@@ -1,5 +1,4 @@
 import SadnjaImage from "../public/sadnja.png"
-import "./styles.css"
 import KontaktSection from "@/components/KontaktSection"
 import Usluge from "@/components/Usluge"
 import Croatia from "../public/partners-images/croatia.png"
