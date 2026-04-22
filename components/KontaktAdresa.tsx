@@ -2,7 +2,7 @@ import { PersonIcon, PhoneIcon, PinIcon, MailIcon } from "@/components/icons"
 
 const KontaktAdresa = () => {
   return (
-    <div className="mt-16 flex flex-col items-start justify-start space-y-4 text-background-light">
+    <div className="mt-16 flex flex-col items-start justify-start space-y-4 text-background-light lg:mt-0 lg:h-full lg:justify-center">
       <div className="flex w-full items-start gap-4 p-4 sm:px-0">
         <PinIcon className="h-9 self-start lg:text-green-super-light" />
         <div>
