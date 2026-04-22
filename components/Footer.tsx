@@ -1,5 +1,6 @@
 import { PersonIcon, PhoneIcon, MailIcon } from "./icons"
 import Link from "next/link"
+import CurrentYear from "./CurrentYear"
 const Footer = () => {
   return (
     <footer className="relative flex h-12 w-full flex-col justify-center bg-green-dark text-center text-xs text-background-light lg:h-64 lg:py-8">
@@ -47,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="absolute bottom-4 left-0 right-0 mx-auto text-center font-light lg:bottom-5">
-        © {new Date().getFullYear()} Anemona Natura d.o.o.
+        © <CurrentYear /> Anemona Natura d.o.o.
       </p>
     </footer>
   )
