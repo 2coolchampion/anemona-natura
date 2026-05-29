@@ -1,5 +1,5 @@
 import SadnjaImage from "../public/sadnja.png"
-import KontaktSection from "@/components/KontaktSection"
+import ContactSectionMobile from "@/components/ContactSectionMobile"
 import Usluge from "@/components/Usluge"
 import Croatia from "../public/partners-images/croatia.png"
 import Eu from "../public/partners-images/eu.png"
@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <MainWrapper>
         <HeroSection />
-        <KontaktSection className="relative w-screen rounded-lg bg-background-green-light lg:hidden" />
+        <ContactSectionMobile className="relative w-screen rounded-lg bg-background-green-light lg:hidden" />
         {/* <KontaktSectionXl className="hidden w-screen rounded-lg bg-indigo-200 lg:absolute lg:top-[27rem] lg:flex lg:min-w-[1023px] lg:max-w-[80vw] lg:items-center lg:justify-around lg:pt-16 2xl:right-16 2xl:top-28 2xl:w-[1024px]" /> */}
         <Usluge />
         <EUFondovi />

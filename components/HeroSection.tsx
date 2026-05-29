@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { ArrowDownIcon } from "@/components/icons"
-import KontaktFormaLG from "./KontaktFormaLG"
+import ContactSectionHero from "./ContactSectionHero"
 
 import road_480_avif from "@/public/hero-image-optimized/road-480.avif"
 import road_640_avif from "@/public/hero-image-optimized/road-640.avif"
@@ -105,7 +105,9 @@ const HeroSection = () => {
       <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
           <span className="sm:hidden">SAVJETOVANJE I USLUGE U ŠUMARSTVU</span>
-          <span className="hidden sm:inline">SPECIJALNE USLUGE I SAVJETOVANJE U ŠUMARSTVU</span>
+          <span className="hidden sm:inline">
+            SPECIJALNE USLUGE I SAVJETOVANJE U ŠUMARSTVU
+          </span>
           {/* <Glow className="pointer-events-none top-16 z-10 hidden scale-[235%] opacity-30 lg:absolute lg:block" /> */}
           <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
         </h1>
@@ -121,7 +123,7 @@ const HeroSection = () => {
           </p>
         </a>
       </div>
-      <KontaktFormaLG />
+      <ContactSectionHero />
     </section>
   )
 }

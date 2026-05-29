@@ -11,7 +11,7 @@ import ToastError from "./toast/ToastError"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
 import { useEffect } from "react"
 
-const KontaktFormaV2 = () => {
+const ContactFormHero = () => {
   const {
     handleSubmit,
     register,
@@ -171,4 +171,4 @@ const KontaktFormaV2 = () => {
   )
 }
 
-export default KontaktFormaV2
+export default ContactFormHero

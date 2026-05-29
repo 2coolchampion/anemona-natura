@@ -11,7 +11,7 @@ import ToastSuccess from "./toast/ToastSuccess"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
 import ToastError from "./toast/ToastError"
 
-const KontaktFroma = () => {
+const ContactFormMobile = () => {
   const imeRef = useRef<HTMLInputElement | null>(null)
   const emailRef = useRef<HTMLInputElement | null>(null)
   const telRef = useRef<HTMLInputElement | null>(null)
@@ -210,4 +210,4 @@ const KontaktFroma = () => {
   )
 }
 
-export default KontaktFroma
+export default ContactFormMobile
