@@ -44,6 +44,7 @@ Sve detaljne informacije o uslugama, EU projektima i pratećim materijalima nala
 
 * **[Usluge (services.md)](services.md):** Cjelokupan popis i opis svih usluga u šumarstvu i cestovnom prijevozu.
 * **[EU Projekti (eu-projects.md)](eu-projects.md):** Informacije o projektima iz Europskih fondova (podmjera 8.5.1).
+* **[Koncepti i Varijacije Dizajna (design-ideas.md)](design-ideas.md):** Različite ideje i varijacije dizajna za hero sekciju, usluge, kontakt formu i integraciju EU projekata.
 * **[Logotipi i Slikovni Materijali (Direktorij: logos/)](logos/):**
   * [Zastava Republike Hrvatske (logos/croatia.png)](logos/croatia.png)
   * [Zastava Europske Unije (logos/eu.png)](logos/eu.png)
