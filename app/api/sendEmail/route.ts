@@ -68,6 +68,7 @@ export async function POST(req: NextRequest) {
         const { error: confirmationError } = await resend.emails.send({
           from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
           to: email,
+          reply_to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
           subject: "Zaprimili smo Vaš upit - Anemona Natura d.o.o.",
           react: MessageReceivedConfirmation({
             ime: ime,
