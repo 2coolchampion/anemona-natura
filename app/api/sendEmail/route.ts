@@ -7,7 +7,7 @@ import InitialMessage from "@/emails/initialMessage"
 export async function POST(req: NextRequest) {
   const body = await req.json()
 
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const resend = new Resend(process.env.RESEND_API_KEY || process.env.RESEND_API)
 
   const sendEmail = async (porukaData: unknown) => {
     // server-side validation
@@ -39,7 +39,8 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      const responseData = await resend.emails.send({
+      console.log("Attempting to send email via Resend to:", process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com")
+      const { data, error } = await resend.emails.send({
         from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
         to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
         subject: ime ? `📬 Nova poruka - ${ime}` : `📬 Nova poruka - ${email}`,
@@ -52,30 +53,21 @@ export async function POST(req: NextRequest) {
         }),
       })
 
-      // if (responseData.data) {
-      //   const emailData = await resend.emails.get(responseData.data.id)
-      //   if (emailData.data) {
-      //     if (emailData.data.last_event === "delivered") {
-      //       // send a confirmation email
-      //       const confirmationData = await resend.emails.send({
-      //         from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
-      //         to: email,
-      //         subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
-      //         react: messageReceivedConfirmation({
-      //           poruka: porukaWithLineBreaks,
-      //         }),
-      //       })
-      //     }
-      //   }
-      // }
+      if (error) {
+        console.error("Resend API Error details:", error)
+        return {
+          error: `Resend API Error: ${error.message} (${error.name})`,
+        }
+      }
 
+      console.log("Email sent successfully. ID:", data?.id)
       return {
         success: "Poruka je uspješno poslana!",
       }
-    } catch (error) {
-      console.log(error)
+    } catch (error: any) {
+      console.error("Exception caught in sendEmail route handler:", error)
       return {
-        error: "Došlo je do greške prilikom slanja poruke!",
+        error: `Exception: ${error?.message || error}`,
       }
     }
   }
