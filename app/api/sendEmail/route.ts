@@ -2,7 +2,7 @@ import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
 import InitialMessage from "@/emails/initialMessage"
-// import messageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
+import MessageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
@@ -61,8 +61,33 @@ export async function POST(req: NextRequest) {
       }
 
       console.log("Email sent successfully. ID:", data?.id)
+
+      // Send confirmation email to the visitor
+      try {
+        console.log("Attempting to send confirmation email to visitor:", email)
+        const { error: confirmationError } = await resend.emails.send({
+          from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
+          to: email,
+          subject: "Zaprimili smo Vaš upit - Anemona Natura d.o.o.",
+          react: MessageReceivedConfirmation({
+            ime: ime,
+            email: email,
+            tel: tel,
+            poruka: porukaWithLineBreaks,
+          }),
+        })
+
+        if (confirmationError) {
+          console.error("Failed to send visitor confirmation email:", confirmationError)
+        } else {
+          console.log("Visitor confirmation email sent successfully.")
+        }
+      } catch (confirmEx) {
+        console.error("Exception thrown when sending visitor confirmation:", confirmEx)
+      }
+
       return {
-        success: "Poruka je uspješno poslana!",
+        success: `Poruka je uspješno poslana! Poslali smo potvrdu na ${email}. Ako je ne vidite, provjerite i mapu s neželjenom poštom (Spam).`,
       }
     } catch (error: any) {
       console.error("Exception caught in sendEmail route handler:", error)
