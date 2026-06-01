@@ -138,8 +138,8 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
               <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53] mb-2">
                 Sadržaj poruke
               </Text>
-              <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb]">
-                <Text className="m-0 text-sm leading-relaxed text-[#374151]">
+              <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb] overflow-hidden" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
+                <Text className="m-0 text-sm leading-relaxed text-[#374151]" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
                   <div dangerouslySetInnerHTML={{ __html: poruka }} />
                 </Text>
               </Section>
