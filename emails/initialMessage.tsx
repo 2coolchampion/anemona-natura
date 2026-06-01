@@ -22,12 +22,11 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
     const month = String(today.getMonth() + 1).padStart(2, "0") // Adds 1 because months are 0-indexed, and ensures two digits
     const year = today.getFullYear()
 
-    return `${day}/${month}/${year}`
+    return `${day}.${month}.${year}.`
   }
 
-  const baseUrl = process.env.URL
-    ? `${process.env.URL}`
-    : "http://localhost:3001" // Use the dev server port
+  // Use the live production URL for the logo so it renders correctly even when testing locally
+  const baseUrl = "https://anemona-natura.hr"
 
   return (
     <Html lang="hr">
@@ -43,7 +42,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
           fontWeight={400}
           fontStyle="normal"
         />
-        {/* Inter font weight 400 - latin-ext */}
+        {/* Inter font weight 600 - latin-ext */}
         <Font
           fontFamily="Inter"
           fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
@@ -51,91 +50,111 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
             url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
             format: "woff2",
           }}
-          fontWeight={400}
-          fontStyle="normal"
-        />
-        {/* Inter font weight 800 - latin */}
-        <Font
-          fontFamily="Inter"
-          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
-          webFont={{
-            url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
-            format: "woff2",
-          }}
-          fontWeight={800}
-          fontStyle="normal"
-        />
-        {/* Inter font weight 800 - latin-ext */}
-        <Font
-          fontFamily="Inter"
-          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
-          webFont={{
-            url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
-            format: "woff2",
-          }}
-          fontWeight={800}
+          fontWeight={600}
           fontStyle="normal"
         />
       </Head>
-      <Body>
+      <Body className="bg-[#f4f6f4] py-10 font-sans">
         <Tailwind>
-          <Container>
-            <Section className="bg-[#011e0e] px-14 py-8 text-white">
+          <Container className="mx-auto max-w-[600px] overflow-hidden rounded-lg border border-[#e0e4e0] bg-white shadow-sm">
+            {/* Logo and Header Section */}
+            <Section className="bg-[#012c14] px-10 py-8">
               <Row>
-                {" "}
-                <Link href="https://anemona-natura.hr">
-                  <Img
-                    src={`${baseUrl}/assets-email/logo-email.png`}
-                    alt="Anemona Natura Logo"
-                    width="173"
-                    height="38"
-                  />
-                </Link>
-              </Row>
-              <Row className="mt-4">
                 <Column>
-                  <Text style={text} className="mb-4 text-[#e7e4e1]">
-                    {email}
-                  </Text>
-                  <Text
-                    style={text}
-                    className="text-xl font-extrabold text-[#e7e4e1]"
-                  >
-                    {tel}
-                  </Text>
+                  <Link href="https://anemona-natura.hr">
+                    <Img
+                      src={`${baseUrl}/assets-email/logo-email.png`}
+                      alt="Anemona Natura Logo"
+                      width="150"
+                      height="33"
+                      className="block"
+                    />
+                  </Link>
                 </Column>
-                <Column style={tableCell} align="right">
-                  <Text style={text} className="mb-4 text-[#e7e4e1]">
-                    {getCurrentDateFormatted()}
-                  </Text>
-                  <Text style={text} className="text-sm text-[#e7e4e1]">
-                    {ime}
+                <Column align="right">
+                  <Text className="m-0 text-xs font-semibold uppercase tracking-wider text-[#e7e4e1]">
+                    Novi Upit
                   </Text>
                 </Column>
               </Row>
             </Section>
-            <Section className="bg-[#dcd7d2] px-14 pb-12 pt-8">
-              <Row>
-                <Column>
-                  <Text
-                    style={text}
-                    className="text-2xl font-semibold text-[#011e0e]"
-                  >
-                    Poruka:
-                  </Text>
-                </Column>
-                <Column>
-                  <Section
-                    align="right"
-                    className="h-2 w-12 bg-[#011e0e]"
-                  ></Section>
-                </Column>
-              </Row>
-              <Row>
-                <Text style={text} className="mt-6">
+
+            {/* Title / Hero */}
+            <Section className="px-10 pt-6 pb-2">
+              <Text className="m-0 text-2xl font-bold text-[#012c14]">
+                Primljena je nova poruka
+              </Text>
+              <Text className="m-0 mt-1 text-sm text-[#4b5563]">
+                Korisnik je poslao poruku preko kontakt obrasca na web stranici.
+              </Text>
+            </Section>
+
+            {/* Sender Info Details Box */}
+            <Section className="px-10 py-4">
+              <Section className="rounded-lg border border-[#e6ebe6] bg-[#f7faf7] p-6">
+                <Row className="mb-4">
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Ime i prezime
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {ime || "Nije navedeno"}
+                    </Text>
+                  </Column>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Datum primitka
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {getCurrentDateFormatted()}
+                    </Text>
+                  </Column>
+                </Row>
+                <Row>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      E-mail adresa
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold">
+                      <Link href={`mailto:${email}`} className="text-[#086437] underline decoration-[#086437]">
+                        {email}
+                      </Link>
+                    </Text>
+                  </Column>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Telefon
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {tel || "Nije navedeno"}
+                    </Text>
+                  </Column>
+                </Row>
+              </Section>
+            </Section>
+
+            {/* Message Content Section */}
+            <Section className="px-10 pt-2 pb-8">
+              <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53] mb-2">
+                Sadržaj poruke
+              </Text>
+              <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb] overflow-hidden" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
+                <Text className="m-0 text-sm leading-relaxed text-[#374151]" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
                   <div dangerouslySetInnerHTML={{ __html: poruka }} />
                 </Text>
-              </Row>
+              </Section>
+            </Section>
+
+            {/* Footer Section */}
+            <Section className="bg-[#f9faf9] px-10 py-6 border-t border-[#f0f2f0]">
+              <Text className="m-0 text-center text-xs text-[#9ca3af] leading-normal">
+                Ova poruka je automatski poslana s kontakt obrasca na{" "}
+                <Link href="https://anemona-natura.hr" className="text-[#086437] font-semibold underline">
+                  anemona-natura.hr
+                </Link>
+                .<br />
+                Molimo ne odgovarajte izravno na ovaj e-mail. Ako želite odgovoriti pošiljatelju, kliknite "Odgovori" (Reply) ili koristite e-mail adresu iznad.
+              </Text>
             </Section>
           </Container>
         </Tailwind>
@@ -145,7 +164,3 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
 }
 
 export default Email
-
-const tableCell = { display: "table-cell" }
-
-const text = { margin: 0 }

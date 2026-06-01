@@ -1,6 +1,6 @@
 import { PersonIcon, PhoneIcon, PinIcon, MailIcon } from "@/components/icons"
 
-const KontaktAdresa = () => {
+const ContactAddress = () => {
   return (
     <div className="mt-16 flex flex-col items-start justify-start space-y-4 text-background-light lg:mt-0 lg:h-full lg:justify-center">
       <div className="flex w-full items-start gap-4 p-4 sm:px-0">
@@ -39,4 +39,4 @@ const KontaktAdresa = () => {
   )
 }
 
-export default KontaktAdresa
+export default ContactAddress

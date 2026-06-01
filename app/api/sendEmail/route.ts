@@ -2,12 +2,12 @@ import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
 import InitialMessage from "@/emails/initialMessage"
-// import messageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
+import MessageReceivedConfirmation from "@/emails/messageReceivedConfirmation"
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
 
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const resend = new Resend(process.env.RESEND_API_KEY || process.env.RESEND_API)
 
   const sendEmail = async (porukaData: unknown) => {
     // server-side validation
@@ -39,9 +39,10 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      const responseData = await resend.emails.send({
+      console.log("Attempting to send email via Resend to:", process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com")
+      const { data, error } = await resend.emails.send({
         from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
-        to: "anemona.natura.info@gmail.com",
+        to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
         subject: ime ? `📬 Nova poruka - ${ime}` : `📬 Nova poruka - ${email}`,
         reply_to: email as string,
         react: InitialMessage({
@@ -52,30 +53,47 @@ export async function POST(req: NextRequest) {
         }),
       })
 
-      // if (responseData.data) {
-      //   const emailData = await resend.emails.get(responseData.data.id)
-      //   if (emailData.data) {
-      //     if (emailData.data.last_event === "delivered") {
-      //       // send a confirmation email
-      //       const confirmationData = await resend.emails.send({
-      //         from: "Anemona Natura d.o.o.<noreply@anemona-natura.hr>",
-      //         to: email,
-      //         subject: "✅ Primili smo vašu poruku! - Anemona Natura d.o.o.",
-      //         react: messageReceivedConfirmation({
-      //           poruka: porukaWithLineBreaks,
-      //         }),
-      //       })
-      //     }
-      //   }
-      // }
+      if (error) {
+        console.error("Resend API Error details:", error)
+        return {
+          error: `Resend API Error: ${error.message} (${error.name})`,
+        }
+      }
+
+      console.log("Email sent successfully. ID:", data?.id)
+
+      // Send confirmation email to the visitor
+      try {
+        console.log("Attempting to send confirmation email to visitor:", email)
+        const { error: confirmationError } = await resend.emails.send({
+          from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
+          to: email,
+          reply_to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
+          subject: "Zaprimili smo Vaš upit - Anemona Natura d.o.o.",
+          react: MessageReceivedConfirmation({
+            ime: ime,
+            email: email,
+            tel: tel,
+            poruka: porukaWithLineBreaks,
+          }),
+        })
+
+        if (confirmationError) {
+          console.error("Failed to send visitor confirmation email:", confirmationError)
+        } else {
+          console.log("Visitor confirmation email sent successfully.")
+        }
+      } catch (confirmEx) {
+        console.error("Exception thrown when sending visitor confirmation:", confirmEx)
+      }
 
       return {
-        success: "Poruka je uspješno poslana!",
+        success: `Poruka je uspješno poslana! Poslali smo potvrdu na ${email}. Ako je ne vidite, provjerite i mapu s neželjenom poštom (Spam).`,
       }
-    } catch (error) {
-      console.log(error)
+    } catch (error: any) {
+      console.error("Exception caught in sendEmail route handler:", error)
       return {
-        error: "Došlo je do greške prilikom slanja poruke!",
+        error: `Exception: ${error?.message || error}`,
       }
     }
   }

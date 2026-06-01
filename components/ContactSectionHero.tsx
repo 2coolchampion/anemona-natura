@@ -1,5 +1,5 @@
-import KontaktAdresa from "./KontaktAdresa"
-import KontaktFromaV2 from "./KontaktFormaV2"
+import ContactAddress from "./ContactAddress"
+import ContactFormHero from "./ContactFormHero"
 import { B_b, B_dark, B_green, Leaf, Leaf_bottom } from "@/components/blobs"
 // import BlobBrown from "@/components/blobs/b-b.svg"
 // import BlobDark from "@/components/blobs/b-dark.svg"
@@ -7,7 +7,7 @@ import { B_b, B_dark, B_green, Leaf, Leaf_bottom } from "@/components/blobs"
 // import Leaf from "@/components/blobs/leaf.svg"
 // import LeafBottom from "@/components/blobs/leaf-bottom.svg"
 
-const KontaktFormaLG = () => {
+const ContactSectionHero = () => {
   return (
     <div className="textured absolute -bottom-[38rem] hidden w-[65vw] min-w-[60rem] max-w-[71rem] overflow-clip rounded-lg border-2 border-white border-opacity-60 pb-16 backdrop-blur-xl before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-b before:from-white/55 before:to-white/35 before:content-[''] lg:grid lg:grid-cols-2 lg:grid-rows-[1.2fr_5fr]">
       <B_b className="absolute -right-8 -top-16 -z-10 opacity-20 blur-2xl" />
@@ -23,16 +23,16 @@ const KontaktFormaLG = () => {
       </div>
       <div className="flex justify-end px-8">
         <div className="w-96">
-          <KontaktFromaV2 />
+          <ContactFormHero />
         </div>
       </div>
       <div className="flex px-8">
         <div className="flex w-96 justify-center rounded-md bg-green-dark">
-          <KontaktAdresa />
+          <ContactAddress />
         </div>
       </div>
     </div>
   )
 }
 
-export default KontaktFormaLG
+export default ContactSectionHero

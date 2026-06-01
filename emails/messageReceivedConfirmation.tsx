@@ -1,112 +1,162 @@
-import { Poruka } from "@/lib/types"
 import {
   Body,
   Html,
   Head,
+  Font,
   Tailwind,
   Text,
   Section,
   Row,
   Column,
   Container,
-  Img,
   Link,
+  Img,
 } from "@react-email/components"
 import * as React from "react"
+import { Poruka } from "../lib/types"
 
-type PorukaProps = {
-  poruka: string
-}
-
-const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
+const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
   const getCurrentDateFormatted = () => {
     const today = new Date()
     const day = String(today.getDate()).padStart(2, "0") // Ensures two digits
     const month = String(today.getMonth() + 1).padStart(2, "0") // Adds 1 because months are 0-indexed, and ensures two digits
     const year = today.getFullYear()
 
-    return `${day}/${month}/${year}`
+    return `${day}.${month}.${year}.`
   }
 
-  const baseUrl = process.env.URL
-    ? `${process.env.URL}`
-    : "http://localhost:3001" // Use the dev server port
+  // Use the live production URL for the assets so they render correctly even when testing locally
+  const baseUrl = "https://anemona-natura.hr"
 
   return (
-    <Html>
-      <Head />
-      <Body>
+    <Html lang="hr">
+      <Head>
+        <Font
+          fontFamily="Inter"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
+          webFont={{
+            url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
+            format: "woff2",
+          }}
+          fontWeight={400}
+          fontStyle="normal"
+        />
+        <Font
+          fontFamily="Inter"
+          fallbackFontFamily={["Arial", "Helvetica", "sans-serif"]}
+          webFont={{
+            url: "https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
+            format: "woff2",
+          }}
+          fontWeight={600}
+          fontStyle="normal"
+        />
+      </Head>
+      <Body className="bg-[#f4f6f4] py-10 font-sans">
         <Tailwind>
-          <Container>
-            <Section className="bg-[#011e0e] px-14 py-6 text-[#e7e4e1]">
+          <Container className="mx-auto max-w-[600px] overflow-hidden rounded-lg border border-[#e0e4e0] bg-white shadow-sm">
+            {/* Logo and Header Section */}
+            <Section className="bg-[#012c14] px-10 py-8">
               <Row>
                 <Column>
                   <Link href="https://anemona-natura.hr">
                     <Img
                       src={`${baseUrl}/assets-email/logo-email.png`}
                       alt="Anemona Natura Logo"
-                      width="173"
-                      height="38"
+                      width="150"
+                      height="33"
+                      className="block"
                     />
                   </Link>
                 </Column>
                 <Column align="right">
-                  <Text style={text}>{getCurrentDateFormatted()}</Text>
-                </Column>
-              </Row>
-            </Section>
-            <Section className="bg-[#066437] px-14 py-8 text-[#e7e4e1]">
-              <Row>
-                <Column>
-                  <Text style={text} className="text-3xl">
-                    Primili smo vašu poruku!
-                  </Text>
-                </Column>
-              </Row>
-              <Row className="mt-4">
-                <Column>
-                  <Img
-                    // src={`${baseUrl}/assets-email/check-email-optimized.png`}
-                    src={`${baseUrl}/assets-email/check-email.png`}
-                    alt="Ikona kvačice"
-                    width="72"
-                    height="57"
-                  />
-                </Column>
-                <Column className="pl-10">
-                  <Text style={text} className="text-lg">
-                    Hvala Vam što ste nas kontaktirali. Ovim putem želimo
-                    potvrditi da smo uspješno primili Vašu poruku. Naš tim će
-                    obraditi Vaš upit i odgovoriti u najkraćem mogućem roku.{" "}
-                    base url is: {baseUrl}
+                  <Text className="m-0 text-xs font-semibold uppercase tracking-wider text-[#e7e4e1]">
+                    Potvrda
                   </Text>
                 </Column>
               </Row>
             </Section>
-            <Section className="bg-[#DCD7D2] px-14 pb-12 pt-8 text-[#011e0e]">
-              <Row>
-                <Column>
-                  <Text style={text} className="text-2xl font-semibold">
-                    Kopija Vaše Poruke:
-                  </Text>
-                </Column>
-                <Column>
-                  <Section
-                    align="right"
-                    className="h-2 w-12 bg-[#011e0e]"
-                  ></Section>
-                </Column>
-              </Row>
-              <Text style={text} className="mt-6">
-                <div dangerouslySetInnerHTML={{ __html: poruka }} />
+
+            {/* Thank you Banner */}
+            <Section className="px-10 pt-8 pb-4 text-center">
+              <Img
+                src={`${baseUrl}/assets-email/check-email.png`}
+                alt="Ikona kvačice"
+                width="64"
+                height="50"
+                className="mx-auto mb-4 block"
+              />
+              <Text className="m-0 text-2xl font-bold text-[#012c14]">
+                Zaprimili smo Vaš upit!
+              </Text>
+              <Text className="m-0 mt-2 text-sm leading-relaxed text-[#4b5563]">
+                Hvala Vam što ste nas kontaktirali. Naš tim će obraditi Vaš upit i odgovoriti Vam u najkraćem mogućem roku. U nastavku šaljemo kopiju poslanih podataka.
               </Text>
             </Section>
-            <Section className="bg-[#EBE8E6] px-14 text-[#011e0e]">
-              <Text
-                style={text}
-                className="my-2 text-center text-xs font-semibold opacity-80"
-              >
-                Molimo ne odgovarajte na ovaj email
+
+            {/* Submitted Details Box */}
+            <Section className="px-10 py-4">
+              <Section className="rounded-lg border border-[#e6ebe6] bg-[#f7faf7] p-6">
+                <Row className="mb-4">
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Ime i prezime
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {ime || "Nije navedeno"}
+                    </Text>
+                  </Column>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Datum slanja
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {getCurrentDateFormatted()}
+                    </Text>
+                  </Column>
+                </Row>
+                <Row>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      E-mail adresa
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {email}
+                    </Text>
+                  </Column>
+                  <Column className="w-1/2">
+                    <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
+                      Telefon
+                    </Text>
+                    <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
+                      {tel || "Nije navedeno"}
+                    </Text>
+                  </Column>
+                </Row>
+              </Section>
+            </Section>
+
+            {/* Message Content Section */}
+            <Section className="px-10 pt-2 pb-8">
+              <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53] mb-2">
+                Vaša poruka
+              </Text>
+              <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb] overflow-hidden" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
+                <Text className="m-0 text-sm leading-relaxed text-[#374151]" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
+                  <div dangerouslySetInnerHTML={{ __html: poruka }} />
+                </Text>
+              </Section>
+            </Section>
+
+            {/* Footer Section */}
+            <Section className="bg-[#f9faf9] px-10 py-6 border-t border-[#f0f2f0]">
+              <Text className="m-0 text-center text-xs text-[#9ca3af] leading-normal">
+                Ova potvrda je poslana automatski nakon ispunjavanja kontakt obrasca na{" "}
+                <Link href="https://anemona-natura.hr" className="text-[#086437] font-semibold underline">
+                  anemona-natura.hr
+                </Link>
+                .<br />
+                Na ovaj e-mail možete odgovoriti izravno ako želite dodati dodatne detalje svom upitu.
               </Text>
             </Section>
           </Container>
@@ -116,10 +166,4 @@ const messageReceivedConfirmation = ({ poruka }: PorukaProps) => {
   )
 }
 
-export default messageReceivedConfirmation
-
-const text = {
-  margin: 0,
-  fontSize: "1rem",
-  fontFamily: '"Arial", "Halvetica", "sans-serif"',
-}
+export default MessageReceivedConfirmation

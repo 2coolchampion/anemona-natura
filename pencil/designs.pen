@@ -1,0 +1,4926 @@
+{
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "QLWqx",
+      "x": 0,
+      "y": 0,
+      "name": "Design A - Trust Ribbon & Tabs",
+      "clip": true,
+      "width": 1440,
+      "height": 3300,
+      "fill": "#F5F3EEFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kIRKE",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#F5F3EEFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "MANli",
+              "name": "Logo",
+              "fill": "#1B3A28FF",
+              "content": "ANEMONA NATURA",
+              "fontFamily": "Playfair Display",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "QGrzZ",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D9UPv",
+                  "name": "Početna",
+                  "fill": "#1B3A28FF",
+                  "content": "Početna",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "x4tHU",
+                  "name": "EU Projekti",
+                  "fill": "#1B3A28FF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MkgDU",
+                  "name": "Kontakt",
+                  "fill": "#1B3A28FF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xsySg",
+              "name": "CTA Button",
+              "fill": "#2D5E3AFF",
+              "cornerRadius": 4,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ozqg3",
+                  "name": "CTA Label",
+                  "fill": "#FFFFFFFF",
+                  "content": "Zatražite Savjetovanje",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NBFlU",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": 700,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "KAx5U",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Image Bg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "stefaniejockschat",
+                "link": "https://unsplash.com/@stefaniejockschat",
+                "author": "Stefanie Jockschat"
+              },
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1759126817760-723a46474d55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "width": 1440,
+              "height": 700
+            },
+            {
+              "type": "rectangle",
+              "id": "Xv8Ti",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Overlay",
+              "fill": "#1B3A2899",
+              "width": 1440,
+              "height": 700
+            },
+            {
+              "type": "frame",
+              "id": "CERFN",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Content Container",
+              "width": 1440,
+              "height": 700,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                0,
+                80
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "V83oSD",
+                  "name": "Hero Eyebrow",
+                  "fill": "#A5D6A7FF",
+                  "content": "SAVJETOVANJE I USLUGE U ŠUMARSTVU",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "cJAaa",
+                  "name": "Hero Title",
+                  "fill": "#FFFFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Specijalne Usluge i Stručno Savjetovanje u Šumarstvu",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "k6GiG",
+                  "name": "Hero Subtitle",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Nudimo licencirane usluge doznake stabala, otpreme sortimenata, procjene vrijednosti zemljišta i stručnu izradu gospodarskih planova za privatne i pravne osobe.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "bDrMV",
+                  "name": "Hero CTA Button",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Q0M8Ez",
+                      "name": "Hero CTA Label",
+                      "fill": "#FFFFFFFF",
+                      "content": "Istražite Naše Usluge",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K4NMFq",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 610,
+              "name": "Trust Ribbon",
+              "width": 1440,
+              "height": 90,
+              "fill": "#1B3A28EE",
+              "padding": [
+                0,
+                80
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "f4R1d",
+                  "name": "Trust Text",
+                  "fill": "#FFFFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Preko 3.000.000 € ostvarenih bespovratnih sredstava iz EU fondova za naše klijente.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "Iu6M9",
+                  "name": "Trust Logos Container",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "V6Po5",
+                      "name": "RH Logo",
+                      "width": 50,
+                      "height": 40
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ghYl4",
+                      "name": "EU Logo",
+                      "width": 50,
+                      "height": 40
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Swh5S",
+                      "name": "Fondovi Logo",
+                      "width": 90,
+                      "height": 40
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "jbvDZ",
+                      "name": "Razvoj Logo",
+                      "width": 90,
+                      "height": 40
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xqnMF",
+          "name": "Services Section",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#F5F3EEFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "bLzDz",
+              "name": "Services Eyebrow",
+              "fill": "#4A6B52FF",
+              "content": "ŠTO RADIMO",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "BOLFk",
+              "name": "Services Title",
+              "fill": "#1B3A28FF",
+              "content": "Profesionalne Šumarske Usluge",
+              "fontFamily": "Playfair Display",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "U4ZbNe",
+              "name": "Tabs Container",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ie9Kg",
+                  "name": "Tab Doznaka i Otprema",
+                  "fill": "#00000000",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o9l5I",
+                      "name": "Tab Label",
+                      "fill": "#1B3A28FF",
+                      "content": "Doznaka i Otprema",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fLXNb",
+                  "name": "Tab Procjena Vrijednosti",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "stroke": "#00000000",
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w2cMc",
+                      "name": "Tab Label",
+                      "fill": "#FFFFFFFF",
+                      "content": "Procjena Vrijednosti",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SA4pI",
+                  "name": "Tab Planovi Gospodarenja",
+                  "fill": "#00000000",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xkeUv",
+                      "name": "Tab Label",
+                      "fill": "#1B3A28FF",
+                      "content": "Planovi Gospodarenja",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zqt1b",
+                  "name": "Tab Otkup Drva",
+                  "fill": "#00000000",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XaITp",
+                      "name": "Tab Label",
+                      "fill": "#1B3A28FF",
+                      "content": "Otkup Drva",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hMZ3s",
+                  "name": "Tab Vangabaritni Prijevoz",
+                  "fill": "#00000000",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mY0Yw",
+                      "name": "Tab Label",
+                      "fill": "#1B3A28FF",
+                      "content": "Vangabaritni Prijevoz",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ui3q8",
+              "name": "Tab Content Panel",
+              "width": "fill_container",
+              "gap": 64,
+              "padding": [
+                40,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UHqyh",
+                  "name": "Left Info Column",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vkCXw",
+                      "name": "Service Heading",
+                      "fill": "#1B3A28FF",
+                      "content": "Procjena vrijednosti šume i šumskog zemljišta",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dUzOX",
+                      "name": "Service Body",
+                      "fill": "#4A6B52FF",
+                      "textGrowth": "fixed-width",
+                      "width": 580,
+                      "content": "Vršimo stručnu i ovlaštenu procjenu tržišne vrijednosti šumskih sastojina i zemljišta, izračun drvne mase na panju te procjenu šteta u šumama za potrebe trasiranja, eksproprijacije ili sudskih vještačenja.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DETxf",
+                      "name": "Bullet Points",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Yfodk",
+                          "name": "Bullet Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "I47LF",
+                              "name": "Check Icon",
+                              "fill": "#2D5E3AFF",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "IYbk9",
+                              "name": "Bullet Text",
+                              "fill": "#1B3A28FF",
+                              "textGrowth": "fixed-width",
+                              "width": 540,
+                              "content": "Izrada elaborata procjene vrijednosti šumskih sastojina",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "I3JowC",
+                          "name": "Bullet Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "peucZ",
+                              "name": "Check Icon",
+                              "fill": "#2D5E3AFF",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "bHHkE",
+                              "name": "Bullet Text",
+                              "fill": "#1B3A28FF",
+                              "textGrowth": "fixed-width",
+                              "width": 540,
+                              "content": "Izračun vrijednosti drvne mase na panju i šumskih šteta",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QlHs6",
+                          "name": "Bullet Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ki6Dd",
+                              "name": "Check Icon",
+                              "fill": "#2D5E3AFF",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BZlty",
+                              "name": "Bullet Text",
+                              "fill": "#1B3A28FF",
+                              "textGrowth": "fixed-width",
+                              "width": 540,
+                              "content": "Procjena vrijednosti šuma na trasama infrastrukture (dalekovodi, vodovodi, prometnice)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AEpY8",
+                          "name": "Bullet Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NUsmQ",
+                              "name": "Check Icon",
+                              "fill": "#2D5E3AFF",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "MtHY2",
+                              "name": "Bullet Text",
+                              "fill": "#1B3A28FF",
+                              "textGrowth": "fixed-width",
+                              "width": 540,
+                              "content": "Sve ostale usluge ovlaštenog vještačenja u šumarstvu",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N9n34",
+                  "name": "Right Image Column",
+                  "width": "fill_container",
+                  "height": 350,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "IoGU2",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Service Image Card",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "illes_cristi",
+                        "link": "https://unsplash.com/@illes_cristi",
+                        "author": "iuliu illes"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1779465197179-29a1d410b536?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 500,
+                      "height": 350
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YC27d",
+          "name": "EU Projects Teaser",
+          "width": "fill_container",
+          "height": 480,
+          "fill": "#1B3A28FF",
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ocHhS",
+              "name": "EU Left",
+              "width": 600,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K8iUr",
+                  "name": "EU Eyebrow",
+                  "fill": "#A5D6A7FF",
+                  "content": "BESPOVRATNA SREDSTVA",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "CIUsC",
+                  "name": "EU Title",
+                  "fill": "#FFFFFFFF",
+                  "content": "EU Fondovi & Podmjera 8.5.1",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "z9cIK",
+                  "name": "EU Body",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 580,
+                  "content": "Klijentima pružamo cjelokupnu uslugu organizacije, savjetovanja i pripreme projekata za konverziju degradiranih šumskih sastojina i šumskih kultura u mješovite sastojine autohtonih vrsta drveća.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "c6dc1",
+                  "name": "EU CTA",
+                  "fill": "#F5F3EEFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wonq9",
+                      "name": "EU CTA Label",
+                      "fill": "#1B3A28FF",
+                      "content": "Saznajte Više o Projektima",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "d00kYC",
+              "name": "EU Right",
+              "width": 500,
+              "height": 320,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 8,
+                  "id": "XyjQE",
+                  "layoutPosition": "absolute",
+                  "x": 0,
+                  "y": 0,
+                  "name": "EU Image Card",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "declansun",
+                    "link": "https://unsplash.com/@declansun",
+                    "author": "Declan Sun"
+                  },
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1759390304078-98e9bd547fec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "width": 500,
+                  "height": 320
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UKFa2",
+          "name": "About Section",
+          "width": "fill_container",
+          "height": 380,
+          "fill": "#F5F3EEFF",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            60,
+            200
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "C0X5F",
+              "name": "About Eyebrow",
+              "fill": "#4A6B52FF",
+              "content": "O NAMA",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "JLzRM",
+              "name": "About Title",
+              "fill": "#1B3A28FF",
+              "content": "Stručnost i Pouzdanost u Šumarstvu",
+              "fontFamily": "Playfair Display",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "hND6s",
+              "name": "About Body 1",
+              "fill": "#1B3A28FF",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Anemona Natura d.o.o. sa sjedištem u Karlovcu nudi specijalizirane usluge i savjetovanja u šumarstvu na području cijele Republike Hrvatske. Nudimo licencirane usluge održivog gospodarenja šumama te pripremu EU projekata za privatne posjednike i udruge.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Pd5lC",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#112519FF",
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ESxdH",
+              "name": "Contact Info Left",
+              "width": 550,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xWc9W",
+                  "name": "Contact Eyebrow",
+                  "fill": "#A5D6A7FF",
+                  "content": "KONTAKT",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "X5nvmW",
+                  "name": "Contact Title",
+                  "fill": "#FFFFFFFF",
+                  "content": "Javite Nam Se s Povjerenjem",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 36,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "qiaWo",
+                  "name": "Contact Desc",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Ako trebate procjenu vrijednosti šume, savjetovanje u vezi EU fondova ili uslugu izvanrednog prijevoza, naš tim stoji na raspolaganju.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "WAYuT",
+                  "name": "Info List",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NfHGr",
+                      "name": "Info Row Adresa",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O8Vl14",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DO0TR",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "R5FV3",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "ADRESA",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "FuWLE",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "Anemona Natura d.o.o. \nM. J. Šporera 20, 47 000 Karlovac",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YirHP",
+                      "name": "Info Row Telefon",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "acmg8",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "b0kMCn",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "yg0If",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "TELEFON",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tNxxL",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "+385 99 286 8188 (Općenito) \n+385 99 5452 421 (Prijevoz)",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d3Htk1",
+                      "name": "Info Row E-mail",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HdaSX",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GEA43",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "w1o4I",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "E-MAIL",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Jwc3E",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "anemona.natura.info@gmail.com",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QxJ9V",
+              "name": "Contact Form Right",
+              "width": 550,
+              "fill": "#F5F3EEFF",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UzGrH",
+                  "name": "Form Title",
+                  "fill": "#1B3A28FF",
+                  "content": "Brzi Upit",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "KhyB6",
+                  "name": "Field Ime i Prezime",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lOSuO",
+                      "name": "Input Label",
+                      "fill": "#4A6B52FF",
+                      "content": "IME I PREZIME",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TWZ0i",
+                      "name": "Input Box",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O4ssW",
+                          "name": "Placeholder",
+                          "fill": "#999999FF",
+                          "content": "Unesite ime i prezime...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wt3YK",
+                  "name": "Field E-mail adresa",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uVs7p",
+                      "name": "Input Label",
+                      "fill": "#4A6B52FF",
+                      "content": "E-MAIL ADRESA",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uS8ta",
+                      "name": "Input Box",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jAtXE",
+                          "name": "Placeholder",
+                          "fill": "#999999FF",
+                          "content": "Unesite e-mail adresa...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Fc8hL",
+                  "name": "Field Kontakt telefon",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XCYaM",
+                      "name": "Input Label",
+                      "fill": "#4A6B52FF",
+                      "content": "KONTAKT TELEFON",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Wt0at",
+                      "name": "Input Box",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zl3Fl",
+                          "name": "Placeholder",
+                          "fill": "#999999FF",
+                          "content": "Unesite kontakt telefon...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "stRFX",
+                  "name": "Field Vaša poruka",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PiZn4",
+                      "name": "Input Label",
+                      "fill": "#4A6B52FF",
+                      "content": "VAŠA PORUKA",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tGFKE",
+                      "name": "Input Box",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jBkeZ",
+                          "name": "Placeholder",
+                          "fill": "#999999FF",
+                          "content": "Unesite vaša poruka...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d3fqdC",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jN2ke",
+                      "name": "Submit Label",
+                      "fill": "#FFFFFFFF",
+                      "content": "Pošalji Poruku",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nQ3xO",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": 140,
+          "fill": "#112519FF",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ySFCQ",
+              "name": "Copyright Text",
+              "fill": "#A5D6A7FF",
+              "content": "© 2026 Anemona Natura d.o.o. Sva prava pridržana.",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "sa0il",
+              "name": "Footer Links",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eCVg1",
+                  "name": "Link Naslovnica",
+                  "fill": "#FFFFFFFF",
+                  "content": "Naslovnica",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kSFNd",
+                  "name": "Link EU Projekti",
+                  "fill": "#FFFFFFFF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "aE2aU",
+                  "name": "Link Kontakt",
+                  "fill": "#FFFFFFFF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "d1sZc",
+      "x": 1540,
+      "y": 0,
+      "name": "Design B - Split Hero & Grid Cards",
+      "clip": true,
+      "width": 1440,
+      "height": 3200,
+      "fill": "#F5F3EEFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KHlEA",
+          "name": "Navbar B",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#1B3A28FF",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "g8q6NC",
+              "name": "Logo B",
+              "fill": "#FFFFFFFF",
+              "content": "ANEMONA NATURA",
+              "fontFamily": "Playfair Display",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "EgCjB",
+              "name": "Nav Links B",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y6NGuY",
+                  "name": "Početna",
+                  "fill": "#FFFFFFFF",
+                  "content": "Početna",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "djFUd",
+                  "name": "EU Projekti",
+                  "fill": "#FFFFFFFF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "NTBcZ",
+                  "name": "Kontakt",
+                  "fill": "#FFFFFFFF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qn7Vv",
+          "name": "Hero Section B",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#1B3A28FF",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "I8U57",
+              "name": "Hero Left B",
+              "width": 650,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MYWy8",
+                  "name": "Hero Eyebrow B",
+                  "fill": "#A5D6A7FF",
+                  "content": "LICENCIRANI STRUČNJACI ZA ŠUMARSTVO",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "mHs0I",
+                  "name": "Hero Title B",
+                  "fill": "#FFFFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Održivo Upravljanje Šumama i Stručne Procjene",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 44,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "A6cA0",
+                  "name": "Hero Subtitle B",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 580,
+                  "content": "Pružamo ovlaštene šumarske usluge, izradu elaborata procjena i operativno vođenje projekata u Hrvatskoj i Sloveniji.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ynngC",
+                  "name": "Hero CTA B",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F6sD8c",
+                      "name": "Hero CTA Label B",
+                      "fill": "#FFFFFFFF",
+                      "content": "Započnite Upit",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ab17F",
+              "name": "Trust Card",
+              "width": 480,
+              "height": 380,
+              "fill": "#F5F3EEFF",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LODzd",
+                  "name": "Trust Large Metric",
+                  "fill": "#1B3A28FF",
+                  "content": "3.000.000+ €",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "Puj3f",
+                  "name": "Trust Card Label",
+                  "fill": "#4A6B52FF",
+                  "textGrowth": "fixed-width",
+                  "width": 380,
+                  "content": "BESPOVRATNIH SREDSTAVA OSIGURANO ZA NAŠE KLIJENTE",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "Ce2C6",
+                  "name": "Trust Card Body",
+                  "fill": "#1B3A28FF",
+                  "textGrowth": "fixed-width",
+                  "width": 380,
+                  "content": "Uspješno vodimo klijente kroz komplicirane prijave za EU potpore i podmjeru 8.5.1. za konverziju šuma.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "V9Tka",
+                  "name": "Trust Logos B",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "OiP6q",
+                      "name": "RH Logo B",
+                      "width": 50,
+                      "height": 35
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "lImKL",
+                      "name": "EU Logo B",
+                      "width": 50,
+                      "height": 35
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "F0yGs0",
+                      "name": "Fondovi Logo B",
+                      "width": 80,
+                      "height": 35
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "KOgTf",
+                      "name": "Razvoj Logo B",
+                      "width": 80,
+                      "height": 35
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xZbmn",
+          "name": "Services Section B",
+          "width": "fill_container",
+          "height": 980,
+          "fill": "#F5F3EEFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gSekz",
+              "name": "Services Eyebrow B",
+              "fill": "#4A6B52FF",
+              "content": "DETALJAN POPIS",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "DpYHi",
+              "name": "Services Title B",
+              "fill": "#1B3A28FF",
+              "content": "Istražite Naše Usluge",
+              "fontFamily": "Playfair Display",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "oECxy",
+              "name": "Services Sub B",
+              "fill": "#4A6B52FF",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "U nastavku su navedene sve operativne i savjetodavne usluge koje pružamo. Kliknite na pojedinu karticu za pregled detalja.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Pd7hZ",
+              "name": "Row 1",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xsFGd",
+                  "name": "Doznaka i Otprema Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AWbnY",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w0iX1",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Doznaka i Otprema",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "puQfB",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Doznaka stabala za sječu i administrativna otprema drvnih sortimenata.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K2qVJq",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KRKsK",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H3vxH",
+                  "name": "Procjena Vrijednosti Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VYZTg",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UieJL",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Procjena Vrijednosti",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SCyCQ",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Izrada elaborata procjene šuma, izračun drvne mase na panju i procjena šteta.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XQ5qa",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a4KvWm",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N9eMwK",
+                  "name": "Lovnogospodarski Planovi Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UoFUN",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lBy5N",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Lovnogospodarski Planovi",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yrrIB",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Programi uzgoja i zaštite divljači, lovnogospodarske osnove i revizije.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Zfmpq",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IoSCY",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X1eVrB",
+              "name": "Row 2",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v2pqVX",
+                  "name": "Šumskogospodarski Planovi Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Dz7vP",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JdBHy",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Šumskogospodarski Planovi",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vovoa",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Programi gospodarenja za privatne posjednike i posebne namjene.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ivFYM",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T88Pov",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T38F9",
+                  "name": "Otkup Drvnih Sortimenata Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AN1SI",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "e0XGiQ",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Otkup Drvnih Sortimenata",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q6txZa",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Otkup svih vrsta drvnih sortimenata na panju, uz panj ili na stovarištu.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cj6ng",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PQNBb",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N7XCA6",
+                  "name": "Vangabaritni Prijevoz Card",
+                  "width": 410,
+                  "height": 240,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 6,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nkREW",
+                      "name": "Card Header",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IMKUb",
+                          "name": "Card Title",
+                          "fill": "#1B3A28FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Vangabaritni Prijevoz",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AiiYw",
+                          "name": "Card Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 362,
+                          "content": "Cestovni prijevoz poljoprivrednih, građevinskih i šumskih strojeva (HR i SLO).",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LVjpP",
+                      "name": "Card Footer",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dSWRw",
+                          "name": "Accordion Trigger",
+                          "fill": "#2D5E3AFF",
+                          "content": "PRIKAŽI DETALJE ▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H06dq",
+          "name": "EU Projects Section B",
+          "width": "fill_container",
+          "height": 600,
+          "fill": "#1B3A28FF",
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wUR3r",
+              "name": "EU Info Left B",
+              "width": 580,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZvvU7",
+                  "name": "EU Section Eyebrow B",
+                  "fill": "#A5D6A7FF",
+                  "content": "EU POTPORE",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "DAykh",
+                  "name": "EU Section Title B",
+                  "fill": "#FFFFFFFF",
+                  "content": "Konverzija Degradiranih Šuma (Podmjera 8.5.1)",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "YXpcS",
+                  "name": "EU Section Desc B",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Kroz fondove Europske unije osiguravaju se stopostotna bespovratna sredstva za prevođenje degradiranih šumskih sastojina i šumskih kultura u mješovite sastojine autohtonih vrsta drveća.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "K0Hb3",
+                  "name": "Gallery Row",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4,
+                      "id": "GS5Lc",
+                      "name": "Gallery Image B1",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "naopp",
+                        "link": "https://unsplash.com/@naopp",
+                        "author": "Naoki Suzuki"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1744974235684-3f78c67e1ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 120,
+                      "height": 90
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4,
+                      "id": "sGfBD",
+                      "name": "Gallery Image B2",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "opiekhov",
+                        "link": "https://unsplash.com/@opiekhov",
+                        "author": "Oleksii Piekhov"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1670524363343-df8db773fedb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 120,
+                      "height": 90
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4,
+                      "id": "G0ThMi",
+                      "name": "Gallery Image B3",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "silverkblack",
+                        "link": "https://unsplash.com/@silverkblack",
+                        "author": "Vitaly Gariev"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1758599543152-a73184816eba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjE1NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 120,
+                      "height": 90
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WxkTX",
+              "name": "EU Guide Right B",
+              "width": 580,
+              "fill": "#F5F3EEFF",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OCxR9",
+                  "name": "Guide Title",
+                  "fill": "#1B3A28FF",
+                  "content": "Vodič za Prijavu",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "RLnty",
+                  "name": "Guide List",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "p4y74O",
+                      "name": "Step Box Prihvatljivi Korisnici",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C69fF",
+                          "name": "Step Title",
+                          "fill": "#1B3A28FF",
+                          "content": "■ Prihvatljivi Korisnici",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pQ585",
+                          "name": "Step Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 480,
+                          "content": "Šumoposjednici i udruge šumoposjednika sukladno članku 14. Zakona o šumama.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GlyEj",
+                      "name": "Step Box Projektni Cilj",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k3Lbh",
+                          "name": "Step Title",
+                          "fill": "#1B3A28FF",
+                          "content": "■ Projektni Cilj",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o9gkZq",
+                          "name": "Step Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 480,
+                          "content": "Prevođenje narušenih struktura šuma u visoki uzgojni oblik mješovitih autohtonih vrsta.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qoYPI",
+                      "name": "Step Box Naša Podrška",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wwiqQ",
+                          "name": "Step Title",
+                          "fill": "#1B3A28FF",
+                          "content": "■ Naša Podrška",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "y88tWM",
+                          "name": "Step Desc",
+                          "fill": "#4A6B52FF",
+                          "textGrowth": "fixed-width",
+                          "width": 480,
+                          "content": "Izrada cjelokupnog projekta i priprema popratne dokumentacije od ideje do realizacije.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ddOu9",
+          "name": "Footer & Contact B",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#112519FF",
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "X0ubO",
+              "name": "Footer Left B",
+              "width": 550,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X2ro4S",
+                  "name": "Brand Logo Title B",
+                  "fill": "#FFFFFFFF",
+                  "content": "ANEMONA NATURA d.o.o.",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 26,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "q6ury",
+                  "name": "Brand Desc B",
+                  "fill": "#A5D6A7FF",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Ovlaštena tvrtka za savjetovanje i usluge u šumarstvu. Djelujemo na području cijele Hrvatske i Slovenije, sa sjedištem u Karlovcu.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "P9zpNn",
+                  "name": "Contact List B",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dq8SQ",
+                      "name": "Contact Item Sjedište",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O9kLZA",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ahgoq",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xWeX4",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "SJEDIŠTE",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "z0iXvg",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 380,
+                              "content": "M. J. Šporera 20, 47 000 Karlovac",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TTXxQ",
+                      "name": "Contact Item Telefon",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UhAb5",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e20S6p",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oiyWU",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "TELEFON",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "q8Fhs",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 380,
+                              "content": "+385 99 286 8188 (Sabrina Hribar)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lBixB",
+                      "name": "Contact Item Prijevoz",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mVOKj",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mBTdd",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T6LFl",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "PRIJEVOZ",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BPx3P",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 380,
+                              "content": "+385 99 5452 421 (Vangabaritni teret)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mcvTJ",
+                      "name": "Contact Item E-mail",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lBbDf",
+                          "name": "Bullet Marker",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lqhq7",
+                          "name": "Text Group",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ku2jI",
+                              "name": "Label",
+                              "fill": "#A5D6A7FF",
+                              "content": "E-MAIL",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Fahiz",
+                              "name": "Value",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 380,
+                              "content": "anemona.natura.info@gmail.com",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T9GyL",
+              "name": "Footer Form Card",
+              "width": 550,
+              "fill": "#1B3A28FF",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Q0S2dr",
+                  "name": "Form Heading B",
+                  "fill": "#FFFFFFFF",
+                  "content": "Pošaljite Upit",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "gpiLt",
+                  "name": "Field Box B Vaše Ime",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mrN0y",
+                      "name": "Input Label B",
+                      "fill": "#A5D6A7FF",
+                      "content": "VAŠE IME",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CKZz4",
+                      "name": "Input Box B",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#112519FF",
+                      "cornerRadius": 4,
+                      "stroke": "#2D5E3AFF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T2BEM",
+                          "name": "Placeholder B",
+                          "fill": "#778F7BFF",
+                          "content": "Unesite vaše ime...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GhzXJ",
+                  "name": "Field Box B E-mail adresa",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pl27t",
+                      "name": "Input Label B",
+                      "fill": "#A5D6A7FF",
+                      "content": "E-MAIL ADRESA",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f6yG1s",
+                      "name": "Input Box B",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#112519FF",
+                      "cornerRadius": 4,
+                      "stroke": "#2D5E3AFF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rnu6Q",
+                          "name": "Placeholder B",
+                          "fill": "#778F7BFF",
+                          "content": "Unesite e-mail adresa...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i4EzW",
+                  "name": "Field Box B Opis projekta / poruka",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "woTPk",
+                      "name": "Input Label B",
+                      "fill": "#A5D6A7FF",
+                      "content": "OPIS PROJEKTA / PORUKA",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rm2NM",
+                      "name": "Input Box B",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#112519FF",
+                      "cornerRadius": 4,
+                      "stroke": "#2D5E3AFF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eggmW",
+                          "name": "Placeholder B",
+                          "fill": "#778F7BFF",
+                          "content": "Unesite opis projekta / poruka...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uEaEt",
+                  "name": "Submit Button B",
+                  "width": "fill_container",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BaSKf",
+                      "name": "Submit Label B",
+                      "fill": "#FFFFFFFF",
+                      "content": "Pošalji Poruku",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kdRog",
+      "x": 3080,
+      "y": 0,
+      "name": "Design C - Split Hero & Navbar A",
+      "clip": true,
+      "width": 1440,
+      "fill": "#F5F3EEFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "hZFke",
+          "name": "Navbar C",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#F5F3EEFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "X2SWf",
+              "name": "Logo C",
+              "fill": "#1B3A28FF",
+              "content": "ANEMONA NATURA",
+              "fontFamily": "Playfair Display",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "AD7hl",
+              "name": "Nav Links C",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "I64KSN",
+                  "name": "Početna",
+                  "fill": "#1B3A28FF",
+                  "content": "Početna",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "EabB7",
+                  "name": "EU Projekti",
+                  "fill": "#1B3A28FF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sMpai",
+                  "name": "Kontakt",
+                  "fill": "#1B3A28FF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "o6jfDF",
+              "name": "CTA Button C",
+              "fill": "#2D5E3AFF",
+              "cornerRadius": 4,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tMADW",
+                  "name": "CTA Label C",
+                  "fill": "#FFFFFFFF",
+                  "content": "Zatražite Savjetovanje",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oCZIW",
+          "name": "Hero Section C",
+          "width": "fill_container",
+          "height": 720,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "L9lum",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Image Bg C",
+              "metadata": {
+                "type": "unsplash",
+                "username": "brice_cooper18",
+                "link": "https://unsplash.com/@brice_cooper18",
+                "author": "Brice Cooper"
+              },
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1596940341928-4596d6770b1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjg2NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "width": 1440,
+              "height": 720
+            },
+            {
+              "type": "rectangle",
+              "id": "wkSP2",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Overlay C",
+              "fill": "#1B3A28B3",
+              "width": 1440,
+              "height": 720
+            },
+            {
+              "type": "frame",
+              "id": "l5z9SK",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Content Row",
+              "width": 1440,
+              "height": 720,
+              "padding": [
+                0,
+                80
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "N45MbH",
+                  "name": "Hero Left C",
+                  "width": 900,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "D1WrM",
+                      "name": "Hero Eyebrow C",
+                      "fill": "#A5D6A7FF",
+                      "content": "SAVJETOVANJE I USLUGE U ŠUMARSTVU",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "a5qdm",
+                      "name": "Hero Title C",
+                      "fill": "#FFFFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 618,
+                      "content": "Specijalne Usluge i Stručno Savjetovanje u Šumarstvu",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 48,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "U1kRr",
+                      "name": "Hero Subtitle C",
+                      "fill": "#E8F5E9FF",
+                      "textGrowth": "fixed-width",
+                      "width": "fit_content(618)",
+                      "content": "Nudimo licencirane usluge doznake stabala, otpreme sortimenata, procjene vrijednosti zemljišta i stručnu izradu gospodarskih planova za privatne i pravne osobe.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bQM0A",
+                      "name": "Hero CTA C",
+                      "fill": "#2D5E3AFF",
+                      "cornerRadius": 4,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WaokS",
+                          "name": "Hero CTA Label C",
+                          "fill": "#FFFFFFFF",
+                          "content": "Istražite Naše Usluge",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TDue9",
+          "name": "EU Projects Section C",
+          "width": "fill_container",
+          "height": 520,
+          "fill": "#F5F3EEFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            60,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "OExQS",
+              "name": "EU Section Eyebrow",
+              "fill": "#4A6B52FF",
+              "content": "BESPOVRATNA SREDSTVA",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "IubnX",
+              "name": "EU Section Title",
+              "fill": "#1B3A28FF",
+              "content": "EU Potpore i Bespovratna Sredstva",
+              "fontFamily": "Playfair Display",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "UzpXN",
+              "name": "EU Row",
+              "width": "fill_container",
+              "gap": 64,
+              "padding": [
+                20,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "t2tMo",
+                  "name": "EU Text Column",
+                  "width": 620,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zx2pP",
+                      "name": "EU Large Metric Title",
+                      "fill": "#2D5E3AFF",
+                      "content": "Osigurano preko 3.000.000 € za naše klijente",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 28,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gGJUr",
+                      "name": "EU Text Paragraph",
+                      "fill": "#1B3A28FF",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Kroz Podmjeru 8.5.1. za konverziju degradiranih šumskih sastojina i šumskih kultura, osiguravamo stopostotno financiranje vaših projekata. Naš tim preuzima kompletnu izradu dokumentacije, administrativno vođenje te stručni nadzor nad izvođenjem radova.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pNigu",
+                      "name": "EU CTA Button C",
+                      "fill": "#2D5E3AFF",
+                      "cornerRadius": 4,
+                      "padding": [
+                        12,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "i40BX",
+                          "name": "EU CTA Label C",
+                          "fill": "#FFFFFFFF",
+                          "content": "Saznajte Više o Prijavi",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q9IuaM",
+                  "name": "EU Logos Card",
+                  "width": 500,
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 8,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DeoWz",
+                      "name": "Logos Title",
+                      "fill": "#4A6B52FF",
+                      "content": "SUFINANCIRANO UZ PARTNERSTVO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "e4njmv",
+                      "name": "Logos Row",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "WtoPe",
+                          "name": "RH Logo C",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../business-info/logos/croatia.png",
+                            "mode": "fit"
+                          },
+                          "width": 50,
+                          "height": 35
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "nr7P7",
+                          "name": "EU Logo C",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../business-info/logos/eu.png",
+                            "mode": "fit"
+                          },
+                          "width": 50,
+                          "height": 35
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "HC4E2",
+                          "name": "Fondovi Logo C",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../business-info/logos/euInvestmentFunds.png",
+                            "mode": "fit"
+                          },
+                          "width": 80,
+                          "height": 35
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "QfWuP",
+                          "name": "Razvoj Logo C",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../business-info/logos/ruralniRazvoj.png",
+                            "mode": "fit"
+                          },
+                          "width": 80,
+                          "height": 35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "u08Dy",
+                      "name": "Logos Disclaimer",
+                      "fill": "#4A6B52FF",
+                      "textGrowth": "fixed-width",
+                      "width": 436,
+                      "content": "Projekti se provode u suradnji s Ministarstvom poljoprivrede i Europskim strukturnim i investicijskim fondovima s ciljem ruralnog razvoja.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MK07V",
+          "name": "Services Section C",
+          "width": "fill_container",
+          "fill": "#F5F3EEFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "slmjk",
+              "name": "Sec Eyebrow",
+              "fill": "#4A6B52FF",
+              "content": "NAŠE USLUGE",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "LLnGW",
+              "name": "Sec Title",
+              "fill": "#1B3A28FF",
+              "content": "Šumarske Usluge i Prijevoz",
+              "fontFamily": "Playfair Display",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "FxWXs",
+              "name": "Sec Subtitle",
+              "fill": "#4A6B52FF",
+              "textGrowth": "fixed-width",
+              "width": 650,
+              "content": "Kliknite na pojedinu uslugu kako biste vidjeli cjelokupni opseg i specifikacije radova koje provodimo.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "G9tib",
+              "name": "Accordion List",
+              "width": 1000,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Lot41",
+                  "name": "Accordion Item Doznaka i Otprema",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZnO6M",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IAGeF",
+                          "name": "Title Group - Doznaka i Otprema",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Qe48Q",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Doznaka i Otprema",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "GL3Lh",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Želim obilježiti i posjeći stabla u svojoj šumi za drvo",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "t1AFn",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eGurj",
+                  "name": "Accordion Item Procjena Vrijednosti Šume i Šumskog Zemljišta",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#2D5E3AFF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Rrq3b",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fje12",
+                          "name": "Title Group - Procjena Vrijednosti Šume i Šumskog Zemljišta",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CKuur",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Procjena Vrijednosti Šume i Šumskog Zemljišta",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ca3rf",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Želim saznati koliko vrijedi moja šuma ili je prodati/vještačiti",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "HkvWL",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-up",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hGejL",
+                      "name": "Expanded Content",
+                      "width": "fill_container",
+                      "gap": 48,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "z3fBU",
+                          "name": "Details Left",
+                          "width": 520,
+                          "layout": "vertical",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oDQ1O",
+                              "name": "Details Desc",
+                              "fill": "#4A6B52FF",
+                              "textGrowth": "fixed-width",
+                              "width": 500,
+                              "content": "Vršimo ovlaštenu procjenu tržišne vrijednosti šumskih sastojina i šumskog zemljišta, izradu elaborata, izračune drvne mase na panju te procjene šumskih šteta.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Q5ZLe",
+                              "name": "Bullets Box",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "BZ7VC",
+                                  "name": "Bullet Row",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "zxg50",
+                                      "name": "Check Icon",
+                                      "fill": "#2D5E3AFF",
+                                      "content": "✓",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "x9LxBA",
+                                      "name": "Bullet Text",
+                                      "fill": "#1B3A28FF",
+                                      "textGrowth": "fixed-width",
+                                      "width": 470,
+                                      "content": "Izrada elaborata procjene vrijednosti šumskih sastojina",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "R0eLNF",
+                                  "name": "Bullet Row",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "D41oa",
+                                      "name": "Check Icon",
+                                      "fill": "#2D5E3AFF",
+                                      "content": "✓",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "bYvT4",
+                                      "name": "Bullet Text",
+                                      "fill": "#1B3A28FF",
+                                      "textGrowth": "fixed-width",
+                                      "width": 470,
+                                      "content": "Procjena vrijednosti šuma na trasama dalekovoda, vodovoda, prometnica i ostale infrastrukture",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "yNbsg",
+                                  "name": "Bullet Row",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "CfWqM",
+                                      "name": "Check Icon",
+                                      "fill": "#2D5E3AFF",
+                                      "content": "✓",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "N3xGbk",
+                                      "name": "Bullet Text",
+                                      "fill": "#1B3A28FF",
+                                      "textGrowth": "fixed-width",
+                                      "width": 470,
+                                      "content": "Izračun vrijednosti drvne mase na panju i izračun šumskih šteta",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Cw2fO",
+                                  "name": "Bullet Row",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "ZcEw1",
+                                      "name": "Check Icon",
+                                      "fill": "#2D5E3AFF",
+                                      "content": "✓",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "edhGx",
+                                      "name": "Bullet Text",
+                                      "fill": "#1B3A28FF",
+                                      "textGrowth": "fixed-width",
+                                      "width": 470,
+                                      "content": "Izračun tržišne vrijednosti šumskog zemljišta i vještačenja u šumarstvu",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wzVtH",
+                          "name": "Details Right Image",
+                          "width": 380,
+                          "height": 220,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 6,
+                              "id": "MxXvF",
+                              "layoutPosition": "absolute",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Service Image Card",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "valentinbalan",
+                                "link": "https://unsplash.com/@valentinbalan",
+                                "author": "Valentin Balan"
+                              },
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1778343284768-b5ca177511a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNjk2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "fill"
+                              },
+                              "width": 380,
+                              "height": 220
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ai8L0",
+                  "name": "Accordion Item Lovnogospodarski Planovi",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xp3jb",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "O2P9x",
+                          "name": "Title Group - Lovnogospodarski Planovi",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t3H1ku",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Lovnogospodarski Planovi",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "jFWwp",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Izrada planova za lovišta, lovočuvare i uzgoj divljači",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "MPjB8",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bwgvx",
+                  "name": "Accordion Item Šumskogospodarski Planovi",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hH9MD",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Cscpo",
+                          "name": "Title Group - Šumskogospodarski Planovi",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "g6nuQq",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Šumskogospodarski Planovi",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "wRMe7",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Službeni planovi upravljanja i programi za privatne posjednike",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "O3Nc3",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PaRPH",
+                  "name": "Accordion Item Otkup Drvnih Sortimenata",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "B1x4l",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "DBV9D",
+                          "name": "Title Group - Otkup Drvnih Sortimenata",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "M8NU6I",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Otkup Drvnih Sortimenata",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OStEX",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Prodaja drva - kupujemo drvo izravno iz vaše šume",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "thfG8",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hxUnN",
+                  "name": "Accordion Item Cestovni Prijevoz Vangabaritnog Tereta",
+                  "width": "fill_container",
+                  "fill": "#FFFFFFFF",
+                  "cornerRadius": 4,
+                  "stroke": "#D6DDD0FF",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wQB7X",
+                      "name": "Header Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "R1cht6",
+                          "name": "Title Group - Cestovni Prijevoz Vangabaritnog Tereta",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "p4LW2o",
+                              "name": "Service Title",
+                              "fill": "#1B3A28FF",
+                              "content": "Cestovni Prijevoz Vangabaritnog Tereta",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "phUmy",
+                              "name": "Layman Sub-label",
+                              "fill": "#4A6B52FF",
+                              "content": "Prijevoz velikih strojeva, traktora i građevinske mehanizacije",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon",
+                          "id": "NCDy2",
+                          "name": "Chevron Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#4A6B52FF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DLQHO",
+          "name": "Contact Section C",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#112519FF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "C2631",
+              "name": "Contact Left",
+              "width": 550,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lzrT8",
+                  "name": "Contact Eyebrow C",
+                  "fill": "#A5D6A7FF",
+                  "content": "KONTAKT",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "zgudQ",
+                  "name": "Contact Title C",
+                  "fill": "#FFFFFFFF",
+                  "content": "Javite Nam Se s Povjerenjem",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 36,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "v3iUgd",
+                  "name": "Contact Desc C",
+                  "fill": "#E8F5E9FF",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Stojimo vam na raspolaganju za sve upite vezane uz šumarske radove, izradu planova gospodarenja ili vangabaritni prijevoz.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "sE4NX",
+                  "name": "Info List C",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D3b5j",
+                      "name": "Info Row C Adresa",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "u3uXtR",
+                          "name": "Bullet Marker C",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "m8v03X",
+                          "name": "Text Group C",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NrxC0",
+                              "name": "Label C",
+                              "fill": "#A5D6A7FF",
+                              "content": "ADRESA",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "u5z7dF",
+                              "name": "Value C",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "Anemona Natura d.o.o. \nM. J. Šporera 20, 47 000 Karlovac",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DEnXR",
+                      "name": "Info Row C Telefon",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o765d",
+                          "name": "Bullet Marker C",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qcqHw",
+                          "name": "Text Group C",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hboY1",
+                              "name": "Label C",
+                              "fill": "#A5D6A7FF",
+                              "content": "TELEFON",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "iXaPn",
+                              "name": "Value C",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "+385 99 286 8188 (Općenito) \n+385 99 5452 421 (Prijevoz)",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nU6hQ",
+                      "name": "Info Row C E-mail",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZxGlx",
+                          "name": "Bullet Marker C",
+                          "fill": "#A5D6A7FF",
+                          "content": "■",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T4ieQB",
+                          "name": "Text Group C",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "g8cIl",
+                              "name": "Label C",
+                              "fill": "#A5D6A7FF",
+                              "content": "E-MAIL",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "yviVV",
+                              "name": "Value C",
+                              "fill": "#FFFFFFFF",
+                              "textGrowth": "fixed-width",
+                              "width": 400,
+                              "content": "anemona.natura.info@gmail.com",
+                              "lineHeight": 1.4,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u3NRH",
+              "name": "Contact Form Right C",
+              "width": 550,
+              "fill": "#F5F3EEFF",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u6GEF",
+                  "name": "Form Title C",
+                  "fill": "#1B3A28FF",
+                  "content": "Pošaljite Poruku",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "J3oiD",
+                  "name": "Field Box C Ime i Prezime",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KPp2V",
+                      "name": "Input Label C",
+                      "fill": "#4A6B52FF",
+                      "content": "IME I PREZIME",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hfo6p",
+                      "name": "Input Box C",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bpL4Q",
+                          "name": "Placeholder C",
+                          "fill": "#999999FF",
+                          "content": "Unesite ime i prezime...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y10ax",
+                  "name": "Field Box C E-mail adresa",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xAFWZ",
+                      "name": "Input Label C",
+                      "fill": "#4A6B52FF",
+                      "content": "E-MAIL ADRESA",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DG8qN",
+                      "name": "Input Box C",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "op6ER",
+                          "name": "Placeholder C",
+                          "fill": "#999999FF",
+                          "content": "Unesite e-mail adresa...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gS9W6",
+                  "name": "Field Box C Vaša poruka",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r8BYu",
+                      "name": "Input Label C",
+                      "fill": "#4A6B52FF",
+                      "content": "VAŠA PORUKA",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nGVkn",
+                      "name": "Input Box C",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "#FFFFFFFF",
+                      "cornerRadius": 4,
+                      "stroke": "#D6DDD0FF",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pHGPZ",
+                          "name": "Placeholder C",
+                          "fill": "#999999FF",
+                          "content": "Unesite vaša poruka...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xoe7i",
+                  "name": "Submit Button C",
+                  "width": "fill_container",
+                  "fill": "#2D5E3AFF",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f1UvC",
+                      "name": "Submit Label C",
+                      "fill": "#FFFFFFFF",
+                      "content": "Pošalji Poruku",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yNbIb",
+          "name": "Footer C",
+          "width": "fill_container",
+          "height": 140,
+          "fill": "#112519FF",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "b3IdP",
+              "name": "Copyright Text C",
+              "fill": "#A5D6A7FF",
+              "content": "© 2026 Anemona Natura d.o.o. Sva prava pridržana.",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "tLWj3",
+              "name": "Footer Links C",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aCR8Z",
+                  "name": "Link C Naslovnica",
+                  "fill": "#FFFFFFFF",
+                  "content": "Naslovnica",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZkrPo",
+                  "name": "Link C EU Projekti",
+                  "fill": "#FFFFFFFF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "l1kxB",
+                  "name": "Link C Kontakt",
+                  "fill": "#FFFFFFFF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zopcM",
+      "x": 4620,
+      "y": 0,
+      "name": "EU Projects Page - /eu-projekti",
+      "clip": true,
+      "width": 1440,
+      "fill": "#F5F3EEFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "VYskA",
+          "name": "Navbar EU",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#F5F3EEFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "GWAVC",
+              "name": "Logo EU",
+              "fill": "#1B3A28FF",
+              "content": "ANEMONA NATURA",
+              "fontFamily": "Playfair Display",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "Z1VL6o",
+              "name": "Nav Links EU",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ghOCT",
+                  "name": "Link Početna",
+                  "fill": "#1B3A28FF",
+                  "content": "Početna",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kAs9Q",
+                  "name": "Link EU Projekti",
+                  "fill": "#1B3A28FF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "jPsKZ",
+                  "name": "Link Kontakt",
+                  "fill": "#1B3A28FF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q8nuJK",
+              "name": "CTA Button EU",
+              "fill": "#2D5E3AFF",
+              "cornerRadius": 4,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rSzY7",
+                  "name": "CTA Label EU",
+                  "fill": "#FFFFFFFF",
+                  "content": "Zatražite Savjetovanje",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "whihQ",
+          "name": "Intro Section",
+          "width": "fill_container",
+          "height": 600,
+          "fill": "#F5F3EEFF",
+          "padding": 80,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "C7tiT",
+              "name": "Intro Left",
+              "width": 650,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UdKtB",
+                  "name": "Eyebrow EU Page",
+                  "fill": "#4A6B52FF",
+                  "content": "PODMJERA 8.5.1",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "bold",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "ThiHV",
+                  "name": "Title EU Page",
+                  "fill": "#1B3A28FF",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "Konverzija Degradiranih Šumskih Sastojina i Šumskih Kultura",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 38,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "gt6XA",
+                  "name": "Body EU Page 1",
+                  "fill": "#1B3A28FF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Klijentima pružamo kompletnu uslugu organizacije, savjetovanja i pripreme projekata iz Europskih fondova. Specijalizirani smo u izradi projekata za podmjeru 8.5.1. — konverzija degradiranih šumskih sastojina i šumskih kultura. Pripremamo i izrađujemo cjelokupnu dokumentaciju za potrebe projekta iz Europskih strukturnih i investicijskih fondova.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iW2gE",
+                  "name": "Body EU Page 2",
+                  "fill": "#4A6B52FF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Prihvatljivi korisnici su šumoposjednici u skladu sa člankom 14. Zakona o šumama („Narodne novine\", br. 68/2018, 115/2018, 98/2019, 32/2020 i 145/20) te udruge šumoposjednika.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XsnZv",
+                  "name": "Body EU Page 3",
+                  "fill": "#4A6B52FF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Cilj pokretanja projekta je dodjela sredstava za prevođenje degradiranih šumskih sastojina, šumskih sastojina narušene strukture po vrstama drveća i šumskih kultura u mješovite sastojine autohtonih vrsta drveća visokog uzgojnog oblika.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BMBcw",
+              "name": "Intro Right Featured Image",
+              "width": 550,
+              "height": 440,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 8,
+                  "id": "EghEt",
+                  "layoutPosition": "absolute",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Featured Image Card",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "hibnoptix",
+                    "link": "https://unsplash.com/@hibnoptix",
+                    "author": "Benjamin Hibbert-Hingston"
+                  },
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1711018018901-d7966ecd6a4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "width": 550,
+                  "height": 440
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rN6XA",
+          "name": "Projects Gallery Section",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "#F5F3EEFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "u3Esg",
+              "name": "Gallery Heading",
+              "fill": "#1B3A28FF",
+              "content": "Galerija Ostvarenih Projekata i Konverzija",
+              "fontFamily": "Playfair Display",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "k1sVo",
+              "name": "Gallery Grid",
+              "width": 1280,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NwSo8",
+                  "name": "Gallery Row 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "zKz07",
+                      "name": "Gallery Thumbnail Row 1 - 1",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "meowside",
+                        "link": "https://unsplash.com/@meowside",
+                        "author": "David Knieradl"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1778089417155-db9bd912b74b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "GOYnl",
+                      "name": "Gallery Thumbnail Row 1 - 2",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "pbxdelirio",
+                        "link": "https://unsplash.com/@pbxdelirio",
+                        "author": "Jhan Castillón"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1701817714101-7bf1d08675a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "SZVIZ",
+                      "name": "Gallery Thumbnail Row 1 - 3",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "anniespratt",
+                        "link": "https://unsplash.com/@anniespratt",
+                        "author": "Annie Spratt"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1645430786073-afce4c31e415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JodCC",
+                  "name": "Gallery Row 2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "hi25q",
+                      "name": "Gallery Thumbnail Row 2 - 1",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "brightsightproductions",
+                        "link": "https://unsplash.com/@brightsightproductions",
+                        "author": "Brightsight Productions"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1676831776452-b20b12281255?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "srvck",
+                      "name": "Gallery Thumbnail Row 2 - 2",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "antonme",
+                        "link": "https://unsplash.com/@antonme",
+                        "author": "Anton Volnuhin"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1703543338431-219e5db3bfa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "oq4pb",
+                      "name": "Gallery Thumbnail Row 2 - 3",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "kaymayer",
+                        "link": "https://unsplash.com/@kaymayer",
+                        "author": "Kay Mayer"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1651682235478-460062a083e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAxNzA0MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 416,
+                      "height": 200
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bjYlJ",
+          "name": "Logos Banner",
+          "width": "fill_container",
+          "height": 180,
+          "fill": "#FFFFFFFF",
+          "stroke": "#D6DDD0FF",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nDW9I",
+              "name": "Banner Subtitle",
+              "fill": "#4A6B52FF",
+              "content": "PROGRAM RURALNOG RAZVOJA REPUBLIKE HRVATSKE UZ PODRŠKU EUROPSKE UNIJE",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "TUCqW",
+              "name": "Banner Logos Row",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "lNUhM",
+                  "name": "RH Logo Banner",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../business-info/logos/croatia.png",
+                    "mode": "fit"
+                  },
+                  "width": 60,
+                  "height": 45
+                },
+                {
+                  "type": "rectangle",
+                  "id": "lLokI",
+                  "name": "EU Logo Banner",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../business-info/logos/eu.png",
+                    "mode": "fit"
+                  },
+                  "width": 60,
+                  "height": 45
+                },
+                {
+                  "type": "rectangle",
+                  "id": "cbnQp",
+                  "name": "Fondovi Logo Banner",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../business-info/logos/euInvestmentFunds.png",
+                    "mode": "fit"
+                  },
+                  "width": 100,
+                  "height": 45
+                },
+                {
+                  "type": "rectangle",
+                  "id": "fF04i",
+                  "name": "Razvoj Logo Banner",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../business-info/logos/ruralniRazvoj.png",
+                    "mode": "fit"
+                  },
+                  "width": 100,
+                  "height": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z5AfrB",
+          "name": "Footer EU",
+          "width": "fill_container",
+          "height": 140,
+          "fill": "#112519FF",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xla73",
+              "name": "Copyright Text EU",
+              "fill": "#A5D6A7FF",
+              "content": "© 2026 Anemona Natura d.o.o. Sva prava pridržana.",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "BoJiK",
+              "name": "Footer Links EU",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Hz9O5",
+                  "name": "Link EU Naslovnica",
+                  "fill": "#FFFFFFFF",
+                  "content": "Naslovnica",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "a4TvF",
+                  "name": "Link EU EU Projekti",
+                  "fill": "#FFFFFFFF",
+                  "content": "EU Projekti",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bZVPJ",
+                  "name": "Link EU Kontakt",
+                  "fill": "#FFFFFFFF",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
