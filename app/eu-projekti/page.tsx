@@ -8,7 +8,7 @@ import Eu from "/public/partners-images/eu.png"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "EU Projekti",
+  title: "EU Projects",
 }
 
 const EUProjekti = () => {
@@ -17,28 +17,30 @@ const EUProjekti = () => {
       <section className="mt-28 px-6 md:mt-36 lg:px-11">
         <div className="flex max-w-[55rem] flex-col">
           <h1 className="text-3xl font-extrabold text-green-dark">
-            EU PROJEKTI PODMJERA 8.5.1. - KONVERZIJA DEGRADIRANIH ŠUMSKIH
-            SASTOJINA I ŠUMSKIH KULTURA
+            EU PROJECTS — SUB-MEASURE 8.5.1: CONVERSION OF DEGRADED FOREST
+            STANDS AND FOREST PLANTATIONS
           </h1>
           <p className="mt-4 max-w-[42rem]">
-            Klijentima pružamo uslugu organizacije, savjetovanja i pripreme
-            projekata iz Europskih fondova. Specijalizirani smo u izradi
-            projekata za podmjeru 8.5.1. — konverzija degradiranih šumskih
-            sastojina i šumskih kultura. Pripremamo i izrađujemo cjelokupnu
-            dokumentaciju za potrebe projekta iz Europskih strukturnih i
-            investicijskih fondova.
+            We provide our clients with project organisation, consulting and
+            preparation services for European funds. We specialise in preparing
+            projects under sub-measure 8.5.1 — the conversion of degraded forest
+            stands and forest plantations. We prepare and produce all the
+            documentation required for projects funded by the European
+            Structural and Investment Funds.
           </p>
           <p className="mt-2 max-w-[42rem]">
-            Prihvatljivi korisnici su šumoposjednici u skladu sa člankom 14.
-            Zakona o šumama („Narodne novine", br. 68/2018, 115/2018, 98/2019,
-            32/2020 i 145/20) te udruge šumoposjednika.{" "}
+            Eligible beneficiaries are forest owners in accordance with Article
+            14 of the Forest Act (Official Gazette "Narodne novine", Nos.
+            68/2018, 115/2018, 98/2019, 32/2020 and 145/20), as well as forest
+            owners' associations.{" "}
           </p>
           <p className="mt-2 max-w-[42rem]">
-            Cilj pokretanja projekta je dodjela sredstava za prevođenje
-            degradiranih šumskih sastojina, šumskih sastojina narušene strukture
-            po vrstama drveća i šumskih kultura u,mješovite sastojine autohtonih
-            vrsta drveća visokog uzgojnog oblika, a naš tim iza sebe ima brojne
-            uspješne i ostvarene projekte koje možete pogledati u nastavku.
+            The aim of the project is to secure funding for converting degraded
+            forest stands, forest stands with a disturbed tree-species
+            structure, and forest plantations into mixed stands of
+            autochthonous tree species of high forest form. Our team has a
+            track record of numerous successful, completed projects, which you
+            can browse below.
           </p>
         </div>
         <ImageDisplay />
@@ -64,7 +66,7 @@ const EUProjekti = () => {
           <div className="relative  col-span-2 h-full min-w-40 place-self-center xs:col-span-1 sm:order-4 md:w-40">
             <Image
               src={EuInvestmentFunds}
-              alt="croatian fill flag"
+              alt="European Structural and Investment Funds logo"
               fill
               className="absolute object-contain"
               sizes="170px"
@@ -73,7 +75,7 @@ const EUProjekti = () => {
           <div className="relative col-span-2 h-full w-40 place-self-center xs:col-span-1 sm:order-2 md:w-40">
             <Image
               src={RuralniRazvoj}
-              alt="croatian fill flag"
+              alt="Rural Development Programme logo"
               fill
               className="absolute object-contain"
               sizes="170px"

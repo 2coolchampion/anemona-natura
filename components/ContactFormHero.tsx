@@ -7,7 +7,8 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner"
 import ToastSuccess from "./toast/ToastSuccess"
-import ToastError from "./toast/ToastError"
+// [DEMO] - Kept in the commented production flow below for reference.
+// import ToastError from "./toast/ToastError"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
 import { useEffect } from "react"
 
@@ -35,6 +36,9 @@ const ContactFormHero = () => {
   }, [isSubmitting])
 
   const clientSendEmailAPI: SubmitHandler<Poruka> = async (data) => {
+    // [DEMO] - Disable the production request in this demo deployment. The
+    // original fetch is kept below for reference, but no email should be sent.
+    /*
     try {
       const result = await fetch("/api/sendEmail", {
         method: "POST",
@@ -50,26 +54,31 @@ const ContactFormHero = () => {
 
       const responseData = await result.json()
 
-      // Handle success or error response
       responseData.success
         ? toast(<ToastSuccess message={responseData.success} />, {
             unstyled: true,
           })
         : toast(<ToastError message={responseData.error} />, { unstyled: true })
     } catch (error) {
-      // Handle the fetching error
       console.error("There was a problem with the fetch operation:", error)
       toast(
         <ToastError
           message={
-            "Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno putem e-maila ili telefonom."
+            "Something went wrong. Please try again or contact us directly by email or phone."
           }
         />,
         { unstyled: true, duration: 8000 }
       )
     }
+    */
 
-    await new Promise((resolve) => setTimeout(resolve, 300))
+    // [DEMO] - Simulate a successful send. Keeping the handler pending lets
+    // the Rive "fly" animation play before the success-style disclaimer toast.
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    toast(
+      <ToastSuccess message="This is a demo website — the email wasn't actually sent, but let's pretend it was." />,
+      { unstyled: true }
+    )
   }
 
   const { rive, RiveComponent } = useRive({
@@ -91,7 +100,7 @@ const ContactFormHero = () => {
             htmlFor="ime"
             className="font-semibold text-white hover:cursor-pointer"
           >
-            IME I PREZIME
+            FULL NAME
           </label>
           <input
             {...register("ime")}
@@ -127,7 +136,7 @@ const ContactFormHero = () => {
             htmlFor="tel"
             className="font-semibold text-white hover:cursor-pointer"
           >
-            KONTAKT TELEFON
+            CONTACT PHONE
           </label>
           <input
             {...register("tel")}
@@ -142,14 +151,14 @@ const ContactFormHero = () => {
         </div>
         <div className="felx felx-col relative">
           <label htmlFor="poruka" className="font-semibold text-white">
-            PORUKA*
+            MESSAGE*
           </label>
           <textarea
             {...register("poruka")}
             className="mt-2 h-32 w-full rounded-md border-2 border-white/5 bg-white/20 p-4 placeholder:text-white focus:border-white/20 focus:bg-white/30 lg:resize-none"
             id="poruka"
             name="poruka"
-            placeholder="Upišite svoju poruku ovdje..."
+            placeholder="Type your message here..."
           />
           {errors.poruka && (
             <p className="mt-1 text-red-500">{errors.poruka.message}</p>
@@ -160,7 +169,7 @@ const ContactFormHero = () => {
           className="flex items-center justify-center rounded-lg bg-white/70 p-2 px-3 py-3 text-lg font-extrabold text-green-dark hover:bg-white hover:shadow-md hover:shadow-[#656150] focus:bg-white"
           disabled={isSubmitting}
         >
-          {isSubmitting ? "" : "Pošalji Poruku"}
+          {isSubmitting ? "" : "Send Message"}
           <RiveComponent className="ml-2 h-8 w-8 text-green-dark" />
         </button>
         {errors.root && (

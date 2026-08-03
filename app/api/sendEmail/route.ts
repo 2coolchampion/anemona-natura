@@ -1,3 +1,23 @@
+// [DEMO] - Disable the production Resend route for this demo deployment.
+// The original imports and implementation remain below for reference only.
+export async function POST() {
+  await new Promise((resolve) => setTimeout(resolve, 2000))
+
+  return new Response(
+    JSON.stringify({
+      success:
+        "This is a demo website — the email wasn't actually sent, but let's pretend it was.",
+    }),
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  )
+}
+
+/*
+[DEMO] - Production email implementation disabled above. Keep this code here
+for reference when demonstrating or restoring the real Resend integration.
+
 import { Poruka, porukaSchema } from "@/lib/types"
 import { NextRequest } from "next/server"
 import { Resend } from "resend"
@@ -34,16 +54,16 @@ export async function POST(req: NextRequest) {
 
     if (!poruka || poruka.trim() === "") {
       return {
-        error: "Poruka je obavezna!",
+        error: "Message is required!",
       }
     }
 
     try {
-      console.log("Attempting to send email via Resend to:", process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com")
+      console.log("Attempting to send email via Resend to:", process.env.CONTACT_RECIPIENT_EMAIL || "your-email@example.com")
       const { data, error } = await resend.emails.send({
         from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
-        to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
-        subject: ime ? `📬 Nova poruka - ${ime}` : `📬 Nova poruka - ${email}`,
+        to: process.env.CONTACT_RECIPIENT_EMAIL || "your-email@example.com",
+        subject: ime ? `📬 New message - ${ime}` : `📬 New message - ${email}`,
         reply_to: email as string,
         react: InitialMessage({
           ime: ime,
@@ -68,8 +88,8 @@ export async function POST(req: NextRequest) {
         const { error: confirmationError } = await resend.emails.send({
           from: "Anemona Natura d.o.o.<kontakt@anemona-natura.hr>",
           to: email,
-          reply_to: process.env.CONTACT_RECIPIENT_EMAIL || "franvidicek@gmail.com",
-          subject: "Zaprimili smo Vaš upit - Anemona Natura d.o.o.",
+          reply_to: process.env.CONTACT_RECIPIENT_EMAIL || "your-email@example.com",
+          subject: "We have received your enquiry - Anemona Natura d.o.o.",
           react: MessageReceivedConfirmation({
             ime: ime,
             email: email,
@@ -88,7 +108,7 @@ export async function POST(req: NextRequest) {
       }
 
       return {
-        success: `Poruka je uspješno poslana! Poslali smo potvrdu na ${email}. Ako je ne vidite, provjerite i mapu s neželjenom poštom (Spam).`,
+        success: `Your message was sent successfully! We have sent a confirmation to ${email}. If you don't see it, please check your spam folder.`,
       }
     } catch (error: any) {
       console.error("Exception caught in sendEmail route handler:", error)
@@ -101,3 +121,4 @@ export async function POST(req: NextRequest) {
   const result = await sendEmail(body)
   return new Response(JSON.stringify(result))
 }
+*/

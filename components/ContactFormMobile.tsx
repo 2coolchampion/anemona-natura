@@ -9,7 +9,8 @@ import { useEffect, useRef } from "react"
 import { toast } from "sonner"
 import ToastSuccess from "./toast/ToastSuccess"
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas-lite"
-import ToastError from "./toast/ToastError"
+// [DEMO] - Kept in the commented production flow below for reference.
+// import ToastError from "./toast/ToastError"
 
 const ContactFormMobile = () => {
   const imeRef = useRef<HTMLInputElement | null>(null)
@@ -46,6 +47,9 @@ const ContactFormMobile = () => {
   }, [isSubmitting])
 
   const clientSendEmailAPI: SubmitHandler<Poruka> = async (data) => {
+    // [DEMO] - Disable the production request in this demo deployment. The
+    // original fetch is kept below for reference, but no email should be sent.
+    /*
     try {
       const result = await fetch("/api/sendEmail", {
         method: "POST",
@@ -61,7 +65,6 @@ const ContactFormMobile = () => {
 
       const responseData = await result.json()
 
-      // Handle success or error response
       responseData.success
         ? toast(<ToastSuccess message={responseData.success} />, {
             unstyled: true,
@@ -74,13 +77,19 @@ const ContactFormMobile = () => {
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error)
       toast(
-        <ToastError message="Nešto nije u redu. Pukušajte ponovno ili nas kontaktirajte direktno putem e-maila/telefonom." />,
+        <ToastError message="Something went wrong. Please try again or contact us directly by email/phone." />,
         { unstyled: true, position: "top-center", duration: 8000 }
       )
-      // Handle the error
     }
+    */
 
-    await new Promise((resolve) => setTimeout(resolve, 300))
+    // [DEMO] - Simulate a successful send. Keeping the handler pending lets
+    // the Rive "fly" animation play before the success-style disclaimer toast.
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    toast(
+      <ToastSuccess message="This is a demo website — the email wasn't actually sent, but let's pretend it was." />,
+      { unstyled: true, position: "top-center" }
+    )
   }
 
   const { rive, RiveComponent } = useRive({
@@ -108,7 +117,7 @@ const ContactFormMobile = () => {
             name="ime"
             className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none "
             id="ime"
-            placeholder="Ime i Prezime..."
+            placeholder="Full name..."
           />
           {errors.ime && (
             <p className="mt-1 text-red-500">{errors.ime.message}</p>
@@ -118,7 +127,7 @@ const ContactFormMobile = () => {
             className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
             onClick={() => setFocus("ime")}
           >
-            IME I PREZIME
+            FULL NAME
           </label>
         </div>
         <div className="felx felx-col relative mt-8">
@@ -154,7 +163,7 @@ const ContactFormMobile = () => {
             }}
             type="tel"
             name="tel"
-            placeholder="Kontakt broj..."
+            placeholder="Contact number..."
             className="peer w-full border-b-4 border-b-green-dark bg-transparent  pb-1 placeholder-transparent focus:outline-none"
             id="tel"
           />
@@ -166,7 +175,7 @@ const ContactFormMobile = () => {
             className="absolute -top-7 left-0 text-sm font-semibold transition-all duration-75 ease-out hover:cursor-pointer peer-placeholder-shown:-top-2 peer-placeholder-shown:text-base peer-focus:-top-7 peer-focus:text-sm"
             onClick={() => setFocus("tel")}
           >
-            KONTAKT TELEFON
+            CONTACT PHONE
           </label>
         </div>
         <div className="felx felx-col relative mt-8">
@@ -175,7 +184,7 @@ const ContactFormMobile = () => {
             className=" relative -top-2 cursor-pointer font-semibold"
             onClick={() => setFocus("poruka")}
           >
-            PORUKA*
+            MESSAGE*
           </label>
           <textarea
             {...porukaRest}
@@ -186,7 +195,7 @@ const ContactFormMobile = () => {
             className="mt-1 h-32 w-full rounded-lg border-2 border-dashed border-green-light bg-transparent p-4 placeholder:text-green-light"
             id="poruka"
             name="poruka"
-            placeholder="Upišite svoju poruku ovdje..."
+            placeholder="Type your message here..."
           />
           {errors.poruka && (
             <p className="mt-1 text-red-500">{errors.poruka.message}</p>
@@ -199,7 +208,7 @@ const ContactFormMobile = () => {
           }`}
           disabled={isSubmitting}
         >
-          {isSubmitting ? "" : "Pošalji Poruku"}
+          {isSubmitting ? "" : "Send Message"}
           <RiveComponent className="h-8 w-8" />
         </button>
         {errors.root && (

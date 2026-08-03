@@ -21,28 +21,29 @@ const EUFondovi = () => {
         <div className="mt-10 flex items-center justify-between">
           <h2 className="text-3xl font-extrabold text-green-dark lg:before:absolute lg:before:left-0 lg:before:top-[7.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-green-dark lg:after:absolute lg:after:right-0 lg:after:top-[7.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-green-dark">
             {" "}
-            EU FONDOVI - PODMJERA 8.5.1{" "}
+            EU FUNDS - SUB-MEASURE 8.5.1{" "}
           </h2>{" "}
           <div className="-mr-4 h-[50px] w-[12px] flex-none bg-green-dark  sm:-mr-16 sm:h-[10px] sm:w-[100px] lg:hidden"></div>
         </div>
         <h3 className="font-xs mt-1 font-light">
-          TIP OPERACIJE 8.5.1 KONVERZIJA ŠUMA
+          OPERATION TYPE 8.5.1 — FOREST CONVERSION
         </h3>
         <p className="font-sm mt-6 max-w-md flex-none 2xl:max-w-full">
-          Izrada programa konverzije degradiranih šumskih sastojina i šumskih
-          kultura.
+          Preparation of conversion programs for degraded forest stands and
+          forest plantations.
         </p>
         <p className="font-md mt-6 max-w-md 2xl:max-w-3xl">
-          Do sada smo našim zadovoljnim klijentima osigurali preko{" "}
+          To date, we have secured over{" "}
           <strong className="whitespace-nowrap font-extrabold">
-            3 milijuna eura
+            3 million euros
           </strong>{" "}
-          bespovratnih sredstava. U nastavku saznajte više o našim projektima te
-          kako možete postati korisnik ove mjere.
+          in non-repayable grants for our satisfied clients. Below, learn more
+          about our projects and how you can become a beneficiary of this
+          measure.
         </p>
         <Link href="/eu-projekti">
           <button className="mt-10 self-start rounded bg-green-dark p-2 px-4 font-semibold text-background-light transition-colors duration-75 ease-out hover:bg-green-light">
-            Saznaj Više
+            Learn More
           </button>
         </Link>
 
@@ -50,7 +51,7 @@ const EUFondovi = () => {
           <div className="relative min-h-[5rem] min-w-[5rem] max-w-[10rem] place-self-end xs:justify-self-center sm:order-1 md:justify-self-start 2xl:w-[6rem]">
             <Image
               src={Croatia}
-              alt="Zastava Republike Hrvatske"
+              alt="Flag of the Republic of Croatia"
               fill
               className="absolute object-contain"
               sizes="90px"
@@ -59,7 +60,7 @@ const EUFondovi = () => {
           <div className=" relative h-16 w-16 self-center justify-self-start xs:justify-self-center sm:order-3 md:w-[4.3rem] 2xl:order-2 2xl:w-[5rem]">
             <Image
               src={Eu}
-              alt="Zastava Europske Unije"
+              alt="Flag of the European Union"
               fill
               className="absolute object-contain"
               sizes="90px"
@@ -68,7 +69,7 @@ const EUFondovi = () => {
           <div className="relative  col-span-2 h-full min-w-40 place-self-center xs:col-span-1 sm:order-4 md:w-40">
             <Image
               src={EuInvestmentFunds}
-              alt="Logotip - Program ruralnog razvoja"
+              alt="Rural Development Programme logo"
               fill
               className="absolute object-contain"
               sizes="170px"
@@ -77,7 +78,7 @@ const EUFondovi = () => {
           <div className="relative col-span-2 h-full w-40 place-self-center xs:col-span-1 sm:order-2 md:w-40">
             <Image
               src={RuralniRazvoj}
-              alt="Logo - Europski strukturni i investicijski fondovi"
+              alt="European Structural and Investment Funds logo"
               fill
               className="absolute object-contain"
               sizes="170px"

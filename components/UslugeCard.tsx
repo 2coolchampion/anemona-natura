@@ -40,7 +40,7 @@ const UslugeCard = ({
     >
       <h3 className="z-20 mt-8 text-xl font-bold">{nazivUsluge}</h3>
       <button className="absolute inset-x-auto bottom-6 z-20">
-        Saznaj više...
+        Learn more...
       </button>
       <div className="absolute inset-0 z-10 bg-black/20"></div>
       <Image

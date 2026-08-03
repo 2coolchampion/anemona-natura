@@ -3,7 +3,7 @@ import MainWrapper from "@/components/ui/main"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Usluge",
+  title: "Services",
 }
 
 const Usluge = () => {
@@ -11,178 +11,178 @@ const Usluge = () => {
     <MainWrapper>
       <section className="mb-12 mt-24 px-6 md:mb-16 md:mt-32 lg:mb-24 lg:mt-44 lg:px-11">
         <h1 className="w-full max-w-full text-3xl font-extrabold text-green-dark lg:text-center">
-          Naše Usluge
+          Our Services
         </h1>
         <h2
           id="doznaka-i-otprema"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Doznaka i Otprema
+          Tree Marking and Timber Delivery
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
-          <li className="list-inside">Doznaka stabala</li>
+          <li className="list-inside">Marking of trees for felling</li>
           <li className="mt-1 list-inside lg:mt-0">
-            Otprema drvnih sortimenata
+            Delivery of timber assortments
           </li>
         </ul>
         <h2
           id="procjena-vrijednosti-sume-i-sumskog-zemljista"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Procjena vrijednosti šume i šumskog zemljišta
+          Forest and Forest Land Valuation
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
           <li className="list-inside">
-            Izrada elaborata procjene vrijednosti šumskih sastojina
+            Preparation of forest stand valuation reports
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Procjena vrijednosti šuma i šumskog zemljišta{" "}
+            Valuation of forests and forest land{" "}
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun vrijednosti drvne mase na panju
+            Calculation of the value of standing timber
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun vrijednosti šumskih šteta
+            Assessment of forest damage values
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun prihoda i rashoda u šumama
+            Calculation of forest revenues and costs
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun sječivih mogućnosti šumskih sastojina
+            Calculation of the allowable cut for forest stands
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun vrijednosti pojedinačnih stabala
+            Valuation of individual trees
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Izračun tržišne vrijednosti šumskog zemljišta
+            Calculation of the market value of forest land
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Procjena vrijednosti šuma na trasama dalekovoda, vodovoda, prometne
-            i ostale infrastrukture
+            Valuation of forests along power lines, water pipelines, transport
+            and other infrastructure routes
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Sve ostale usluge vještačenja u šumarstvu
+            All other expert valuation services in forestry
           </li>
         </ul>
         <h2
           id="lovnogospodarski-planovi"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Lovnogospodarski Planovi
+          Hunting Management Plans
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
-          <li className="list-inside">Lovnogospodarska osnova</li>
-          <li className="mt-1 list-inside lg:mt-0">Program uzgoja divljači</li>
-          <li className="mt-1 list-inside lg:mt-0">Program zaštite divljači</li>
+          <li className="list-inside">Hunting management framework</li>
+          <li className="mt-1 list-inside lg:mt-0">Game breeding program</li>
+          <li className="mt-1 list-inside lg:mt-0">Game protection program</li>
           <li className="mt-1 list-inside lg:mt-0">
-            Revizija lovnogospodarskih planova
+            Revision of hunting management plans
           </li>
         </ul>
         <h2
           id="sumskogospodarski-planovi"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Šumskogospodarski Planovi
+          Forest Management Plans
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
           <li className="list-inside">
-            Osnova gospodarenja gospodarskom jedinicom
+            Management framework for the forest management unit
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program gospodarenja gospodarskom jedinicom s planom upravljanja
-            područjem ekološke mreže
+            Forest management program for the management unit, including an
+            ecological network area management plan
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program gospodarenja šumama privatnih posjednika
+            Forest management program for private forest owners
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program gospodarenja šumama posebne namjene za potrebe obrane
-            Republike Hrvatske
+            Forest management program for special-purpose forests serving the
+            defense needs of the Republic of Croatia
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program gospodarenja šumskim sjemenskim objektima
+            Forest seed object management program
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program zaštite, njege i obnove šuma
+            Forest protection, care and restoration program
           </li>
           <li className="mt-1 list-inside lg:mt-0">
-            Program gospodarenja šumama posebne namjene kojima gospodari Pravna
-            osoba
+            Forest management program for special-purpose forests managed by a
+            legal entity
           </li>
         </ul>
         <h2
           id="otkup-drvnih-sortimenata"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Otkup drvnih sortimenata
+          Purchase of Timber Assortments
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
           <li className="mt-1 list-inside lg:mt-0">
-            Kupujemo drvne sortimente svih vrsta na panju, uz panj, na pomoćnom
-            stovarištu
+            We purchase timber assortments of all species — on the stump, at
+            roadside, or at an auxiliary storage yard
           </li>
         </ul>
         <h2
           id="Cestovni-prijevoz-vangabaritetnig-tereta"
           className="mt-8 text-2xl font-bold text-green-dark"
         >
-          Cestovni prijevoz vangabaritnog tereta
+          Road Transport of Oversized Cargo
         </h2>
         <ul
           className="mt-2 max-w-prose list-disc"
           style={{ listStyleType: "square" }}
         >
           <p>
-            Tvrtka Anemona Natura d.o.o. nudi usluge cestovnog prijevoza
-            vangabartnih tereta:
+            Anemona Natura d.o.o. offers road transport services for oversized
+            cargo:
           </p>
           <ul
             className="mt-2 max-w-prose list-disc"
             style={{ listStyleType: "square" }}
           >
             <li className="mt-1 list-inside lg:mt-0">
-              poljoprivredni i šumski strojevi
+              agricultural and forestry machinery
             </li>
-            <li className="list-inside">strojevi građevinske mehanizacije</li>
+            <li className="list-inside">construction machinery</li>
             <li className="list-inside">
-              ostale vrste tereta na području Hrvatske i Slovenije.
+              other types of cargo across Croatia and Slovenia.
             </li>
           </ul>
 
           <div className="relative mt-8 flex flex-col gap-8 lg:flex-row lg:items-start">
             <Image
               src="/usluge/vangabaritetni-teret/kamion-2.jpeg"
-              alt="Kamion Mercedes Benz Arocs"
+              alt="Mercedes-Benz Arocs truck"
               width={500}
               height={300}
               className="rounded-lg object-cover"
             />
             <div className="right-[-18rem] top-6 lg:absolute">
-              <p>Za pružanje usluge koristimo:</p>
+              <p>For this service we use:</p>
               <ul
                 className="mt-2 list-disc"
                 style={{ listStyleType: "square" }}
               >
                 <li className="list-inside">
-                  Troosovinski tegljač Mercedes Benz Arocs
+                  Three-axle Mercedes-Benz Arocs tractor unit
                 </li>
                 <li className="list-inside">
-                  Dvoosovinsku niskopodnu poluprikolicu marke DOLL
+                  Two-axle low-loader semi-trailer, brand DOLL
                 </li>
               </ul>
             </div>
@@ -191,14 +191,14 @@ const Usluge = () => {
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
             <Image
               src="/usluge/vangabaritetni-teret/kamion-3.jpeg"
-              alt="Kamion u transportu"
+              alt="Truck in transit"
               width={500}
               height={300}
               className="rounded-lg object-cover"
             />
             <Image
               src="/usluge/vangabaritetni-teret/kamion-1.jpeg"
-              alt="Kamion na cesti"
+              alt="Truck on the road"
               width={500}
               height={300}
               className="rounded-lg object-cover"
@@ -206,12 +206,15 @@ const Usluge = () => {
           </div>
 
           <p className="mt-4">
-            Za upite o prijevozu ostalih kategorija te sve dodatne upite vezane
-            uz cijenu i uslugu prijevoza možete nas kontaktirati na:
+            For enquiries about transporting other categories of cargo, and for
+            any additional questions regarding transport prices and services,
+            please contact us at:
           </p>
 
-          <p className="ml-8 mt-4">E-mail: anemona.natura.info@gmail.com</p>
-          <p className="ml-8">Mobitel: +385 99 5452 421 ili +385 99 286 8188</p>
+          <p className="ml-8 mt-4">Email: anemona.natura.info@gmail.com</p>
+          <p className="ml-8">
+            Mobile: +385 99 5452 421 or +385 99 286 8188
+          </p>
         </ul>
       </section>
     </MainWrapper>

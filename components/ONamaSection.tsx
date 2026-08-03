@@ -6,30 +6,30 @@ const ONamaSection = () => {
       <div className="flex w-full flex-col items-start md:w-fit">
         <div className="mt-10 flex items-center justify-between self-stretch">
           <h2 className="text-3xl font-extrabold text-background-light">
-            O NAMA
+            ABOUT US
           </h2>
           <div className="-mr-4 h-[12px] w-[150px] bg-background-light sm:hidden"></div>
         </div>
         <p className="font-sm mt-8 text-background-light sm:w-[36rem] ">
-          Anemona Natura d.o.o. nudi specijalne usluge i savjetovanja u
-          šumarstvu.
+          Anemona Natura d.o.o. provides specialist services and consulting in
+          forestry.
         </p>
         <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-          Nudimo usluge doznake stabala i otpreme drvnih sortimenata, usluge
-          održivog gospodarenja šumom, provodimo lovnogospodarske planove te
-          nudimo identifikaciju katastarskih čestica na terenu kao i procjenu
-          vrijednosti šume i šumskog zemljišta.
+          We offer tree marking and timber delivery services, sustainable forest
+          management, implement hunting management plans, and provide on-site
+          identification of cadastral parcels as well as forest and forest land
+          valuation.
         </p>
         <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-          Osim toga pružamo uslugu organizacije, savjetovanja i pripreme
-          projekata iz Europskih fondova. Specijalizirani smo u izradi projekata
-          za podmjeru 8.5.1. - konverzije šuma. Pripremamo i izrađujemo
-          cjelokupnu dokumentaciju za potrebe projekta iz Europskih strukturnih
-          i investicijskih fondova.
+          In addition, we provide project organisation, consulting and
+          preparation services for European funds. We specialise in projects
+          under sub-measure 8.5.1 — forest conversion. We prepare and produce
+          all the documentation required for projects funded by the European
+          Structural and Investment Funds.
         </p>
         <p className="font-sm mt-6 text-background-light sm:w-[36rem]">
-          Sjedište naše tvrtke nalazi se u Karlovcu, no rad uspješno obavljamo
-          na području cijele Hrvatske.
+          Our company is headquartered in Karlovac, yet we successfully deliver
+          our services across the whole of Croatia.
         </p>
       </div>
     </section>
