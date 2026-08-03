@@ -29,7 +29,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
   const baseUrl = "https://anemona-natura.hr"
 
   return (
-    <Html lang="hr">
+    <Html lang="en">
       <Head>
         {/* Inter font weight 400 - latin */}
         <Font
@@ -73,7 +73,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 </Column>
                 <Column align="right">
                   <Text className="m-0 text-xs font-semibold uppercase tracking-wider text-[#e7e4e1]">
-                    Novi Upit
+                    New Enquiry
                   </Text>
                 </Column>
               </Row>
@@ -82,10 +82,11 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
             {/* Title / Hero */}
             <Section className="px-10 pt-6 pb-2">
               <Text className="m-0 text-2xl font-bold text-[#012c14]">
-                Primljena je nova poruka
+                A new message has been received
               </Text>
               <Text className="m-0 mt-1 text-sm text-[#4b5563]">
-                Korisnik je poslao poruku preko kontakt obrasca na web stranici.
+                A user has submitted a message via the contact form on our
+                website.
               </Text>
             </Section>
 
@@ -95,15 +96,15 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 <Row className="mb-4">
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Ime i prezime
+                      Full name
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
-                      {ime || "Nije navedeno"}
+                      {ime || "Not provided"}
                     </Text>
                   </Column>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Datum primitka
+                      Date received
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
                       {getCurrentDateFormatted()}
@@ -113,7 +114,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                 <Row>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      E-mail adresa
+                      Email address
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold">
                       <Link href={`mailto:${email}`} className="text-[#086437] underline decoration-[#086437]">
@@ -123,10 +124,10 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
                   </Column>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Telefon
+                      Phone
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
-                      {tel || "Nije navedeno"}
+                      {tel || "Not provided"}
                     </Text>
                   </Column>
                 </Row>
@@ -136,7 +137,7 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
             {/* Message Content Section */}
             <Section className="px-10 pt-2 pb-8">
               <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53] mb-2">
-                Sadržaj poruke
+                Message content
               </Text>
               <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb] overflow-hidden" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
                 <Text className="m-0 text-sm leading-relaxed text-[#374151]" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
@@ -148,12 +149,12 @@ const Email = ({ ime, email, tel, poruka }: Poruka) => {
             {/* Footer Section */}
             <Section className="bg-[#f9faf9] px-10 py-6 border-t border-[#f0f2f0]">
               <Text className="m-0 text-center text-xs text-[#9ca3af] leading-normal">
-                Ova poruka je automatski poslana s kontakt obrasca na{" "}
+                This message was sent automatically from the contact form on{" "}
                 <Link href="https://anemona-natura.hr" className="text-[#086437] font-semibold underline">
                   anemona-natura.hr
                 </Link>
                 .<br />
-                Molimo ne odgovarajte izravno na ovaj e-mail. Ako želite odgovoriti pošiljatelju, kliknite "Odgovori" (Reply) ili koristite e-mail adresu iznad.
+                Please do not reply directly to this email. If you wish to respond to the sender, click "Reply" or use the email address above.
               </Text>
             </Section>
           </Container>

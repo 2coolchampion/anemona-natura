@@ -4,15 +4,15 @@ import { usePathname } from "next/navigation"
 
 const NavLinks = [
   {
-    name: "Naslovnica",
+    name: "Home",
     href: "/",
   },
   {
-    name: "Usluge",
+    name: "Services",
     href: "/usluge",
   },
   {
-    name: "EU Projekti",
+    name: "EU Projects",
     href: "/eu-projekti",
   },
 ]

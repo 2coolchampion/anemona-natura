@@ -13,52 +13,51 @@ type ImageObject = {
 
 const Images: ImageObject[] = [
   {
-    usluga: "Doznaka i otprema drvnih sortimenata",
+    usluga: "Tree marking and timber delivery",
     imgSrc: "/usluge/forest_truck_full_of_logs.png",
-    imgAlt:
-      "Kamion za odvoz drva vozi se šumskim putem s punim teretom trupaca",
+    imgAlt: "A truck loaded with logs driving along a forest road",
     cardType: "small",
     route: "/usluge/#doznaka-i-otprema",
   },
   {
-    usluga: "EU Fondovi",
+    usluga: "EU Funds",
     imgSrc: "/usluge/handshake.png",
-    imgAlt: "Rukovanje dvaju muškaraca u odijelima",
+    imgAlt: "Two men in suits shaking hands",
     cardType: "big",
     route: "/eu-projekti",
   },
   {
-    usluga: "Procjena vrijednosti šume i šumskog zemljišta",
+    usluga: "Forest and forest land valuation",
     imgSrc: "/usluge/map.png",
-    imgAlt: "Osoba pokazuje kemijskom olovkom po karti",
+    imgAlt: "A person pointing at a map with a pen",
     cardType: "big",
     route: "/usluge/#procjena-vrijednosti-sume-i-sumskog-zemljista",
   },
   {
-    usluga: "Izrada lovno gospodarskih planova",
+    usluga: "Hunting management plans",
     imgSrc: "/usluge/hogs.png",
-    imgAlt: "Divlje svinje u šumi",
+    imgAlt: "Wild boars in the forest",
     cardType: "small",
     route: "/usluge/#lovnogospodarski-planovi",
   },
   {
-    usluga: "Izrada šumsko gospodarskih planova",
+    usluga: "Forest management plans",
     imgSrc: "/usluge/beech.png",
-    imgAlt: "Bukva",
+    imgAlt: "Beech tree",
     cardType: "small",
     route: "/usluge/#sumskogospodarski-planovi",
   },
   {
-    usluga: "Otkup drvnih sortimenata",
+    usluga: "Purchase of timber assortments",
     imgSrc: "/usluge/timber_assortments.png",
-    imgAlt: "Naslagana narezana drva",
+    imgAlt: "Stacked cut timber",
     cardType: "big",
     route: "/usluge/#otkup-drvnih-sortimenata",
   },
   {
-    usluga: "Prijevoz vangabaritnog tereta",
+    usluga: "Oversized cargo transport",
     imgSrc: "/usluge/vangabaritetni-teret/kamion-1.jpeg",
-    imgAlt: "Naslagana narezana drva",
+    imgAlt: "Stacked cut timber",
     cardType: "huge",
     route: "/usluge/#otkup-drvnih-sortimenata",
   },
@@ -73,7 +72,7 @@ const Usluge = () => {
           id="usluge"
           className="mr-auto text-3xl font-extrabold text-green-dark lg:before:absolute lg:before:left-0 lg:before:top-[3.3rem] lg:before:inline-block lg:before:h-[10px] lg:before:w-[100px] lg:before:bg-green-dark lg:after:absolute lg:after:right-0 lg:after:top-[3.3rem] lg:after:inline-block lg:after:h-[10px] lg:after:w-[45px] lg:after:bg-green-dark"
         >
-          USLUGE
+          SERVICES
         </h2>
         <div className="-mr-4 ml-auto h-[12px] w-[150px] bg-green-dark lg:hidden"></div>
       </div>

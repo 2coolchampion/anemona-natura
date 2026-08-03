@@ -29,7 +29,7 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
   const baseUrl = "https://anemona-natura.hr"
 
   return (
-    <Html lang="hr">
+    <Html lang="en">
       <Head>
         <Font
           fontFamily="Inter"
@@ -71,7 +71,7 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
                 </Column>
                 <Column align="right">
                   <Text className="m-0 text-xs font-semibold uppercase tracking-wider text-[#e7e4e1]">
-                    Potvrda
+                    Confirmation
                   </Text>
                 </Column>
               </Row>
@@ -81,16 +81,16 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
             <Section className="px-10 pt-8 pb-4 text-center">
               <Img
                 src={`${baseUrl}/assets-email/check-email.png`}
-                alt="Ikona kvačice"
+                alt="Checkmark icon"
                 width="64"
                 height="50"
                 className="mx-auto mb-4 block"
               />
               <Text className="m-0 text-2xl font-bold text-[#012c14]">
-                Zaprimili smo Vaš upit!
+                We have received your enquiry!
               </Text>
               <Text className="m-0 mt-2 text-sm leading-relaxed text-[#4b5563]">
-                Hvala Vam što ste nas kontaktirali. Naš tim će obraditi Vaš upit i odgovoriti Vam u najkraćem mogućem roku. U nastavku šaljemo kopiju poslanih podataka.
+                Thank you for contacting us. Our team will process your enquiry and get back to you as soon as possible. Below is a copy of the information you submitted.
               </Text>
             </Section>
 
@@ -100,15 +100,15 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
                 <Row className="mb-4">
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Ime i prezime
+                      Full name
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
-                      {ime || "Nije navedeno"}
+                      {ime || "Not provided"}
                     </Text>
                   </Column>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Datum slanja
+                      Date sent
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
                       {getCurrentDateFormatted()}
@@ -118,7 +118,7 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
                 <Row>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      E-mail adresa
+                      Email address
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
                       {email}
@@ -126,10 +126,10 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
                   </Column>
                   <Column className="w-1/2">
                     <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53]">
-                      Telefon
+                      Phone
                     </Text>
                     <Text className="m-0 mt-1 text-base font-semibold text-[#1f2937]">
-                      {tel || "Nije navedeno"}
+                      {tel || "Not provided"}
                     </Text>
                   </Column>
                 </Row>
@@ -139,7 +139,7 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
             {/* Message Content Section */}
             <Section className="px-10 pt-2 pb-8">
               <Text className="m-0 text-xs font-bold uppercase tracking-wider text-[#4d5e53] mb-2">
-                Vaša poruka
+                Your message
               </Text>
               <Section className="rounded-lg border-l-4 border-[#086437] bg-[#f9fafb] p-5 border border-y-[#e5e7eb] border-r-[#e5e7eb] overflow-hidden" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
                 <Text className="m-0 text-sm leading-relaxed text-[#374151]" style={{ wordBreak: "break-word", wordWrap: "break-word" }}>
@@ -151,12 +151,12 @@ const MessageReceivedConfirmation = ({ ime, email, tel, poruka }: Poruka) => {
             {/* Footer Section */}
             <Section className="bg-[#f9faf9] px-10 py-6 border-t border-[#f0f2f0]">
               <Text className="m-0 text-center text-xs text-[#9ca3af] leading-normal">
-                Ova potvrda je poslana automatski nakon ispunjavanja kontakt obrasca na{" "}
+                This confirmation was sent automatically after submitting the contact form on{" "}
                 <Link href="https://anemona-natura.hr" className="text-[#086437] font-semibold underline">
                   anemona-natura.hr
                 </Link>
                 .<br />
-                Na ovaj e-mail možete odgovoriti izravno ako želite dodati dodatne detalje svom upitu.
+                You can reply to this email directly if you wish to add further details to your enquiry.
               </Text>
             </Section>
           </Container>

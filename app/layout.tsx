@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Anemona Natura - Stručne usluge i savjetovanje u šumarstvu",
+    default: "Anemona Natura - Professional Forestry Services and Consulting",
     template: "%s - Anemona Natura",
   },
   description:
-    "Anemona Natura d.o.o. nudi usluge u šumarstvu uključujući doznaku i otpremu drvnih sortimenata, procjenu vrijednosti šume, EU fondove, i lovno gospodarske planove. Djelujemo u cijeloj Hrvatskoj sa sjedištem u Karlovcu.",
+    "Anemona Natura d.o.o. offers forestry services including tree marking and timber delivery, forest valuation, EU fund projects, and hunting management plans. We operate across the whole of Croatia, with our headquarters in Karlovac.",
 }
 
 export default function RootLayout({

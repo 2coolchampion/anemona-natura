@@ -104,9 +104,9 @@ const HeroSection = () => {
       </picture>
       <div className="group/grand flex flex-col pt-56 lg:items-center lg:pt-80">
         <h1 className="relative z-10 text-4xl font-extrabold text-background-light md:max-w-[26rem] lg:max-w-[45rem] lg:text-center">
-          <span className="sm:hidden">SAVJETOVANJE I USLUGE U ŠUMARSTVU</span>
+          <span className="sm:hidden">FORESTRY CONSULTING AND SERVICES</span>
           <span className="hidden sm:inline">
-            SPECIJALNE USLUGE I SAVJETOVANJE U ŠUMARSTVU
+            SPECIALIZED FORESTRY SERVICES AND CONSULTING
           </span>
           {/* <Glow className="pointer-events-none top-16 z-10 hidden scale-[235%] opacity-30 lg:absolute lg:block" /> */}
           <Bg_blur className="absolute -top-3 -z-10 opacity-50 blur-xl" />
@@ -119,7 +119,7 @@ const HeroSection = () => {
             <ArrowDownIcon className="mb-[2px] h-auto w-6" />
           </div>
           <p className="inline whitespace-nowrap px-5 py-2 text-xl font-bold">
-            Istraži Ponudu
+            Explore Our Services
           </p>
         </a>
       </div>

@@ -93,7 +93,7 @@ const Nav = () => {
               {/* LOGO */}
               <Link
                 href={"/"}
-                aria-label="Naslovnica"
+                aria-label="Home"
                 className="flex items-center justify-center"
               >
                 <Logo className="w-40" />

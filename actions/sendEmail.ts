@@ -1,9 +1,11 @@
 "use server"
 
 import { Poruka, porukaSchema } from "@/lib/types"
-import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// [DEMO] - The Resend import and client are kept in the disabled flow below
+// for reference, but this unused server action must not send email in the demo.
+// import { Resend } from "resend"
+// const resend = new Resend(process.env.RESEND_API_KEY)
 
 // This is never used in the actual code because it's a server-side function and at the time I didn't manage to make it work with netlify.
 
@@ -31,20 +33,27 @@ const sendEmail = async (porukaData: unknown) => {
 
   if (!poruka || poruka.trim() === "") {
     return {
-      error: "Poruka je obavezna!",
+      error: "Message is required!",
     }
   }
 
+  // [DEMO] - Disable the real Resend invocation. It is retained as comments
+  // so the production implementation can still be demonstrated or restored.
+  /*
   const data = await resend.emails.send({
     from: "Acme <onboarding@resend.dev>",
-    to: "franvidicek@gmail.com",
-    subject: `📬 Nova poruka - ${ime} - ${tel}`,
+    to: "your-email@example.com",
+    subject: `📬 New message - ${ime} - ${tel}`,
     reply_to: email as string,
-    text: `Poruka: ${poruka} || Email: ${email}`,
+    text: `Message: ${poruka} || Email: ${email}`,
   })
+  */
+
+  await new Promise((resolve) => setTimeout(resolve, 2000))
 
   return {
-    sucess: "Poruka je uspesno poslana!",
+    success:
+      "This is a demo website — the email wasn't actually sent, but let's pretend it was.",
   }
 }
 
